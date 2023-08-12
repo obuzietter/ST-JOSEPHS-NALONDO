@@ -17,11 +17,11 @@
                 <div class="welcome-text">
                     WE WELCOME YOU TO
                 </div>
-                <div class="school-name">
+                <div class="school-name anim-typewriter">
                     ST JOSEPH NALONDO BOYS HIGHSCHOOL
                 </div>
                 <div class="button">
-                    <button>LEARN MORE</button>
+                    <button id="btn">LEARN MORE</button>
                 </div>
             </div>
             
@@ -71,11 +71,11 @@
                 </div>
             </div>
             <div class="control">
-                <a href="#1"></a>
-                <a href="#2"></a>
-                <a href="#3"></a>
-                <a href="#4"></a>
-                <a href="#5"></a>
+                <a href="#1">o</a>
+                <a href="#2">o</a>
+                <a href="#3">o</a>
+                <a href="#4">o</a>
+                <a href="#5">o</a>
             </div>
         </section>
     </main>

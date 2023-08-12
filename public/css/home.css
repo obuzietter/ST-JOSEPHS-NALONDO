@@ -1,76 +1,217 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
     /* border: 1px solid blue; */
 }
-html{
-    scroll-snap-type: x mandatory;
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
-main .landing{
+
+main .landing {
+    background-image: url(https://img.freepik.com/premium-photo/girl-graduation-gown-cap-stands-front-university-building_455711-76.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     padding: 0 2rem;
+    scroll-snap-align: start;
 }
-main .landing .welcome{
+
+main .landing .welcome {
     /* justify-self: center; */
 }
-main .landing .welcome .welcome-text{
-    font-size: 1.5rem;
+
+main .landing .welcome .welcome-text {
+    font-size: 1.8rem;
     font-weight: 600;
     padding: 30px 0;
 }
-main .landing .welcome .school-name{
+
+main .landing .welcome .school-name {
     color: blue;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 900;
+    text-align: center;
+    /* padding: 0 30px; */
+    /* border: 1px solid white; */
+}
+
+main .landing .welcome .button {
     padding: 30px 0;
 }
-main .landing .welcome .button{
-    padding: 30px 0;
-}
-main .landing .welcome .button button{
+
+/* main .landing .welcome .button button {
     text-decoration: none;
     color: white;
+    font-size: 1.3rem;
     background-color: blue;
+    border-style: ridge;
     padding: 30px;
-}
-main .boxes{
+} */
+/* button styling */
+#btn {
+    --color: blue;
+    background-color: transparent;
+    display: inline-block;
+    padding: 30px;
+    
+    /* width: 6em;
+    height: 2.6em; */
+    /* line-height: 2.5em; */
+    overflow: hidden;
+    /* margin: 20px; */
+    /* font-size: 17px; */
+    font-size: 1.3rem;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    /* border-radius: 6px; */
+    position: relative;
+    transition: .2s ease;
+    cursor: pointer;
+  }
+  
+  #btn::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    /* width: 150px; */
+    width: 400px;
+    /* height: 200px; */
+    height: 300px;
+    z-index: -1;
+    border-radius: 50%;
+    
+  }
+  
+  #btn:hover {
+    color: white;
+    box-shadow: 5px 5px 15px blue;
+  }
+  
+  #btn:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  #btn:hover::before {
+    top: -50px;
+    left: -50px;
+  }
+main .boxes {
     display: flex;
+    /* flex-direction: row-reverse; */
     padding: 10px;
     justify-content: space-evenly;
 }
-main .boxes div{
+
+main .boxes .box {
     width: 30%;
+    height: 200px;
+    background-color: #0004ff;
+    animation-name: slide-in;
+    animation-duration: 1.4s;
+    /* animation-direction: normal; */
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    text-align: center;
+    /* padding: 20px; */
 }
-main .slideshow{
+
+main .boxes .box h4{
+    font-size: 1.8rem;
+    padding: 10px 0;
+}
+main .boxes .box p{
+    font-size: 1.5rem;
+}
+main .slideshow {
     height: 100dvh;
     display: grid;
     place-items: center;
+    scroll-snap-align: start;
 }
-main .slideshow .slides{
+
+main .slideshow .slides {
     width: 90%;
     height: 90%;
-    padding: 5px;
+    /* padding: 5px; */
     display: flex;
     align-items: center;
     overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
-main .slideshow .slides .slide{
+
+.slides::-webkit-scrollbar {
+    height: 4px;
+}
+
+
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #0004ff;
+}
+
+.slides::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    height: 10px;
+}
+
+main .slideshow .slides .slide {
     width: 100%;
     height: 100%;
     flex: 0 0 100%;
+    scroll-snap-align: start;
 }
-main .slideshow .slides .slide img{
+
+main .slideshow .slides .slide img {
     width: 100%;
-    
+
 }
+
 main .slideshow .control a {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: brown;
 }
+
+@keyframes slide-in {
+    from{
+        transform: translateX(-1500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.anim-typewriter{
+    border-right: 2px solid rgba(255,255,255,.75);
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: typewriter 4s steps(34) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44)  normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
