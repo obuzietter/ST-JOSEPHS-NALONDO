@@ -54,11 +54,21 @@
         </section>
         <section class="slideshow">
             <div class="slides">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>

@@ -42,3 +42,21 @@ main .boxes{
 main .boxes div{
     width: 30%;
 }
+main .slideshow{
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+main .slideshow .slides{
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    overflow-x: scroll;
+}
+main .slideshow .slides .slide{
+    width: 100%;
+}
+/* main .slideshow .slides div img{
+    width: 100%;
+    
+} */
