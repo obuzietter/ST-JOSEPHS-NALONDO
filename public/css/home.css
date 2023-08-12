@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+}
+html{
+    scroll-snap-type: x mandatory;
 }
 main .landing{
     height: 100dvh;
@@ -49,14 +52,25 @@ main .slideshow{
 }
 main .slideshow .slides{
     width: 90%;
+    height: 90%;
     padding: 5px;
     display: flex;
+    align-items: center;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 main .slideshow .slides .slide{
     width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
 }
-/* main .slideshow .slides div img{
+main .slideshow .slides .slide img{
     width: 100%;
     
-} */
+}
+main .slideshow .control a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: brown;
+}
