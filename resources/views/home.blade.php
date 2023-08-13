@@ -69,14 +69,16 @@
                 <div class="slide" id="5">
                     <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg" alt="">
                 </div>
+                
             </div>
             <div class="control">
-                <a href="#1">o</a>
-                <a href="#2">o</a>
-                <a href="#3">o</a>
-                <a href="#4">o</a>
-                <a href="#5">o</a>
+                <a href="#1"><div></div></a>
+                <a href="#2"><div></div></a>
+                <a href="#3"><div></div></a>
+                <a href="#4"><div></div></a>
+                <a href="#5"><div></div></a>
             </div>
+           
         </section>
     </main>
     <footer>

@@ -151,6 +151,7 @@ main .slideshow {
     display: grid;
     place-items: center;
     scroll-snap-align: start;
+    position: relative;
 }
 
 main .slideshow .slides {
@@ -163,6 +164,9 @@ main .slideshow .slides {
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    box-shadow: 10px 10px 86px 0px rgba(0,0,0,0.75);
+
+    
 }
 
 .slides::-webkit-scrollbar {
@@ -195,14 +199,25 @@ main .slideshow .slides .slide img {
     width: 100%;
 
 }
-
-main .slideshow .control a {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: brown;
+main .slideshow .control{
+    position: absolute;
+    bottom: 50px;
+    /* background-color: blue; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+main .slideshow .control a div{
+    height: 20px;
+    width: 20px;
+    margin: 30px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+main .slideshow .control a div:hover{
+    background-color: white;
+}
 @keyframes slide-in {
     from{
         transform: translateX(-1500px);
