@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+main .badge{
+    height: 100dvh;
+}
+main .values{
+    height: 100dvh;
+}
+main .history{
+    height: 100dvh;
+}
