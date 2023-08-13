@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
 }
 
 html {
@@ -20,13 +20,14 @@ main .landing {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     padding: 0 2rem;
     scroll-snap-align: start;
 }
 
 main .landing .welcome {
     /* justify-self: center; */
+    align-self: flex-start;
 }
 
 main .landing .welcome .welcome-text {
@@ -40,7 +41,6 @@ main .landing .welcome .school-name {
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
-    /* padding: 0 30px; */
     /* border: 1px solid white; */
 }
 
@@ -110,19 +110,21 @@ main .landing .welcome .button {
 main .boxes {
     display: flex;
     /* flex-direction: row-reverse; */
-    padding: 10px;
-    justify-content: space-evenly;
+    /* padding: 10px; */
+    justify-content: space-between;
 }
 
 main .boxes .box {
     width: 30%;
     height: 200px;
     background-color: #0004ff;
+    transition: 400ms ease;
     animation-name: slide-in;
     animation-duration: 1.4s;
     /* animation-direction: normal; */
     animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
     text-align: center;
+    cursor: pointer;
     /* padding: 20px; */
 }
 
@@ -133,6 +135,17 @@ main .boxes .box h4{
 main .boxes .box p{
     font-size: 1.5rem;
 }
+.boxes .box:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .boxes:hover > .box:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+/* slide slideshow section styling */
+
 main .slideshow {
     height: 100dvh;
     display: grid;
@@ -199,19 +212,33 @@ main .slideshow .control a {
     }
 }
 .anim-typewriter{
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid blue;
     height: 50px;
     overflow: hidden;
     white-space: nowrap;
 
     animation: typewriter 4s steps(34) 1s 1 normal both,
-               blinkTextCursor 500ms steps(44)  normal;
+               blinkTextCursor 500ms steps(44)  infinite normal;
   }
   @keyframes typewriter{
-    from{width: 0;}
-    to{width: 100%;}
+    from{
+        width: 0;
+        padding-right: 0;
+    }
+    to{
+        width: 100%;
+        padding-right: 10px;
+    }
   }
   @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
+    from{
+        border-right-color: blue;
+    }
+    to{
+        border-right-color: transparent;
+    }
+  }
+
+  ::selection{
+    background-color: orangered;
   }
