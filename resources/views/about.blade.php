@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url('css/about.css') }}">
+    <script src="https://kit.fontawesome.com/5ce449abc0.js" crossorigin="anonymous"></script>
+    <script src="{{url('js/about.js')}}" defer></script>
+
     <title>NALONDO - ABOUT</title>
 </head>
 
@@ -29,10 +32,13 @@
                 <div class="image">
                     <img src="https://img.freepik.com/free-photo/shield-with-letter-n-it_1340-36069.jpg" alt="">
                 </div>
+                <div class="chevron" id="chevron">
+                    <i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color: blue; height: 30px;"></i>
+                </div>
             </div>
 
         </section>
-        <section class="values">
+        <section class="values" id="values">
             <div class="vision">
                 <div class="vision-image">
 
