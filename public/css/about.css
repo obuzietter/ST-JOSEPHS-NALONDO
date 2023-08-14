@@ -4,11 +4,15 @@
     box-sizing: border-box;
     /* border: 1px solid blue; */
 }
-
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 main .badge{
     height: 100dvh;
     position: relative;
     overflow-y: hidden;
+    scroll-snap-align: start;
 }
 main .badge video{
     width: 100%;
@@ -51,6 +55,7 @@ main .values{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    scroll-snap-align: start;
 }
 main .values .vision{
     display: flex;
@@ -122,6 +127,7 @@ main .core-values{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    scroll-snap-align: start;
 }
 main .core-values h1{
     font-size: 3rem;
@@ -141,10 +147,11 @@ main .history{
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 main .history .history-nav{
     width: 30%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +181,7 @@ main .history .history-nav ul li a{
 }
 main .history .history-items{
     width: 60%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
