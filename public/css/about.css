@@ -2,14 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 main .badge{
     height: 100dvh;
+    position: relative;
+    overflow-y: hidden;
+}
+main .badge video{
+    width: 100%;
+    /* height: 100%; */
+    
+}
+/* main .badge video source{
+    width: 100%;
+    height: 100%;
+} */
+main .badge .intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+}
+main .badge .intro .text{
+    font-size: 2rem;
+    color: white;
+}
+main .badge .intro .image{
+    width: 250px;
+}
+main .badge .intro .image img{
+    width: 100%;
 }
 main .values{
+    position: relative;
     height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .values .vision{
+    display: flex;
+    width: 90%;
+    height: 350px;
+}
+main .values .vision .vision-image{
+    background-image: url(https://img.freepik.com/free-photo/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place_231208-2277.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+    width: 50%;
+}
+main .values .vision .vision-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+}
+main .values .vision .vision-text h1{
+    font-size: 2rem;
+}
+main .values .vision .vision-text p{
+    font-size: 1.5rem;
+}
+main .values .mission{
+    display: flex;
+    width: 90%;
+    height: 350px;
+}
+main .values .mission .mission-image{
+    background-image: url(https://img.freepik.com/premium-photo/businessman-making-notes-sticky-notes_274679-37656.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+    width: 50%;
+}
+main .values .mission .mission-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+}
+main .values .mission .mission-text h1{
+    font-size: 2rem;
+}
+main .values .mission .mission-text p{
+    font-size: 1.5rem;
+}
+main .values .motto-banner{ 
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    text-align: center;
+    /* justify-self: flex-end; */
+    /* background-color: red; */
+}
+main .values .motto-banner h1{
+    font-size: 2rem;
+}
+main .values .motto-banner p{
+    font-size: 1.5rem;
 }
 main .history{
     height: 100dvh;
