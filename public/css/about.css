@@ -54,7 +54,7 @@ main .values{
 }
 main .values .vision{
     display: flex;
-    width: 90%;
+    width: 70%;
     height: 350px;
 }
 main .values .vision .vision-image{
@@ -69,6 +69,7 @@ main .values .vision .vision-text{
     align-items: center;
     width: 50%;
     padding: 30px;
+    text-align: justify;
 }
 main .values .vision .vision-text h1{
     font-size: 2rem;
@@ -78,7 +79,7 @@ main .values .vision .vision-text p{
 }
 main .values .mission{
     display: flex;
-    width: 90%;
+    width: 70%;
     height: 350px;
 }
 main .values .mission .mission-image{
@@ -90,9 +91,10 @@ main .values .mission .mission-text{
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    align-items: center;
+    align-items: center;    
     width: 50%;
     padding: 30px;
+    text-align: justify;
 }
 main .values .mission .mission-text h1{
     font-size: 2rem;
@@ -114,6 +116,103 @@ main .values .motto-banner h1{
 main .values .motto-banner p{
     font-size: 1.5rem;
 }
+main .core-values{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .core-values h1{
+    font-size: 3rem;
+    color: blue;
+}
+main .core-values ol{
+    /* list-style-type: square; */
+    padding-left: 30px;
+    font-size: 2rem;
+
+}
+main .core-values ol li{
+    margin: 20px;
+}
 main .history{
     height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .history .history-nav{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272727;
+}
+main .history .history-nav span{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 30px 0px;
+    color: white;
+}
+main .history .history-nav ul{
+    list-style: none;
+    font-size: 2rem;
+}
+main .history .history-nav ul li{
+    margin: 30px 0px;
+    background-color: blue;
+}
+main .history .history-nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+main .history .history-items{
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    background-color: blue;
+    color: white;
+}
+main .history .history-items .item{
+    flex: 0 0 100%;
+    text-align: center;
+    scroll-snap-align: start;
+}
+main .history .history-items .item h1{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 30px 0px;
+}
+main .history .history-items .item p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 30px 0px;
+    padding: 0px 30px;
+}
+
+#history-items::-webkit-scrollbar {
+    height: 4px;
+}
+
+#history-items::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#history-items::-webkit-scrollbar-thumb {
+    background: #272727;
+}
+
+#history-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    height: 10px;
 }
