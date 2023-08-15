@@ -19,8 +19,7 @@
                     WE WELCOME YOU TO
                 </div>
                 <div class="school-name anim-typewriter">
-                    ST JOSEPH NALONDO BOYS HIGHSCHOOL
-                </div>
+                    ST JOSEPH'S NALONDO BOYS HIGH SCHOOL                </div>
                 <div class="button">
                     <button id="btn">LEARN MORE</button>
                 </div>

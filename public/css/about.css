@@ -47,6 +47,9 @@ main .badge .intro .image{
 main .badge .intro .image img{
     width: 100%;
 }
+main .badge .intro .chevron{
+    cursor: pointer;
+}
 main .values{
     position: relative;
     height: 100dvh;
@@ -122,26 +125,68 @@ main .values .motto-banner p{
     font-size: 1.5rem;
 }
 main .core-values{
+    background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     scroll-snap-align: start;
 }
 main .core-values h1{
     font-size: 3rem;
-    color: blue;
+    color: white;
 }
 main .core-values ol{
-    /* list-style-type: square; */
+    list-style-type: none;
     padding-left: 30px;
     font-size: 2rem;
+    position: relative;
+    text-align: center;
+    height: 80vh;
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 main .core-values ol li{
     margin: 20px;
+    cursor: default;
+    background-color: #272727;
+    color: white;
+    transition: .3s linear;
+    padding: 15px 15px;
+    text-shadow: rgb(0, 0, 255) 2px 5px;
+    
 }
+main .core-values ol li:nth-child(odd){
+    transform: perspective(1000px) rotateY(30deg);
+}
+main .core-values ol li:nth-child(even){
+    transform: perspective(1000px) rotateY(-30deg);
+}
+main .core-values ol li:hover{
+    transform: perspective(1000px) rotateY(0deg);
+    box-shadow: 10px 10px 36px 0px rgba(255, 255, 255, 0.75);
+    text-shadow: 1px 1px 2px rgb(16, 22, 105), 0 0 1em blue, 0 0 0.2em blue;
+    scale: 1.12;
+}
+/* main .core-values ol li::before{
+    position: absolute;
+    content:'';
+    width: 0px;
+    height: 2px;
+    background-color: red;
+    transition: .2s linear;
+    
+}
+main .core-values ol li:hover::before{
+    width: 100%;
+} */
 main .history{
     height: 100dvh;
     display: flex;
@@ -170,7 +215,27 @@ main .history .history-nav ul{
 }
 main .history .history-nav ul li{
     margin: 30px 0px;
-    padding: 20px 5px;
+    border-bottom: 2px solid blue;
+    position: relative;
+    /* border-left: 1px solid blue; */
+}
+main .history .history-nav ul li::before{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 0;
+    height: 0;
+    transition: .1s ease;
+    border-radius: 100%;
+    top: 50%;
+    margin-left: -20px;
+}
+main .history .history-nav ul li:hover::before{
+    width: 10px;
+    height: 10px;
+    
+}
+main .history .history-nav ul .active{
     background-color: blue;
 }
 main .history .history-nav ul li a{
@@ -179,7 +244,10 @@ main .history .history-nav ul li a{
     text-align: center;
     width: 100%;
     color: white;
+    padding: 20px 5px;
+    background-color: transparent;
 }
+
 main .history .history-items{
     width: 60%;
     height: 90vh;

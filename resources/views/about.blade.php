@@ -30,7 +30,7 @@
                     </h1>
                 </div>
                 <div class="image">
-                    <img src="https://img.freepik.com/free-photo/shield-with-letter-n-it_1340-36069.jpg" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/128/7927/7927842.png" alt="">
                 </div>
                 <div class="chevron" id="chevron">
                     <i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color: blue; height: 30px;"></i>
@@ -67,13 +67,13 @@
         <section class="core-values">
             <h1>CORE VALUES</h1>
             <ol>
-                <li>HARDWORK AND TEAMWORK</li>
-                <li>TIMELINESS</li>
-                <li>INTEGRITY AND HUMILITY</li>
-                <li>CHASTITY</li>
-                <li>PERSERVERENCE</li>
-                <li>CONTINUAL IMPROVEMENT</li>
-                <li>INNOVATION AND CREATIVITY</li> 
+                <li>1. HARDWORK AND TEAMWORK</li>
+                <li>2. TIMELINESS</li>
+                <li>3. INTEGRITY AND HUMILITY</li>
+                <li>4. CHASTITY</li>
+                <li>5. PERSERVERENCE</li>
+                <li>6. CONTINUAL IMPROVEMENT</li>
+                <li>7. INNOVATION AND CREATIVITY</li> 
             </ol>
         </section>
         <section class="history">
@@ -82,10 +82,10 @@
                     History of the school
                 </span>
                 <ul id='nav-items'>
-                    <li><a href="#genesis">Genesis</a></li>
-                    <li><a href="#purpose">Purpose</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#location">Location</a></li>
+                    <li class="item active"><a href="#genesis">Genesis</a></li>
+                    <li class="item"><a href="#purpose" >Purpose</a></li>
+                    <li class="item"><a href="#community">Community</a></li>
+                    <li class="item"><a href="#location">Location</a></li>
                 </ul>
             </div>
             <div class="history-items" id="history-items">
