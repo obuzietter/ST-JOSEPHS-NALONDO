@@ -17,6 +17,9 @@
 
     </nav>
     <main>
+        <div class="up">
+            <i class="fa-solid fa-circle-up fa-2xl" style="color: #005eff;"></i>
+        </div>
         <section class="badge">
             <video controls loop autoplay>
                 <source

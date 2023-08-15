@@ -8,6 +8,12 @@ html{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
+main .up{
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 20px;
+}
 main .badge{
     height: 100dvh;
     position: relative;
