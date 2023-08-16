@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -238,4 +239,70 @@ main .slideshow .control a div:hover {
 
 ::selection {
     background-color: orangered;
+}
+@media screen and (max-width: 600px) {
+    main .landing {        
+        height: 200vh;
+        width: 100%;
+        /* align-items: center; */
+        /* flex-direction: column; */
+        justify-content: space-between;
+        padding: 0;
+        scroll-snap-align: none;
+    }
+    /* .... */
+    main .landing .welcome {
+        /* align-self: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid red; */
+        height: 100vh;
+        /* scroll-snap-align: start; */
+    }
+    
+    main .landing .welcome .welcome-text {
+        font-size: 1.5rem;
+        padding: 20px 0;
+        color: blue;
+        text-align: center;
+    }
+    
+    main .landing .welcome .school-name {
+        color: white;
+        font-size: 1.8rem;
+        animation: none;
+        white-space: normal;
+        border-style: none;
+        padding: 20px 0;
+    }
+    
+    main .landing .welcome .button {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    /* .... */
+    main .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        /* scroll-snap-align: start; */
+        /* border: 1px solid red; */
+    }
+    
+    main .boxes .box {
+        width: 90%;
+        height: max-content;
+        
+    }
+    main .slideshow {
+        height: auto;
+        scroll-snap-align: none;
+        display: none;
+    }
 }
