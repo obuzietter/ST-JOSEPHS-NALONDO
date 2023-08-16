@@ -12,7 +12,7 @@ html {
 
 main .up {
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     bottom: 20px;
     right: 20px;
 }
@@ -26,8 +26,6 @@ main .badge {
 
 main .badge video {
     width: 100%;
-    /* height: 100%; */
-
 }
 
 /* main .badge video source{
@@ -153,7 +151,7 @@ main .values .motto-banner h1 {
 main .values .motto-banner p {
     font-size: 1.5rem;
 }
-
+/* core-values section */
 main .core-values {
     background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
     background-position: center;
@@ -179,7 +177,6 @@ main .core-values ol {
     position: relative;
     text-align: center;
     height: 80vh;
-    /* width: 70%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -212,18 +209,6 @@ main .core-values ol li:hover {
     scale: 1.12;
 }
 
-/* main .core-values ol li::before{
-    position: absolute;
-    content:'';
-    width: 0px;
-    height: 2px;
-    background-color: red;
-    transition: .2s linear;
-    
-}
-main .core-values ol li:hover::before{
-    width: 100%;
-} */
 main .history {
     height: 100dvh;
     display: flex;
@@ -341,6 +326,8 @@ main .history .history-items .item p {
     height: 10px;
 }
 
+/* media queries */
+
 @media screen and (max-width: 600px) {
 
     /* badge section */
@@ -351,13 +338,14 @@ main .history .history-items .item p {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        width: 100%;
     }
 
     main .badge video {
-        
         display: none;
 
     }
+
     main .badge .intro {
         backdrop-filter: blur(2px);
     }
@@ -367,94 +355,95 @@ main .history .history-items .item p {
         text-align: center;
     }
 
-main .values {
-    position: relative;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    main .values {
+        height: auto;
+        scroll-snap-align: none;
+    }
+
+    main .values .vision {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    main .values .vision .vision-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    main .values .vision .vision-text {
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    main .values .vision .vision-text h1 {
+        font-size: 1.6rem;
+    }
+
+    main .values .vision .vision-text p {
+        font-size: 1.2rem;
+    }
+
+    main .values .mission {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    main .values .mission .mission-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    main .values .mission .mission-text {
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    main .values .mission .mission-text h1 {
+        font-size: 1.6rem;
+    }
+
+    main .values .mission .mission-text p {
+        font-size: 1.2rem;
+    }
+
+    main .values .motto-banner {
+        position: relative;
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    main .values .motto-banner h1 {
+        font-size: 1.6rem;
+    }
+
+    main .values .motto-banner p {
+        font-size: 1.2rem;
+    }
+/* core-values section */
+main .core-values {
+    height: 100vh;
     scroll-snap-align: none;
 }
 
-main .values .vision {
-    display: flex;
-    width: 70%;
-    height: 350px;
-}
-
-main .values .vision .vision-image {
-    background-image: url(https://img.freepik.com/free-photo/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place_231208-2277.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
-    width: 50%;
-}
-
-main .values .vision .vision-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    width: 50%;
-    padding: 30px;
-    text-align: justify;
-}
-
-main .values .vision .vision-text h1 {
+main .core-values h1 {
     font-size: 2rem;
 }
 
-main .values .vision .vision-text p {
-    font-size: 1.5rem;
+main .core-values ol {
+    padding-left: 0;
+    font-size: 1.3rem;
+    height: auto;
 }
-
-main .values .mission {
-    display: flex;
-    width: 70%;
-    height: 350px;
-}
-
-main .values .mission .mission-image {
-    background-image: url(https://img.freepik.com/premium-photo/businessman-making-notes-sticky-notes_274679-37656.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
-    width: 50%;
-}
-
-main .values .mission .mission-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    width: 50%;
-    padding: 30px;
-    text-align: justify;
-}
-
-main .values .mission .mission-text h1 {
-    font-size: 2rem;
-}
-
-main .values .mission .mission-text p {
-    font-size: 1.5rem;
-}
-
-main .values .motto-banner {
-    position: absolute;
-    bottom: 10px;
-    width: 50%;
-    text-align: center;
-    /* justify-self: flex-end; */
-    /* background-color: red; */
-}
-
-main .values .motto-banner h1 {
-    font-size: 2rem;
-}
-
-main .values .motto-banner p {
-    font-size: 1.5rem;
-}
+/* history section */
+    main .history {
+        display: none;
+        scroll-snap-align: none;
+    }
 
 
-    
 }

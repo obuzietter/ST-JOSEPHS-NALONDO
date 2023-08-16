@@ -15,3 +15,5 @@ navItems.forEach( (item)=>{
         item.classList.add("active")
     })
 })
+
+document.getElementById("up").addEventListener("click", ()=>{location.href = "about"})
