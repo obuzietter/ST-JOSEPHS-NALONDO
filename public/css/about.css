@@ -1,35 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid blue; */
 }
-html{
+
+html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
-main .up{
+
+main .up {
     position: fixed;
     z-index: 5;
     bottom: 20px;
     right: 20px;
 }
-main .badge{
+
+main .badge {
     height: 100dvh;
     position: relative;
     overflow-y: hidden;
     scroll-snap-align: start;
 }
-main .badge video{
+
+main .badge video {
     width: 100%;
     /* height: 100%; */
-    
+
 }
+
 /* main .badge video source{
     width: 100%;
     height: 100%;
 } */
-main .badge .intro{
+main .badge .intro {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,20 +48,25 @@ main .badge .intro{
     gap: 30px;
     backdrop-filter: blur(10px);
 }
-main .badge .intro .text{
+
+main .badge .intro .text {
     font-size: 2rem;
     color: white;
 }
-main .badge .intro .image{
+
+main .badge .intro .image {
     width: 250px;
 }
-main .badge .intro .image img{
+
+main .badge .intro .image img {
     width: 100%;
 }
-main .badge .intro .chevron{
+
+main .badge .intro .chevron {
     cursor: pointer;
 }
-main .values{
+
+main .values {
     position: relative;
     height: 100dvh;
     display: flex;
@@ -66,16 +76,19 @@ main .values{
     gap: 10px;
     scroll-snap-align: start;
 }
-main .values .vision{
+
+main .values .vision {
     display: flex;
     width: 70%;
     height: 350px;
 }
-main .values .vision .vision-image{
+
+main .values .vision .vision-image {
     background-image: url(https://img.freepik.com/free-photo/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place_231208-2277.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
     width: 50%;
 }
-main .values .vision .vision-text{
+
+main .values .vision .vision-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,38 +98,46 @@ main .values .vision .vision-text{
     padding: 30px;
     text-align: justify;
 }
-main .values .vision .vision-text h1{
+
+main .values .vision .vision-text h1 {
     font-size: 2rem;
 }
-main .values .vision .vision-text p{
+
+main .values .vision .vision-text p {
     font-size: 1.5rem;
 }
-main .values .mission{
+
+main .values .mission {
     display: flex;
     width: 70%;
     height: 350px;
 }
-main .values .mission .mission-image{
+
+main .values .mission .mission-image {
     background-image: url(https://img.freepik.com/premium-photo/businessman-making-notes-sticky-notes_274679-37656.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
     width: 50%;
 }
-main .values .mission .mission-text{
+
+main .values .mission .mission-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    align-items: center;    
+    align-items: center;
     width: 50%;
     padding: 30px;
     text-align: justify;
 }
-main .values .mission .mission-text h1{
+
+main .values .mission .mission-text h1 {
     font-size: 2rem;
 }
-main .values .mission .mission-text p{
+
+main .values .mission .mission-text p {
     font-size: 1.5rem;
 }
-main .values .motto-banner{ 
+
+main .values .motto-banner {
     position: absolute;
     bottom: 10px;
     width: 50%;
@@ -124,13 +145,16 @@ main .values .motto-banner{
     /* justify-self: flex-end; */
     /* background-color: red; */
 }
-main .values .motto-banner h1{
+
+main .values .motto-banner h1 {
     font-size: 2rem;
 }
-main .values .motto-banner p{
+
+main .values .motto-banner p {
     font-size: 1.5rem;
 }
-main .core-values{
+
+main .core-values {
     background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -142,11 +166,13 @@ main .core-values{
     align-items: center;
     scroll-snap-align: start;
 }
-main .core-values h1{
+
+main .core-values h1 {
     font-size: 3rem;
     color: white;
 }
-main .core-values ol{
+
+main .core-values ol {
     list-style-type: none;
     padding-left: 30px;
     font-size: 2rem;
@@ -159,7 +185,8 @@ main .core-values ol{
     justify-content: space-evenly;
 
 }
-main .core-values ol li{
+
+main .core-values ol li {
     margin: 20px;
     cursor: default;
     background-color: #272727;
@@ -167,20 +194,24 @@ main .core-values ol li{
     transition: .3s linear;
     padding: 15px 15px;
     text-shadow: rgb(0, 0, 255) 2px 5px;
-    
+
 }
-main .core-values ol li:nth-child(odd){
+
+main .core-values ol li:nth-child(odd) {
     transform: perspective(1000px) rotateY(30deg);
 }
-main .core-values ol li:nth-child(even){
+
+main .core-values ol li:nth-child(even) {
     transform: perspective(1000px) rotateY(-30deg);
 }
-main .core-values ol li:hover{
+
+main .core-values ol li:hover {
     transform: perspective(1000px) rotateY(0deg);
     box-shadow: 10px 10px 36px 0px rgba(255, 255, 255, 0.75);
     text-shadow: 1px 1px 2px rgb(16, 22, 105), 0 0 1em blue, 0 0 0.2em blue;
     scale: 1.12;
 }
+
 /* main .core-values ol li::before{
     position: absolute;
     content:'';
@@ -193,14 +224,15 @@ main .core-values ol li:hover{
 main .core-values ol li:hover::before{
     width: 100%;
 } */
-main .history{
+main .history {
     height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
 }
-main .history .history-nav{
+
+main .history .history-nav {
     width: 30%;
     height: 90vh;
     display: flex;
@@ -208,24 +240,28 @@ main .history .history-nav{
     align-items: center;
     background-color: #272727;
 }
-main .history .history-nav span{
+
+main .history .history-nav span {
     font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 900;
     padding: 30px 0px;
     color: white;
 }
-main .history .history-nav ul{
+
+main .history .history-nav ul {
     list-style: none;
     font-size: 2rem;
 }
-main .history .history-nav ul li{
+
+main .history .history-nav ul li {
     margin: 30px 0px;
     border-bottom: 2px solid blue;
     position: relative;
     /* border-left: 1px solid blue; */
 }
-main .history .history-nav ul li::before{
+
+main .history .history-nav ul li::before {
     content: "";
     position: absolute;
     background-color: blue;
@@ -236,15 +272,18 @@ main .history .history-nav ul li::before{
     top: 50%;
     margin-left: -20px;
 }
-main .history .history-nav ul li:hover::before{
+
+main .history .history-nav ul li:hover::before {
     width: 10px;
     height: 10px;
-    
+
 }
-main .history .history-nav ul .active{
+
+main .history .history-nav ul .active {
     background-color: blue;
 }
-main .history .history-nav ul li a{
+
+main .history .history-nav ul li a {
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -254,7 +293,7 @@ main .history .history-nav ul li a{
     background-color: transparent;
 }
 
-main .history .history-items{
+main .history .history-items {
     width: 60%;
     height: 90vh;
     display: flex;
@@ -264,18 +303,21 @@ main .history .history-items{
     background-color: blue;
     color: white;
 }
-main .history .history-items .item{
+
+main .history .history-items .item {
     flex: 0 0 100%;
     text-align: center;
     scroll-snap-align: start;
 }
-main .history .history-items .item h1{
+
+main .history .history-items .item h1 {
     font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 900;
     padding: 30px 0px;
 }
-main .history .history-items .item p{
+
+main .history .history-items .item p {
     font-size: 1.5rem;
     text-align: justify;
     margin: 30px 0px;
@@ -297,4 +339,122 @@ main .history .history-items .item p{
 #history-items::-webkit-scrollbar-thumb:hover {
     background: #555;
     height: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* badge section */
+    main .badge {
+        scroll-snap-align: none;
+        background-image: url(https://img.freepik.com/premium-photo/empty-lecture-hall-with-chairs-blackboard-created-with-generative-ai_419341-57884.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    main .badge video {
+        
+        display: none;
+
+    }
+    main .badge .intro {
+        backdrop-filter: blur(2px);
+    }
+
+    main .badge .intro .text {
+        color: white;
+        text-align: center;
+    }
+
+main .values {
+    position: relative;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    scroll-snap-align: none;
+}
+
+main .values .vision {
+    display: flex;
+    width: 70%;
+    height: 350px;
+}
+
+main .values .vision .vision-image {
+    background-image: url(https://img.freepik.com/free-photo/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place_231208-2277.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+    width: 50%;
+}
+
+main .values .vision .vision-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+
+main .values .vision .vision-text h1 {
+    font-size: 2rem;
+}
+
+main .values .vision .vision-text p {
+    font-size: 1.5rem;
+}
+
+main .values .mission {
+    display: flex;
+    width: 70%;
+    height: 350px;
+}
+
+main .values .mission .mission-image {
+    background-image: url(https://img.freepik.com/premium-photo/businessman-making-notes-sticky-notes_274679-37656.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+    width: 50%;
+}
+
+main .values .mission .mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+
+main .values .mission .mission-text h1 {
+    font-size: 2rem;
+}
+
+main .values .mission .mission-text p {
+    font-size: 1.5rem;
+}
+
+main .values .motto-banner {
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    text-align: center;
+    /* justify-self: flex-end; */
+    /* background-color: red; */
+}
+
+main .values .motto-banner h1 {
+    font-size: 2rem;
+}
+
+main .values .motto-banner p {
+    font-size: 1.5rem;
+}
+
+
+    
 }
