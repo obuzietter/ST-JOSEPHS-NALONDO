@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    /* border: 1px solid red; */
 }
 
 html {
@@ -17,7 +16,6 @@ main .landing {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -207,10 +205,8 @@ main .slideshow .control a div:hover {
 
 .anim-typewriter {
     border-right: 2px solid blue;
-    /* height: 50px; */
     overflow: hidden;
     white-space: nowrap;
-
     animation: typewriter 4s steps(34) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
@@ -240,34 +236,31 @@ main .slideshow .control a div:hover {
 ::selection {
     background-color: orangered;
 }
-@media screen and (max-width: 600px) {
-    main .landing {        
+
+@media screen and (max-width: 480px) {
+    main .landing {
         height: 200vh;
         width: 100%;
-        /* align-items: center; */
-        /* flex-direction: column; */
         justify-content: space-between;
         padding: 0;
         scroll-snap-align: none;
     }
+
     /* .... */
     main .landing .welcome {
-        /* align-self: auto; */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* border: 1px solid red; */
         height: 100vh;
-        /* scroll-snap-align: start; */
     }
-    
+
     main .landing .welcome .welcome-text {
         font-size: 1.5rem;
         padding: 20px 0;
         color: blue;
         text-align: center;
     }
-    
+
     main .landing .welcome .school-name {
         color: white;
         font-size: 1.8rem;
@@ -276,12 +269,12 @@ main .slideshow .control a div:hover {
         border-style: none;
         padding: 20px 0;
     }
-    
+
     main .landing .welcome .button {
         padding: 20px 0;
         text-align: center;
     }
-    
+
     /* .... */
     main .boxes {
         display: flex;
@@ -290,19 +283,89 @@ main .slideshow .control a div:hover {
         justify-content: space-evenly;
         gap: 20px;
         height: 100vh;
-        backdrop-filter: blur(10px);
-        /* scroll-snap-align: start; */
-        /* border: 1px solid red; */
     }
-    
+
     main .boxes .box {
-        width: 90%;
+        width: 80%;
         height: max-content;
-        
+
     }
+
+    .boxes:hover>.box:not(:hover) {
+        filter: blur(0px);
+        transform: scale(0.9, 0.9);
+    }
+
     main .slideshow {
         height: auto;
         scroll-snap-align: none;
         display: none;
+    }
+}
+/* media query for tablet and ipad */
+@media screen and (max-width: 768px) {
+    main .landing {
+        height: 200vh;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+        scroll-snap-align: none;
+    }
+
+    /* .... */
+    main .landing .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    main .landing .welcome .welcome-text {
+        font-size: 1.5rem;
+        padding: 20px 0;
+        color: blue;
+        text-align: center;
+    }
+
+    main .landing .welcome .school-name {
+        color: white;
+        font-size: 1.8rem;
+        animation: none;
+        white-space: normal;
+        border-style: none;
+        padding: 20px 0;
+    }
+
+    main .landing .welcome .button {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* .... */
+    main .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 100vh;
+    }
+
+    main .boxes .box {
+        width: 80%;
+        height: max-content;
+        box-shadow: 15px 15px  45px black;
+
+    }
+
+    .boxes:hover>.box:not(:hover) {
+        filter: blur(0px);
+        transform: scale(0.9, 0.9);
+    }
+
+    main .slideshow {
+        height: auto;
+        scroll-snap-align: none;
+        /* display: none; */
     }
 }

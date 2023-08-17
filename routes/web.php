@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('home');
 });
 Route::view('about', 'about');
-Route::view('ach', 'achievements' );
+Route::view('achievements', 'achievements' );

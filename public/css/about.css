@@ -140,8 +140,6 @@ main .values .motto-banner {
     bottom: 10px;
     width: 50%;
     text-align: center;
-    /* justify-self: flex-end; */
-    /* background-color: red; */
 }
 
 main .values .motto-banner h1 {
@@ -243,7 +241,6 @@ main .history .history-nav ul li {
     margin: 30px 0px;
     border-bottom: 2px solid #040479;
     position: relative;
-    /* border-left: 1px solid blue; */
 }
 
 main .history .history-nav ul li::before {
@@ -328,7 +325,186 @@ main .history .history-items .item p {
 
 /* media queries */
 /* for mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+
+    /* badge section */
+    main .badge {
+        scroll-snap-align: none;
+        background-image: url(https://img.freepik.com/premium-photo/empty-lecture-hall-with-chairs-blackboard-created-with-generative-ai_419341-57884.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+
+    main .badge video {
+        display: none;
+
+    }
+
+    main .badge .intro {
+        backdrop-filter: blur(2px);
+    }
+
+    main .badge .intro .text {
+        color: white;
+        text-align: center;
+    }
+/* values section */
+    main .values {
+        height: auto;
+        scroll-snap-align: none;
+    }
+
+    main .values .vision {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    main .values .vision .vision-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    main .values .vision .vision-text {
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    main .values .vision .vision-text h1 {
+        font-size: 1.6rem;
+    }
+
+    main .values .vision .vision-text p {
+        font-size: 1.2rem;
+    }
+
+    main .values .mission {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    main .values .mission .mission-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    main .values .mission .mission-text {
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    main .values .mission .mission-text h1 {
+        font-size: 1.6rem;
+    }
+
+    main .values .mission .mission-text p {
+        font-size: 1.2rem;
+    }
+
+    main .values .motto-banner {
+        position: relative;
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    main .values .motto-banner h1 {
+        font-size: 1.6rem;
+    }
+
+    main .values .motto-banner p {
+        font-size: 1.2rem;
+    }
+/* core-values section */
+main .core-values {
+    height: 100vh;
+    scroll-snap-align: none;
+}
+
+main .core-values h1 {
+    font-size: 2rem;
+}
+
+main .core-values ol {
+    padding-left: 0;
+    font-size: 1.3rem;
+    height: auto;
+}
+/* history section */
+main .history {
+    height: auto;
+    flex-direction: column;
+    scroll-snap-align: none;
+}
+
+main .history .history-nav {
+    width: 100%;
+    height: auto;
+}
+
+main .history .history-nav span {
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+main .history .history-nav ul {
+    font-size: 1rem;
+    display: flex;
+    
+}
+
+main .history .history-nav ul li {
+    margin: 0;
+    border-bottom: none;
+}
+main .history .history-nav ul li:hover::before {
+    width: 0;
+    height: 0;
+
+}
+main .history .history-nav ul .active {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+main .history .history-nav ul li a {
+    padding: 10px 15px;
+}
+
+main .history .history-items {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    scroll-snap-type: none;
+}
+
+main .history .history-items .item {
+    scroll-snap-align: none;
+}
+
+main .history .history-items .item h1 {
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+
+main .history .history-items .item p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0px 0px;
+    padding: 0px 10px;
+}
+
+
+
+}
+@media screen and (max-width: 768px) {
 
     /* badge section */
     main .badge {
