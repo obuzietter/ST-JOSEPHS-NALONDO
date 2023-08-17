@@ -241,7 +241,7 @@ main .history .history-nav ul {
 
 main .history .history-nav ul li {
     margin: 30px 0px;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #040479;
     position: relative;
     /* border-left: 1px solid blue; */
 }
@@ -249,7 +249,7 @@ main .history .history-nav ul li {
 main .history .history-nav ul li::before {
     content: "";
     position: absolute;
-    background-color: blue;
+    background-color: #040479;
     width: 0;
     height: 0;
     transition: .1s ease;
@@ -265,7 +265,7 @@ main .history .history-nav ul li:hover::before {
 }
 
 main .history .history-nav ul .active {
-    background-color: blue;
+    background-color: #040479;
 }
 
 main .history .history-nav ul li a {
@@ -285,7 +285,7 @@ main .history .history-items {
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    background-color: blue;
+    background-color: #040479;
     color: white;
 }
 
@@ -327,7 +327,7 @@ main .history .history-items .item p {
 }
 
 /* media queries */
-
+/* for mobile */
 @media screen and (max-width: 600px) {
 
     /* badge section */
@@ -354,7 +354,7 @@ main .history .history-items .item p {
         color: white;
         text-align: center;
     }
-
+/* values section */
     main .values {
         height: auto;
         scroll-snap-align: none;
@@ -440,10 +440,70 @@ main .core-values ol {
     height: auto;
 }
 /* history section */
-    main .history {
-        display: none;
-        scroll-snap-align: none;
-    }
+main .history {
+    height: auto;
+    flex-direction: column;
+    scroll-snap-align: none;
+}
+
+main .history .history-nav {
+    width: 100%;
+    height: auto;
+}
+
+main .history .history-nav span {
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+main .history .history-nav ul {
+    font-size: 1rem;
+    display: flex;
+    
+}
+
+main .history .history-nav ul li {
+    margin: 0;
+    border-bottom: none;
+}
+main .history .history-nav ul li:hover::before {
+    width: 0;
+    height: 0;
+
+}
+main .history .history-nav ul .active {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+main .history .history-nav ul li a {
+    padding: 10px 15px;
+}
+
+main .history .history-items {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    scroll-snap-type: none;
+}
+
+main .history .history-items .item {
+    scroll-snap-align: none;
+}
+
+main .history .history-items .item h1 {
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+
+main .history .history-items .item p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0px 0px;
+    padding: 0px 10px;
+}
+
 
 
 }
