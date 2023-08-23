@@ -69,29 +69,43 @@
         </section>
         <section class="slideshow">
             <div class="slides">
-                <div class="slide" id="1">
-                    <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
-                        alt="">
-                </div>
-                <div class="slide" id="2">
-                    <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
-                        alt="">
-                </div>
-                <div class="slide" id="3">
-                    <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
-                        alt="">
-                </div>
-                <div class="slide" id="4">
-                    <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
-                        alt="">
-                </div>
-                <div class="slide" id="5">
-                    <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
-                        alt="">
-                </div>
+
+                <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
+                    alt="">
+
+
+                <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
+                    alt="">
+
+
+                <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
+                    alt="">
+
+
+                <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
+                    alt="">
+
+
+                <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
+                    alt="">
+
 
             </div>
-            <div class="control">
+            <div class="statistics">
+                <div class="teachers">
+                    <h1>TEACHERS</h1>
+                    <span>0</span>
+                </div>
+                <div class="candidates">
+                    <h1>CANDIDATES</h1>
+                    <span>0</span>
+                </div>
+                <div class="students">
+                    <h1>STUDENTS</h1>
+                    <span>0</span>
+                </div>
+            </div>
+            {{-- <div class="control">
                 <a href="#1">
                     <div></div>
                 </a>
@@ -107,7 +121,7 @@
                 <a href="#5">
                     <div></div>
                 </a>
-            </div>
+            </div> --}}
 
         </section>
     </main>
