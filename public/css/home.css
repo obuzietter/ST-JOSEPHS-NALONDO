@@ -111,33 +111,42 @@ main .boxes .box {
     text-align: center;
     cursor: pointer;
 }
+main .boxes .box:hover img{
+    scale: 0.6;
+}
 main .boxes .box:hover h4{
     color: #0004ff;
+    scale: 1.1;
 }
 main .boxes .box:hover p{
-    height: min-content;
+    height: 280px;
+    padding: 1rem;
+    /* box-shadow: 2px 2px 10px #FF8A00; */
     /* width: 100%; */
 }
 main .boxes .box img{
     width: 100px;
+    transition: .2s ease;
 }
 main .boxes .box h4 {
     font-size: 1.8rem;
     padding: 10px 0;
+    transition: .2s ease;
 }
 
 main .boxes .box p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #555;
+    background-color: #242424;
     z-index: 5;
     height: 0;
-    transition: .5s linear;
+    transition: .2s linear;
     overflow: hidden;
     text-align: start;
+    
     /* display: none; */
 }
 main .boxes .box p span{
