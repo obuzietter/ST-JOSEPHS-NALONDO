@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    border: 1px solid white;
 }
 
 html {
@@ -17,16 +18,19 @@ main .landing {
     background-size: cover;
     background-attachment: fixed;
     height: 100dvh;
+    /* display: grid;
+    place-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 2rem;
+    align-items: center;
+    /* padding: 0 5rem; */
     scroll-snap-align: start;
     position: relative;
 }
 
 main .landing .welcome {
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 
 main .landing .welcome .welcome-text {
@@ -90,11 +94,12 @@ main .landing .welcome .button {
 
 main .boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main .boxes .box {
-    width: 30%;
+    /* width: 30%; */
+    flex-basis: 20%;
     height: 200px;
     background-color: #0004ff;
     transition: 400ms ease;
@@ -114,14 +119,14 @@ main .boxes .box p {
     font-size: 1.5rem;
 }
 
-.boxes .box:hover {
+/* .boxes .box:hover {
     transform: scale(1.1, 1.1);
 }
 
 .boxes:hover>.box:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9, 0.9);
-}
+} */
 
 /* slide slideshow section styling */
 

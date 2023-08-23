@@ -28,8 +28,9 @@
             
             <div class="boxes">
                 <div class="box">
+
                     <h4>
-                        Motto
+                        FACULTY
                     </h4>
                     <p>
                         Learning for empowerment.
@@ -37,7 +38,7 @@
                 </div>
                 <div class="box">
                     <h4>
-                        Vision
+                        STUDENT LIFE
                     </h4>
                     <p>
                         To become a school of excellence in education through commitment, diligence and integrity in the country.
@@ -45,7 +46,7 @@
                 </div>
                 <div class="box">
                     <h4>
-                        Mission
+                        PROJECTS    
                     </h4>
                     <p>
                         To attain academic excellence and bring out talent in young people to help the develop mentally, physically, socially and spiritually.
