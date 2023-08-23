@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{url('css/home.css')}}">
-    <script src="{{url('js/home.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url('css/home.css') }}">
+    <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
 </head>
+
 <body>
     <nav>
 
@@ -25,31 +27,42 @@
                     <button id="btn">LEARN MORE</button>
                 </div>
             </div>
-            
+
             <div class="boxes">
                 <div class="box">
-
+                    <img src="{{ asset('icons/faculty.png') }}" alt="">
                     <h4>
                         FACULTY
                     </h4>
                     <p>
-                        Learning for empowerment.
+                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.
+
+                        <span>Learn More</span>
                     </p>
                 </div>
                 <div class="box">
+                    <img src="{{ asset('icons/student-life.png') }}" alt="">
                     <h4>
                         STUDENT LIFE
                     </h4>
                     <p>
-                        To become a school of excellence in education through commitment, diligence and integrity in the country.
+                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.
+
+                        <span>Learn More</span>
                     </p>
                 </div>
                 <div class="box">
+                    <img src="{{ asset('icons/projects.png') }}" alt="">
                     <h4>
-                        PROJECTS    
+                        PROJECTS
                     </h4>
                     <p>
-                        To attain academic excellence and bring out talent in young people to help the develop mentally, physically, socially and spiritually.
+                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.
+
+                        <span>Learn More</span>
                     </p>
                 </div>
             </div>
@@ -57,34 +70,50 @@
         <section class="slideshow">
             <div class="slides">
                 <div class="slide" id="1">
-                    <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg" alt="">
+                    <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
+                        alt="">
                 </div>
                 <div class="slide" id="2">
-                    <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg" alt="">
+                    <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
+                        alt="">
                 </div>
                 <div class="slide" id="3">
-                    <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg" alt="">
+                    <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
+                        alt="">
                 </div>
                 <div class="slide" id="4">
-                    <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg" alt="">
+                    <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
+                        alt="">
                 </div>
                 <div class="slide" id="5">
-                    <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg" alt="">
+                    <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
+                        alt="">
                 </div>
-                
+
             </div>
             <div class="control">
-                <a href="#1"><div></div></a>
-                <a href="#2"><div></div></a>
-                <a href="#3"><div></div></a>
-                <a href="#4"><div></div></a>
-                <a href="#5"><div></div></a>
+                <a href="#1">
+                    <div></div>
+                </a>
+                <a href="#2">
+                    <div></div>
+                </a>
+                <a href="#3">
+                    <div></div>
+                </a>
+                <a href="#4">
+                    <div></div>
+                </a>
+                <a href="#5">
+                    <div></div>
+                </a>
             </div>
-           
+
         </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

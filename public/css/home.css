@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 html {
@@ -25,7 +25,7 @@ main .landing {
     justify-content: space-around;
     align-items: center;
     /* padding: 0 5rem; */
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     position: relative;
 }
 
@@ -98,18 +98,29 @@ main .boxes {
 }
 
 main .boxes .box {
-    /* width: 30%; */
-    flex-basis: 20%;
-    height: 200px;
-    background-color: #0004ff;
-    transition: 400ms ease;
-    animation-name: slide-in;
+    width: 33.3%;
+    /* flex-basis: 20%; */
+    /* height: 200px; */
+    position: relative;
+    padding: 2rem;
+    background-color: #000006;
+    /* transition: 1s ease; */
+    /* animation-name: slide-in;
     animation-duration: 1.4s;
-    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0); */
     text-align: center;
     cursor: pointer;
 }
-
+main .boxes .box:hover h4{
+    color: #0004ff;
+}
+main .boxes .box:hover p{
+    height: min-content;
+    /* width: 100%; */
+}
+main .boxes .box img{
+    width: 100px;
+}
 main .boxes .box h4 {
     font-size: 1.8rem;
     padding: 10px 0;
@@ -117,8 +128,23 @@ main .boxes .box h4 {
 
 main .boxes .box p {
     font-size: 1.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #555;
+    z-index: 5;
+    height: 0;
+    transition: .5s linear;
+    overflow: hidden;
+    text-align: start;
+    /* display: none; */
 }
-
+main .boxes .box p span{
+    display: block;
+    text-align: start;
+    color: #FF8A00;
+}
 /* .boxes .box:hover {
     transform: scale(1.1, 1.1);
 }
@@ -134,7 +160,7 @@ main .slideshow {
     height: 100dvh;
     display: grid;
     place-items: center;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     position: relative;
 }
 
