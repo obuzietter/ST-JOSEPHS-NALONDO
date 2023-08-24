@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url('css/home.css') }}">
     <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
+    <script src="{{url('js/counter.js')}}" defer></script>
 </head>
 
 <body>
@@ -94,15 +95,15 @@
             <div class="statistics">
                 <div class="teachers">
                     <h1>TEACHERS</h1>
-                    <span>0</span>
+                    <span class="num" data-val="68">0</span>
                 </div>
                 <div class="candidates">
                     <h1>CANDIDATES</h1>
-                    <span>0</span>
+                    <span class="num" data-val="299">0</span>
                 </div>
                 <div class="students">
                     <h1>STUDENTS</h1>
-                    <span>0</span>
+                    <span class="num" data-val="1875">0</span>
                 </div>
             </div>
             {{-- <div class="control">
