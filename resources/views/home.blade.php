@@ -15,6 +15,7 @@
     <nav>
 
     </nav>
+{{-- This is the main container --}}
     <main>
         <section class="landing">
             <div class="welcome">
