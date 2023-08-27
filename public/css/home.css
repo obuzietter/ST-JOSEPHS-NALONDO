@@ -119,14 +119,8 @@ main .boxes .box:hover h4 {
     scale: 1.1;
     text-decoration: underline;
 }
-<<<<<<< HEAD
-main .boxes .box:hover p{
-    height: 280px;
-=======
-
 main .boxes .box:hover p {
     height: 350px;
->>>>>>> 6de32fa (home.css formatted and commented)
     padding: 1rem;
 }
 
@@ -196,7 +190,6 @@ main .slideshow .statistics {
     display: flex;
     width: 50%;
     text-align: center;
-<<<<<<< HEAD
 }
 main .slideshow .statistics div{
     background-color: black;
@@ -208,7 +201,6 @@ main .slideshow .statistics div h1{
 main .slideshow .statistics div span{
     font-size: 2.5rem;
     display: block;
-=======
     background-image: url(https://img.freepik.com/premium-photo/computer-desk-with-lamp-table-3d-rendering_921026-10789.jpg?size=626&ext=jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +239,6 @@ main .slideshow .statistics div span {
 
 main .slideshow .statistics div:nth-child(2) span {
     color: #FF8A00;
->>>>>>> 6de32fa (home.css formatted and commented)
 }
 
 /* keyframe animations */
