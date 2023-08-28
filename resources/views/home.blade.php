@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="{{ url('css/home.css') }}">
     <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
-    <script src="{{url('js/counter.js')}}" defer></script>
+    <script src="{{ url('js/counter.js') }}" defer></script>
+    <script src="{{url('js/draggableSlider.js')}}" defer></script>
 </head>
 
 <body>
     <nav>
 
     </nav>
-{{-- This is the main container --}}
+    {{-- This is the main container --}}
     <main>
         <section class="landing">
             <div class="welcome">
@@ -71,27 +72,26 @@
         </section>
         <section class="slideshow">
             <div class="slides">
-
-                <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
-                    alt="">
-
-
-                <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
-                    alt="">
-
-
-                <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
-                    alt="">
-
-
-                <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
-                    alt="">
-
-
-                <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
-                    alt="">
-
-
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
+                        alt="">
+                </div>
             </div>
             <div class="statistics">
                 <div class="teachers card">

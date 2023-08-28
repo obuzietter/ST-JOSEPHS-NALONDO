@@ -1,5 +1,6 @@
 let btn = document.getElementById("btn")
-btn.addEventListener("click", ()=>{location.href = "about";
+btn.addEventListener("click", () => {
+    location.href = "about";
 })
 
 const cards = document.querySelectorAll(".card");
@@ -7,22 +8,23 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.style.transform = "translateX(0)"
-            entry.target.style.backgroundColor = "black"      
+            entry.target.style.backgroundColor = "black"
             counter()
-        }else{
+        } else {
             entry.target.style.transform = "translateX(100%)"
-            entry.target.style.backgroundColor = "blue"      
+            entry.target.style.backgroundColor = "blue"
         }
-        
+
     });
 }, {
-    threshold: .5
+    threshold: .2
 });
 cards.forEach((card) => {
     observer.observe(card);
 });
 
-function counter(){
+// js animated counter function
+function counter() {
     let valueDisplays = document.querySelectorAll(".num");
     let interval = 4000
 

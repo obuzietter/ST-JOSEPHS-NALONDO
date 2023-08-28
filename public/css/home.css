@@ -177,16 +177,29 @@ main .slideshow {
 
 main .slideshow .slides {
     width: 50%;
-    height: auto;
+    /* height: fit-content; */
+    border: 1px solid red;
     display: flex;
     overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    cursor: pointer;
+}
+.active{
+    box-shadow: 15px 15px 15px black;
+    scale: 1.04;
+    
 }
 
-main .slideshow img {
+main .slideshow .slide {
     flex: 0 0 100%;
+    height: min-content;
+    border: 1px solid red;
+}
+main .slideshow .slide img{
+    width: 100%;
+    object-fit: cover;
 }
 
 /* animated statisctics counter - slideshow section */
