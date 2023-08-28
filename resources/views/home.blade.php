@@ -94,15 +94,15 @@
 
             </div>
             <div class="statistics">
-                <div class="teachers">
+                <div class="teachers card">
                     <h1>TEACHERS</h1>
                     <span class="num" data-val="68">0</span>
                 </div>
-                <div class="candidates">
+                <div class="candidates card">
                     <h1>CANDIDATES</h1>
                     <span class="num" data-val="299">0</span>
                 </div>
-                <div class="students">
+                <div class="students card">
                     <h1>STUDENTS</h1>
                     <span class="num" data-val="1875">0</span>
                 </div>

@@ -18,18 +18,6 @@ navItems.forEach( (item)=>{
 
 document.getElementById("up").addEventListener("click", ()=>{location.href = "about"})
 
-const cards = document.querySelectorAll(".card");
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    entry.target.classList.toggle("show", entry.isIntersecting);
-  });
-}, {
-  threshold: .5
-});
-cards.forEach((card) => {
-  observer.observe(card);
-});
-
 // window scroll event
 /*
 const revealElement = document.getElementById('revealElement');
