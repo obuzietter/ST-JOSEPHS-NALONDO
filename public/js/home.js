@@ -51,20 +51,20 @@ function slideShow() {
     let offset = -100;
     let i = -100;
     setInterval(() => {
+        slides.forEach((slide) => {
+            // console.log(slide.clientWidth);
+            slide.style.transform = `translateX(${offset}%)`;
+        });
+        offset = offset + i;
+        // console.log(offset);
+        if (offset / i > slides.length) {
             slides.forEach((slide) => {
-                console.log(slide.clientWidth);
-                slide.style.transform = `translateX(${offset}%)`;
+                offset = offset * -1;
+                slide.style.transform = `translateX(0%)`;
             });
-            offset = offset + i;
-            console.log(offset);
-            if(offset/i > slides.length){
-                slides.forEach((slide) => {
-                    offset = offset * -1
-                    slide.style.transform = `translateX(0%)`;
-                });
-               offset = -0 
-            }
-    }, 2000);
+            offset = -0;
+        }
+    }, 4000);
 }
 
 slideShow();

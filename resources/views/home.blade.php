@@ -9,7 +9,7 @@
     <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
     {{-- <script src="{{ url('js/counter.js') }}" defer></script> --}}
-    <script src="{{url('js/draggableSlider.js')}}" defer></script>
+    <script src="{{ url('js/draggableSlider.js') }}" defer></script>
 </head>
 
 <body>
@@ -76,27 +76,27 @@
                 <div class="slide">
                     <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
                         alt="">
-                        <h1>1</h1>
+                    <h1>1</h1>
                 </div>
                 <div class="slide">
                     <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
                         alt="">
-                        <h1>2</h1>
+                    <h1>2</h1>
                 </div>
                 <div class="slide">
                     <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
                         alt="">
-                        <h1>3</h1>
+                    <h1>3</h1>
                 </div>
                 <div class="slide">
                     <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
                         alt="">
-                        <h1>4</h1>
+                    <h1>4</h1>
                 </div>
                 <div class="slide">
                     <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
                         alt="">
-                        <h1>5</h1>
+                    <h1>5</h1>
                 </div>
             </div>
             <div class="statistics">
