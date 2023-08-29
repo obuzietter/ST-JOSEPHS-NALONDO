@@ -204,17 +204,43 @@ main .slideshow .slide {
     transition: .5s ease;
 
 }
+main .slideshow .slide:hover .brief{
+background-color: rgba(0, 0, 3, .8);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+main .slideshow .slide:hover .brief>h1, .brief>p{
+    opacity: 1;
+    width: fit-content;
+}
+main .slideshow .slide:hover .brief>p{
+    opacity: 1;
+    width: fit-content;
+}
 main .slideshow .slide .brief{
 position: absolute;
-height: 100%;
-width: 100%;
-top: 0;
-left: 0;
+height: 0;
+width: 0;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+transition: .3s ease;
+border-radius: 100%;
+
+}
+main .slideshow .slide .brief h1, main .slideshow .slide .brief p{
+    opacity: 0;
+    transition: 2s ease;
+    width: 0;
+    overflow: hidden;
 }
 
-main .slideshow .slide h1 {
-    color: black;
-}
 
 main .slideshow .slide img {
     width: 100%;
