@@ -18,7 +18,8 @@ html {
 
 /* main section styling */
 main .landing {
-    background-image: url(https://img.freepik.com/premium-photo/girl-graduation-gown-cap-stands-front-university-building_455711-76.jpg);
+    background-image: url(https://newsblaze.co.ke/wp-content/uploads/2020/01/St.-Joseph%E2%80%99s-Nalondo-Boys-Secondary-School.jpg);
+    /* background-image: url(../images/nalondo21.jpeg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,34 +178,47 @@ main .slideshow {
 
 main .slideshow .slides {
     width: 50%;
-    /* height: fit-content; */
-    border: 1px solid red;
+    /* height: 100%; */
+    /* border: 1px solid blue; */
     display: flex;
     overflow-x: scroll;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     cursor: pointer;
-    
+
 }
-.active{
+main .slideshow .slides::-webkit-scrollbar{
+    display: none;
+}
+.active {
     box-shadow: 15px 15px 15px black;
     scale: 1.04;
-    
+
 }
 
 main .slideshow .slide {
+    position: relative;
     flex: 0 0 100%;
-    height: min-content;
-    border: 1px solid red;
+    /* border: 1px solid orange; */
     transition: .5s ease;
-    
+
 }
-main .slideshow .slide h1{
+main .slideshow .slide .brief{
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+}
+
+main .slideshow .slide h1 {
     color: black;
 }
-main .slideshow .slide img{
+
+main .slideshow .slide img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 

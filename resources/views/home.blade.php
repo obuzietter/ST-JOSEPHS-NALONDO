@@ -74,29 +74,39 @@
         <section class="slideshow">
             <div class="slides">
                 <div class="slide">
-                    <img src="https://img.freepik.com/free-photo/modern-classroom-empty-chairs-waiting-students-generated-by-ai_188544-26093.jpg"
-                        alt="">
-                    <h1>1</h1>
+                    <img src="{{ asset('images/nalondo1.jpeg')}}" alt="">
+                    <div class="brief">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+                    </div>
                 </div>
                 <div class="slide">
-                    <img src="https://img.freepik.com/free-photo/smiling-children-pointing-learning-cheerful-classroom-generated-by-ai_188544-29266.jpg"
-                        alt="">
-                    <h1>2</h1>
+                    <img src="{{ asset('images/nalondo8.jpeg')}}" alt="">
+                    <div class="brief">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+                    </div>
                 </div>
                 <div class="slide">
-                    <img src="https://img.freepik.com/free-photo/smiling-african-girl-playing-learning-indoors-generated-by-ai_188544-29126.jpg"
-                        alt="">
-                    <h1>3</h1>
+                    <img src="{{ asset('images/nalondo10.jpeg')}}" alt="">
+                    <div class="brief">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+                    </div>
                 </div>
                 <div class="slide">
-                    <img src="https://img.freepik.com/free-photo/multi-ethnic-group-graduates-smiling-with-success-generated-by-ai_188544-24701.jpg"
-                        alt="">
-                    <h1>4</h1>
+                    <img src="{{ asset('images/nalondo11.jpeg')}}" alt="">
+                    <div class="brief">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+                    </div>
                 </div>
                 <div class="slide">
-                    <img src="https://img.freepik.com/premium-photo/happy-black-woman-her-graduation-day-sitting-with-her-colleagues-ai-generated_47726-11704.jpg"
-                        alt="">
-                    <h1>5</h1>
+                    <img src="{{ asset('images/nalondo13.jpeg')}}" alt="">
+                    <div class="brief">
+                        <h1>TITLE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
+                    </div>
                 </div>
             </div>
             <div class="statistics">
