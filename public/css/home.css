@@ -185,6 +185,7 @@ main .slideshow .slides {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     cursor: pointer;
+    
 }
 .active{
     box-shadow: 15px 15px 15px black;
@@ -196,6 +197,11 @@ main .slideshow .slide {
     flex: 0 0 100%;
     height: min-content;
     border: 1px solid red;
+    transition: .5s ease;
+    
+}
+main .slideshow .slide h1{
+    color: black;
 }
 main .slideshow .slide img{
     width: 100%;
