@@ -10,11 +10,11 @@ const observer = new IntersectionObserver(
 
             (entry.isIntersecting)? (
                 entry.target.style.transform = "translate(0)",
-                entry.target.style.backgroundColor = "black", 
+                // entry.target.style.backgroundColor = "black", 
                 counter()
             ):(
-                entry.target.style.transform = "translateX(100%)",
-                entry.target.style.backgroundColor = "blue"
+                entry.target.style.transform = "translateX(100%)"
+                // entry.target.style.backgroundColor = "blue"
             );
            
         });

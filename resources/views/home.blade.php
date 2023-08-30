@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url('css/home.css') }}">
+    <link rel="stylesheet" href="{{ url('css/homeResponsive.css') }}">
     <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
     {{-- <script src="{{ url('js/draggableSlider.js') }}" defer></script> --}}

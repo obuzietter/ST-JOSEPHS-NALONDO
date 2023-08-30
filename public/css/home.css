@@ -23,7 +23,8 @@ main .landing {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100dvh;
+    /* min-height: 100dvh; */
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -164,7 +165,7 @@ main .boxes .box p span:hover {
 
 /* slide slideshow section styling */
 main .slideshow {
-    height: 100dvh;
+    min-height: 100dvh;
     display: grid;
     place-items: center;
     position: relative;
