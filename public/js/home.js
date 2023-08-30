@@ -7,14 +7,16 @@ const cards = document.querySelectorAll(".card");
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.style.transform = "translateX(0)";
-                entry.target.style.backgroundColor = "black";
-                counter();
-            } else {
-                entry.target.style.transform = "translateX(100%)";
-                entry.target.style.backgroundColor = "blue";
-            }
+
+            (entry.isIntersecting)? (
+                entry.target.style.transform = "translate(0)",
+                entry.target.style.backgroundColor = "black", 
+                counter()
+            ):(
+                entry.target.style.transform = "translateX(100%)",
+                entry.target.style.backgroundColor = "blue"
+            );
+           
         });
     },
     {

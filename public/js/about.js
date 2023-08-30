@@ -1,23 +1,43 @@
-const chev = document.getElementById("chevron")
-chev.addEventListener("click", ()=>{
-    location.href = "#values"
-})
+const chev = document.getElementById("chevron");
+chev.addEventListener("click", () => {
+    location.href = "#values";
+});
 
-const navItems = document.querySelectorAll(".history-nav .item")
+const navItems = document.querySelectorAll(".history-nav .item");
 
+navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        let activeLinks = document.querySelectorAll(".active");
+        activeLinks.forEach((activeLink) => {
+            activeLink.classList.remove("active");
+        });
+        item.classList.add("active");
+    });
+});
 
-navItems.forEach( (item)=>{
-    item.addEventListener("click", ()=>{
-        let activeLinks = document.querySelectorAll(".active")
-        activeLinks.forEach((activeLink)=>{
-            activeLink.classList.remove('active')
-        })
-        item.classList.add("active")
-    })
-})
+document.getElementById("up").addEventListener("click", () => {
+    location.href = "about";
+});
 
-document.getElementById("up").addEventListener("click", ()=>{location.href = "about"})
+const coreValues = document.querySelectorAll(".core-value");
 
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            entry.isIntersecting
+                ? (entry.target.style.translate = "0")
+                : entry.target.classList.contains("even")
+                ? (entry.target.style.translate = "100%")
+                : (entry.target.style.translate = "-100%");
+        });
+    },
+    {
+        threshold: 0.5,
+    }
+);
+coreValues.forEach((coreValue) => {
+    observer.observe(coreValue);
+});
 // window scroll event
 /*
 const revealElement = document.getElementById('revealElement');

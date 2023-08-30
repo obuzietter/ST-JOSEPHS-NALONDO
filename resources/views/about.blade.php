@@ -82,13 +82,13 @@
         <section class="core-values">
             <h1>CORE VALUES</h1>
             <ol>
-                <li>1. HARDWORK AND TEAMWORK</li>
-                <li>2. TIMELINESS</li>
-                <li>3. INTEGRITY AND HUMILITY</li>
-                <li>4. CHASTITY</li>
-                <li>5. PERSERVERENCE</li>
-                <li>6. CONTINUAL IMPROVEMENT</li>
-                <li>7. INNOVATION AND CREATIVITY</li>
+                <li class="core-value odd">1. HARDWORK AND TEAMWORK</li>
+                <li class="core-value even">2. TIMELINESS</li>
+                <li class="core-value odd">3. INTEGRITY AND HUMILITY</li>
+                <li class="core-value even">4. CHASTITY</li>
+                <li class="core-value odd">5. PERSERVERENCE</li>
+                <li class="core-value even">6. CONTINUAL IMPROVEMENT</li>
+                <li class="core-value odd">7. INNOVATION AND CREATIVITY</li>
             </ol>
         </section>
 

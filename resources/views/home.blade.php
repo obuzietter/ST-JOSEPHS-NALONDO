@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="{{ url('css/home.css') }}">
     <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
-    {{-- <script src="{{ url('js/counter.js') }}" defer></script> --}}
-    <script src="{{ url('js/draggableSlider.js') }}" defer></script>
+    {{-- <script src="{{ url('js/draggableSlider.js') }}" defer></script> --}}
 </head>
 
 <body>
+    {{-- navigation bar --}}
     <nav>
 
     </nav>
@@ -71,44 +71,50 @@
                 </div>
             </div>
         </section>
+
+        {{-- home page slideshow section --}}
         <section class="slideshow">
+
+            {{-- slides container --}}
             <div class="slides">
                 <div class="slide">
-                    <img src="{{ asset('images/nalondo1.jpeg')}}" alt="">
+                    <img src="{{ asset('images/nalondo1.jpeg') }}" alt="">
                     <div class="brief">
                         <h1>TITLE</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('images/nalondo8.jpeg')}}" alt="">
+                    <img src="{{ asset('images/nalondo8.jpeg') }}" alt="">
                     <div class="brief">
                         <h1>TITLE</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('images/nalondo10.jpeg')}}" alt="">
+                    <img src="{{ asset('images/nalondo10.jpeg') }}" alt="">
                     <div class="brief">
                         <h1>TITLE</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('images/nalondo11.jpeg')}}" alt="">
+                    <img src="{{ asset('images/nalondo11.jpeg') }}" alt="">
                     <div class="brief">
                         <h1>TITLE</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('images/nalondo13.jpeg')}}" alt="">
+                    <img src="{{ asset('images/nalondo13.jpeg') }}" alt="">
                     <div class="brief">
                         <h1>TITLE</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
                     </div>
                 </div>
             </div>
+
+            {{-- animated statistics counter container --}}
             <div class="statistics">
                 <div class="teachers card">
                     <h1>TEACHERS</h1>
@@ -123,23 +129,6 @@
                     <span class="num" data-val="1875">0</span>
                 </div>
             </div>
-            {{-- <div class="control">
-                <a href="#1">
-                    <div></div>
-                </a>
-                <a href="#2">
-                    <div></div>
-                </a>
-                <a href="#3">
-                    <div></div>
-                </a>
-                <a href="#4">
-                    <div></div>
-                </a>
-                <a href="#5">
-                    <div></div>
-                </a>
-            </div> --}}
 
         </section>
     </main>

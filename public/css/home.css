@@ -18,8 +18,7 @@ html {
 
 /* main section styling */
 main .landing {
-    background-image: url(https://newsblaze.co.ke/wp-content/uploads/2020/01/St.-Joseph%E2%80%99s-Nalondo-Boys-Secondary-School.jpg);
-    /* background-image: url(../images/nalondo21.jpeg); */
+    background-image: url(../images/nalondo21.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,8 +149,6 @@ main .boxes .box p {
     transition: .2s linear;
     overflow: hidden;
     text-align: start;
-
-    /* display: none; */
 }
 
 main .boxes .box p span {
@@ -170,16 +167,11 @@ main .slideshow {
     height: 100dvh;
     display: grid;
     place-items: center;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     position: relative;
 }
 
 main .slideshow .slides {
     width: 50%;
-    /* height: 100%; */
-    /* border: 1px solid blue; */
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -188,9 +180,11 @@ main .slideshow .slides {
     cursor: pointer;
 
 }
-main .slideshow .slides::-webkit-scrollbar{
+
+main .slideshow .slides::-webkit-scrollbar {
     display: none;
 }
+
 .active {
     box-shadow: 15px 15px 15px black;
     scale: 1.04;
@@ -198,43 +192,50 @@ main .slideshow .slides::-webkit-scrollbar{
 }
 
 main .slideshow .slide {
+    scroll-snap-align: start;
     position: relative;
     flex: 0 0 100%;
-    /* border: 1px solid orange; */
     transition: .5s ease;
 
 }
-main .slideshow .slide:hover .brief{
-background-color: rgba(0, 0, 3, .8);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 100%;
+
+main .slideshow .slide:hover .brief {
+    background-color: rgba(0, 0, 3, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 100%;
     border-radius: 0;
 }
-main .slideshow .slide:hover .brief>h1, .brief>p{
+
+main .slideshow .slide:hover .brief>h1,
+.brief>p {
     opacity: 1;
     width: fit-content;
 }
-main .slideshow .slide:hover .brief>p{
+
+main .slideshow .slide:hover .brief>p {
     opacity: 1;
     width: fit-content;
 }
-main .slideshow .slide .brief{
-position: absolute;
-height: 0;
-width: 0;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-overflow: hidden;
-transition: .3s ease;
-border-radius: 100%;
+
+main .slideshow .slide .brief {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: .3s ease;
+    border-radius: 100%;
 
 }
-main .slideshow .slide .brief h1, main .slideshow .slide .brief p{
+
+main .slideshow .slide .brief h1,
+main .slideshow .slide .brief p {
     opacity: 0;
     transition: 2s ease;
     width: 0;
@@ -254,17 +255,8 @@ main .slideshow .statistics {
     text-align: center;
 }
 
-main .slideshow .statistics div h1 {
-    font-size: 1.5rem;
-}
-
-main .slideshow .statistics div span {
-    font-size: 2.5rem;
-    display: block;
-}
-
 main .slideshow .statistics .card {
-    transform: translateX(100%);
+    transform: translate(100%, 50px);
     transition: .5s ease;
     background-color: black;
     flex-basis: 33.333%;
@@ -339,140 +331,5 @@ main .slideshow .statistics div:nth-child(2) span {
 
     to {
         border-right-color: transparent;
-    }
-}
-
-/* media query for small and mobile devices */
-@media screen and (max-width: 480px) {
-    main .landing {
-        height: 200vh;
-        width: 100%;
-        justify-content: space-between;
-        padding: 0;
-        scroll-snap-align: none;
-    }
-
-    /* .... */
-    main .landing .welcome {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    main .landing .welcome .welcome-text {
-        font-size: 1.5rem;
-        padding: 20px 0;
-        color: blue;
-        text-align: center;
-    }
-
-    main .landing .welcome .school-name {
-        color: white;
-        font-size: 1.8rem;
-        animation: none;
-        white-space: normal;
-        border-style: none;
-        padding: 20px 0;
-    }
-
-    main .landing .welcome .button {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    /* .... */
-    main .boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 20px;
-        height: 100vh;
-    }
-
-    main .boxes .box {
-        width: 80%;
-        height: max-content;
-
-    }
-
-    .boxes:hover>.box:not(:hover) {
-        filter: blur(0px);
-        transform: scale(0.9, 0.9);
-    }
-
-    main .slideshow {
-        height: auto;
-        scroll-snap-align: none;
-        display: none;
-    }
-}
-
-/* media query for tablet and ipad */
-@media screen and (max-width: 768px) {
-    main .landing {
-        height: 200vh;
-        width: 100%;
-        justify-content: space-between;
-        padding: 0;
-        scroll-snap-align: none;
-    }
-
-    /* .... */
-    main .landing .welcome {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    main .landing .welcome .welcome-text {
-        font-size: 1.5rem;
-        padding: 20px 0;
-        color: blue;
-        text-align: center;
-    }
-
-    main .landing .welcome .school-name {
-        color: white;
-        font-size: 1.8rem;
-        animation: none;
-        white-space: normal;
-        border-style: none;
-        padding: 20px 0;
-    }
-
-    main .landing .welcome .button {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    /* .... */
-    main .boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 20px;
-        height: 100vh;
-    }
-
-    main .boxes .box {
-        width: 80%;
-        height: max-content;
-        box-shadow: 15px 15px 45px black;
-
-    }
-
-    .boxes:hover>.box:not(:hover) {
-        filter: blur(0px);
-        transform: scale(0.9, 0.9);
-    }
-
-    main .slideshow {
-        height: auto;
-        scroll-snap-align: none;
-        /* display: none; */
     }
 }
