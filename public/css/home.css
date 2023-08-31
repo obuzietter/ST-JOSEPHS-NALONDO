@@ -174,7 +174,7 @@ main .slideshow {
 main .slideshow .slides {
     width: 50%;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
