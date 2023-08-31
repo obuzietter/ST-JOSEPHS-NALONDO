@@ -117,12 +117,11 @@ main .boxes .box p span:hover {
     main .slideshow {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     main .slideshow .slides {
         width: 100%;
-
+        margin: 15px;
     }
     /* animated statisctics counter - slideshow section */
     main .slideshow .statistics {
@@ -132,13 +131,14 @@ main .boxes .box p span:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        margin: 15px;
     }
-
+    
     main .slideshow .statistics .card {
         padding: 1rem;
         background-color: rgba(0, 0, 4, .8);
         backdrop-filter: blur(10px);
     }
-
-
+    
+    
 }

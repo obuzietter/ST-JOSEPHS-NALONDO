@@ -23,8 +23,8 @@ main .landing {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* min-height: 100dvh; */
-    width: 100vw;
+    min-height: 100dvh;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
