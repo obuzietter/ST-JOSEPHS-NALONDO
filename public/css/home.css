@@ -16,6 +16,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+    /* border: 2px solid blue; */
+}
+
 /* main section styling */
 main .landing {
     background-image: url(../images/nalondo21.jpeg);
@@ -257,10 +262,10 @@ main .slideshow .statistics {
 }
 
 main .slideshow .statistics .card {
-    transform: translate(100%, 50px);
+    transform: translateX(100%);
     transition: .5s ease;
     background-color: black;
-    flex-basis: 33.333%;
+    /* flex-basis: 33.333%; */
     padding: 3rem;
     cursor: default;
 }

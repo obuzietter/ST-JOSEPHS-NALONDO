@@ -117,11 +117,12 @@ main .boxes .box p span:hover {
     main .slideshow {
         display: flex;
         flex-direction: column;
+        padding: 15px;
     }
 
     main .slideshow .slides {
         width: 100%;
-        margin: 15px;
+        /* margin: 15px; */
     }
     /* animated statisctics counter - slideshow section */
     main .slideshow .statistics {
@@ -138,6 +139,7 @@ main .boxes .box p span:hover {
         padding: 1rem;
         background-color: rgba(0, 0, 4, .8);
         backdrop-filter: blur(10px);
+        transform: translate(0, 0);
     }
     
     
