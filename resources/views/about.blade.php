@@ -8,6 +8,7 @@
 
     {{-- css links --}}
     <link rel="stylesheet" href="{{ url('css/about.css') }}">
+    <link rel="stylesheet" href="{{ url('css/aboutResponsive.css') }}">
 
     {{-- javascript links --}}
     <script src="https://kit.fontawesome.com/5ce449abc0.js" crossorigin="anonymous"></script>
