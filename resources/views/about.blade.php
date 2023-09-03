@@ -31,11 +31,11 @@
 
         {{-- section - about page landing --}}
         <section class="badge">
-            <video controls loop autoplay>
+            {{-- <video controls loop autoplay>
                 <source
                     src="https://v4.cdnpk.net/videvo_files/video/free/video0456/large_watermarked/_import_609da32c1b31b5.83573401_FPpreview.mp4"
                     type="">
-            </video>
+            </video> --}}
             <div class="intro">
                 <div class="text">
                     <h1>
@@ -101,7 +101,7 @@
                     History of the school
                 </span>
                 <ul id='nav-items'>
-                    <li class="item active"><a href="#genesis">Genesis</a></li>
+                    <li class="item active"><a href="#genesis">Beginning</a></li>
                     <li class="item"><a href="#purpose">Purpose</a></li>
                     <li class="item"><a href="#community">Community</a></li>
                     <li class="item"><a href="#location">Location</a></li>
@@ -111,7 +111,7 @@
             <div class="history-items" id="history-items">
                 {{-- foundation --}}
                 <div class="genesis item" id="genesis">
-                    <h1>Genesis</h1>
+                    <h1>Beginning</h1>
                     <p>Its first infrastructure was in form of a classroom block donated by the neighboring Nalondo
                         Primary School. An interim school committee was inaugurated in 1973 with an intake of 11
                         students. Enrollment increased by 20 when the only secondary school in the locality Sipala

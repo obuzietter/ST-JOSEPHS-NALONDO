@@ -64,12 +64,12 @@
     main .values {
         /* background-color: red; */
         position: relative;
-        min-height: 100dvh;
+        /* min-height: 100dvh; */
         /* display: flex;
         flex-direction: column; */
-        justify-content: start; 
-        align-items: center;
-        gap: 30px;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 2.5rem;
         /* scroll-snap-align: start; */
     }
 
@@ -96,11 +96,14 @@
 
     main .values .vision .vision-text h1 {
         backdrop-filter: blur(5px);
-
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     main .values .vision .vision-text p {
         backdrop-filter: blur(5px);
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, 0.5);
 
     }
 
@@ -114,7 +117,7 @@
 
     main .values .mission .mission-image {
         display: none;
-        
+
 
     }
 
@@ -128,10 +131,15 @@
 
     main .values .mission .mission-text h1 {
         backdrop-filter: blur(5px);
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     main .values .mission .mission-text p {
-        backdrop-filter: blur(5px);    }
+        padding: .5rem;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
 
     main .values .motto-banner {
         /* display: none; */
@@ -142,16 +150,19 @@
     }
 
     main .values .motto-banner h1 {
+        padding: .5rem;
         /* font-size: 2rem; */
     }
 
     main .values .motto-banner p {
+        padding: .5rem;
         /* font-size: 1.5rem; */
     }
 
     /* core-values section */
     main .core-values {
         background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
+        overflow-x: hidden;
         /* height: 100dvh; */
         /* display: flex;
         flex-direction: column;
@@ -207,7 +218,7 @@
     }
 
     main .history {
-        height: 100dvh;
+        min-height: 100dvh;
         /* display: flex;
         justify-content: center;
         align-items: center; */
@@ -282,34 +293,38 @@
     main .history .history-items {
         width: 100%;
         height: auto;
+        /* overflow-y: auto; */
+        /* border: 2px solid red; */
         /* display: flex; */
         flex-direction: column;
-        /* overflow-x: scroll; */
+        overflow-x: hidden;
         /* scroll-behavior: smooth; */
         /* scroll-snap-type: x mandatory; */
         /* background-color: #040479; */
         /* color: white; */
     }
 
-    /* main .history .history-items .item {
-        flex: 0 0 100%;
+    main .history .history-items .item {
+        /* flex: 0 0 100%; */
         text-align: center;
+        /* border: 1px solid red; */
+        /* height: min-content; */
         scroll-snap-align: start;
-    } */
+    }
 
     main .history .history-items .item h1 {
         font-size: 2rem;
         /* text-transform: capitalize; */
-        font-weight: 900;
+        /* font-weight: 900; */
         padding: 1rem;
     }
 
     main .history .history-items .item p {
         font-size: 1rem;
-        text-align: start;
-        line-height: 1rem;
+        text-align: justify;
+        line-height: 1.3rem;
         margin: 1rem 0;
-        padding: 0px 30px;
+        padding: 0 1rem;
     }
 
     #history-items::-webkit-scrollbar {
