@@ -208,7 +208,7 @@ main .core-values ol li:hover {
 }
 
 main .history {
-    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
