@@ -27,8 +27,8 @@ const observer = new IntersectionObserver(
             entry.isIntersecting
                 ? (entry.target.style.translate = "0")
                 : entry.target.classList.contains("even")
-                ? (entry.target.style.translate = "100%")
-                : (entry.target.style.translate = "-100%");
+                ? (entry.target.style.translate = "100px")
+                : (entry.target.style.translate = "-100px");
         });
     },
     {
