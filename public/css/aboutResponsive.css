@@ -3,30 +3,16 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* border: 1px solid blue; */
     }
 
     html {
         scroll-snap-type: none;
-        /* overflow-x: hidden; */
     }
-
-    /* main .up {
-    position: fixed;
-    z-index: 10;
-    bottom: 20px;
-    right: 20px;
-} */
 
     main .badge {
         min-height: 100dvh;
         position: relative;
         overflow-y: auto;
-        /* scroll-snap-align: start; */
-    }
-
-    main .badge video {
-        width: 100%;
     }
 
     main .badge .intro {
@@ -47,6 +33,7 @@
     main .badge .intro .text {
         font-size: 2rem;
         color: white;
+        text-align: center;
     }
 
     main .badge .intro .image {
@@ -62,15 +49,9 @@
     }
 
     main .values {
-        /* background-color: red; */
         position: relative;
-        /* min-height: 100dvh; */
-        /* display: flex;
-        flex-direction: column; */
         justify-content: center;
-        /* align-items: center; */
         gap: 2.5rem;
-        /* scroll-snap-align: start; */
     }
 
     main .values .vision {
@@ -79,7 +60,6 @@
         width: 100%;
         height: auto;
         position: relative;
-
     }
 
     main .values .vision .vision-image {
@@ -96,15 +76,14 @@
 
     main .values .vision .vision-text h1 {
         backdrop-filter: blur(5px);
-        padding: .5rem;
+        padding: 0.5rem;
         background-color: rgba(255, 255, 255, 0.5);
     }
 
     main .values .vision .vision-text p {
         backdrop-filter: blur(5px);
-        padding: .5rem;
+        padding: 0.5rem;
         background-color: rgba(255, 255, 255, 0.5);
-
     }
 
     main .values .mission {
@@ -117,8 +96,6 @@
 
     main .values .mission .mission-image {
         display: none;
-
-
     }
 
     main .values .mission .mission-text {
@@ -131,73 +108,50 @@
 
     main .values .mission .mission-text h1 {
         backdrop-filter: blur(5px);
-        padding: .5rem;
+        padding: 0.5rem;
         background-color: rgba(255, 255, 255, 0.5);
     }
 
     main .values .mission .mission-text p {
-        padding: .5rem;
+        padding: 0.5rem;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.5);
     }
 
     main .values .motto-banner {
-        /* display: none; */
-        /* position: relative; */
-        /* bottom: 10px; */
         width: 100%;
         text-align: center;
     }
 
     main .values .motto-banner h1 {
-        padding: .5rem;
-        /* font-size: 2rem; */
+        padding: 0.5rem;
     }
 
     main .values .motto-banner p {
-        padding: .5rem;
-        /* font-size: 1.5rem; */
+        padding: 0.5rem;
     }
 
     /* core-values section */
     main .core-values {
         background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
         overflow-x: hidden;
-        /* height: 100dvh; */
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-        /* scroll-snap-align: start; */
     }
 
     main .core-values h1 {
         font-size: 2rem;
-        /* color: white; */
     }
 
     main .core-values ol {
         list-style-type: none;
         padding-left: 0;
-        /* font-size: 2rem; */
-        /* position: relative; */
-        /* text-align: center; */
-        height: auto;
-        /* display: flex; */
-        /* flex-direction: column; */
-        justify-content: start;
 
+        height: auto;
+
+        justify-content: start;
     }
 
     main .core-values ol li {
-        /* margin: 0; */
-        /* cursor: default; */
-        /* background-color: #272727; */
-        /* color: white; */
-        /* transition: .3s linear; */
         padding: 5px 5px;
-        /* text-shadow: rgb(0, 0, 255) 2px 5px; */
-
     }
 
     main .core-values ol li:nth-child(odd) {
@@ -219,33 +173,20 @@
 
     main .history {
         min-height: 100dvh;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        /* scroll-snap-align: start; */
+
         flex-direction: column;
     }
 
     main .history .history-nav {
         width: 100%;
         height: auto;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
-        /* background-color: #272727; */
     }
 
     main .history .history-nav span {
         font-size: 1.5rem;
-        /* text-transform: capitalize; */
-        /* font-weight: 900; */
-        /* padding: 30px 0px; */
-        /* text-align: center; */
-        /* color: white; */
     }
 
     main .history .history-nav ul {
-        /* list-style: none; */
         display: flex;
         font-size: 1rem;
     }
@@ -253,69 +194,34 @@
     main .history .history-nav ul li {
         margin: 0;
         border-bottom: none;
-        border-top-right-radius: .5rem;
-        border-top-left-radius: .5rem;
-        /* position: relative; */
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
     }
-
-    /* main .history .history-nav ul li::before {
-        content: "";
-        position: absolute;
-        background-color: #040479;
-        width: 0;
-        height: 0;
-        transition: .1s ease;
-        border-radius: 100%;
-        top: 50%;
-        margin-left: -20px;
-    } */
 
     main .history .history-nav ul li:hover::before {
         width: 0;
         height: 0;
-
     }
 
-    /* main .history .history-nav ul .active {
-        background-color: #040479;
-    } */
-
     main .history .history-nav ul li a {
-        /* text-decoration: none; */
-        /* display: inline-block; */
-        /* text-align: center; */
-        /* width: 100%; */
-        /* color: white; */
-        padding: .5rem .5rem;
-        /* background-color: transparent; */
+        padding: 0.5rem 0.5rem;
     }
 
     main .history .history-items {
         width: 100%;
         height: auto;
-        /* overflow-y: auto; */
-        /* border: 2px solid red; */
-        /* display: flex; */
+
         flex-direction: column;
         overflow-x: hidden;
-        /* scroll-behavior: smooth; */
-        /* scroll-snap-type: x mandatory; */
-        /* background-color: #040479; */
-        /* color: white; */
     }
 
     main .history .history-items .item {
-        /* flex: 0 0 100%; */
         text-align: center;
-        /* border: 1px solid red; */
-        /* height: min-content; */
         scroll-snap-align: start;
     }
 
     main .history .history-items .item h1 {
         font-size: 2rem;
-        /* text-transform: capitalize; */
-        /* font-weight: 900; */
         padding: 1rem;
     }
 
@@ -345,4 +251,256 @@
     }
 }
 
-/* media queries */
+/* tablet view */
+@media only screen and (min-width: 601px) and (max-width: 768px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-snap-type: none;
+    }
+
+    main .badge {
+        min-height: 100dvh;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    main .badge .intro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        backdrop-filter: blur(10px);
+    }
+
+    main .badge .intro .text {
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+    }
+
+    main .badge .intro .image {
+        width: 250px;
+    }
+
+    main .badge .intro .image img {
+        width: 100%;
+    }
+
+    main .badge .intro .chevron {
+        cursor: pointer;
+    }
+
+    main .values {
+        position: relative;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    main .values .vision {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main .values .vision .vision-image {
+        display: none;
+    }
+
+    main .values .vision .vision-text {
+        background-image: url(https://img.freepik.com/free-photo/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place_231208-2277.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    main .values .vision .vision-text h1 {
+        backdrop-filter: blur(5px);
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    main .values .vision .vision-text p {
+        backdrop-filter: blur(5px);
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    main .values .mission {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main .values .mission .mission-image {
+        display: none;
+    }
+
+    main .values .mission .mission-text {
+        background-image: url(https://img.freepik.com/premium-photo/businessman-making-notes-sticky-notes_274679-37656.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+        display: block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    main .values .mission .mission-text h1 {
+        backdrop-filter: blur(5px);
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    main .values .mission .mission-text p {
+        padding: 0.5rem;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    main .values .motto-banner {
+        width: 100%;
+        text-align: center;
+    }
+
+    main .values .motto-banner h1 {
+        padding: 0.5rem;
+    }
+
+    main .values .motto-banner p {
+        padding: 0.5rem;
+    }
+
+    /* core-values section */
+    main .core-values {
+        background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
+        overflow-x: hidden;
+    }
+
+    main .core-values h1 {
+        font-size: 2rem;
+    }
+
+    main .core-values ol {
+        list-style-type: none;
+        padding-left: 0;
+
+        height: auto;
+
+        justify-content: start;
+    }
+
+    main .core-values ol li {
+        padding: 5px 5px;
+    }
+
+    main .core-values ol li:nth-child(odd) {
+        transform: perspective(1000px) rotateY(30deg);
+        translate: -100px;
+    }
+
+    main .core-values ol li:nth-child(even) {
+        transform: perspective(1000px) rotateY(-30deg);
+        translate: 100px;
+    }
+
+    main .core-values ol li:hover {
+        transform: perspective(1000px) rotateY(0deg);
+        box-shadow: 10px 10px 36px 0px rgba(255, 255, 255, 0.75);
+        text-shadow: 1px 1px 2px rgb(16, 22, 105), 0 0 1em blue, 0 0 0.2em blue;
+        scale: 1.12;
+    }
+
+    main .history {
+        min-height: 100dvh;
+
+        flex-direction: column;
+    }
+
+    main .history .history-nav {
+        width: 100%;
+        height: auto;
+    }
+
+    main .history .history-nav span {
+        font-size: 1.5rem;
+    }
+
+    main .history .history-nav ul {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    main .history .history-nav ul li {
+        margin: 0;
+        border-bottom: none;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+
+    main .history .history-nav ul li:hover::before {
+        width: 0;
+        height: 0;
+    }
+
+    main .history .history-nav ul li a {
+        padding: 0.5rem 0.5rem;
+    }
+
+    main .history .history-items {
+        width: 100%;
+        height: auto;
+
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    main .history .history-items .item {
+        text-align: center;
+        scroll-snap-align: start;
+    }
+
+    main .history .history-items .item h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    main .history .history-items .item p {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.3rem;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+
+    #history-items::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    #history-items::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #history-items::-webkit-scrollbar-thumb {
+        background: #272727;
+    }
+
+    #history-items::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        height: 10px;
+    }
+}
