@@ -19,11 +19,12 @@ main .up {
 
 main .badge {
     min-height: 100dvh;
+
     position: relative;
     overflow-y: hidden;
-    background:  linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)), url(../images/nalondo14.jpeg);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)), url(../images/nalondo14.jpeg);
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     /* scroll-snap-align: start; */
 }
 
@@ -219,7 +220,7 @@ main .history {
 }
 
 main .history .history-nav {
-    width: 20%;
+    max-width: 20%;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -228,7 +229,7 @@ main .history .history-nav {
 }
 
 main .history .history-nav span {
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 900;
     padding: 30px 0px;
@@ -238,7 +239,7 @@ main .history .history-nav span {
 
 main .history .history-nav ul {
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 main .history .history-nav ul li {
@@ -280,7 +281,7 @@ main .history .history-nav ul li a {
 }
 
 main .history .history-items {
-    width: 50%;
+    max-width: 50%;
     height: 90vh;
     display: flex;
     overflow-x: scroll;
