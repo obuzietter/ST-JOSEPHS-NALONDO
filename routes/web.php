@@ -18,3 +18,12 @@ Route::get('/', function () {
 });
 Route::view('about', 'about');
 Route::view('achievements', 'achievements' );
+
+
+Route::get('/faculty', function () {
+    return view('faculty');
+});
+
+Route::get('/projects', function () {
+    return view('projects');
+});
