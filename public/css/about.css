@@ -19,12 +19,12 @@ main .up {
 
 main .badge {
     min-height: 100dvh;
-    
+
     position: relative;
     overflow-y: hidden;
-    background:  linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)), url(../images/nalondo14.jpeg);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)), url(../images/nalondo14.jpeg);
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     /* scroll-snap-align: start; */
 }
 
