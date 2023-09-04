@@ -25,7 +25,7 @@ adminOpener.forEach(adm=>{
 
 
 let playState=["paused","running"]
-let playTime=[720,1000]
+let playTime=[720,4000]
 
 console.log(playState[1])
 
