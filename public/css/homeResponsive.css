@@ -3,117 +3,122 @@
         /* border: 1px solid blue; */
     }
 
-main .landing {
-    background-image: url(../images/nalondo21.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    /* min-height: 100dvh; */
-    width: 100vw;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    position: relative;
-}
+    main .landing {
+        background-image: url(../images/nalondo21.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        /* min-height: 100dvh; */
+        width: 100vw;
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        position: relative;
+    }
 
-/* landing section */
-main .landing .welcome{
-    text-align: center;
-}
-main .landing .welcome > div {
-    margin: 10px;
-}
-main .landing .welcome .welcome-text {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 30px 0;
-}
+    /* landing section */
+    main .landing .welcome {
+        text-align: center;
+    }
 
-main .landing .welcome .school-name {
-    color: blue;
-    font-size: 2rem;
-    font-weight: 900;
-}
-.anim-typewriter {
-    border-right-style: none;
-    overflow: hidden;
-    white-space: wrap;
-    animation: none;
-}
-main .landing .welcome .button {
-    padding: 0;
-}
+    main .landing .welcome>div {
+        margin: 10px;
+    }
+
+    main .landing .welcome .welcome-text {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 30px 0;
+    }
+
+    main .landing .welcome .school-name {
+        color: blue;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .anim-typewriter {
+        border-right-style: none;
+        overflow: hidden;
+        white-space: wrap;
+        animation: none;
+    }
+
+    main .landing .welcome .button {
+        padding: 0;
+    }
 
 
 
-/* interactive boxes  */
-main .boxes {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-}
+    /* interactive boxes  */
+    main .boxes {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
 
-main .boxes .box {
-    width: 100%;
-    padding: 0rem;
-    margin: 10px;
-}
+    main .boxes .box {
+        width: 100%;
+        padding: 0rem;
+        margin: 10px;
+    }
 
-main .boxes .box:hover img {
-    scale: 0.6;
-    filter: drop-shadow(5px 5px 30px white);
-}
+    main .boxes .box:hover img {
+        scale: 0.6;
+        filter: drop-shadow(5px 5px 30px white);
+    }
 
-main .boxes .box:hover h4 {
-    color: #0004ff;
-    scale: 1.1;
-    text-decoration: underline;
-}
+    main .boxes .box:hover h4 {
+        color: #0004ff;
+        scale: 1.1;
+        text-decoration: underline;
+    }
 
-main .boxes .box:hover p {
-    height: 350px;
-    padding: 1rem;
-}
+    main .boxes .box:hover p {
+        height: 350px;
+        padding: 1rem;
+    }
 
-main .boxes .box img {
-    width: 100px;
-    transition: .2s ease;
+    main .boxes .box img {
+        width: 100px;
+        transition: .2s ease;
 
-}
+    }
 
-main .boxes .box h4 {
-    font-size: 1.8rem;
-    padding: 10px 0;
-    transition: .2s ease;
-}
+    main .boxes .box h4 {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        transition: .2s ease;
+    }
 
-main .boxes .box p {
-    font-size: 1.2rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #242424;
-    z-index: 5;
-    height: 0;
-    transition: .2s linear;
-    overflow: hidden;
-    text-align: start;
-}
+    main .boxes .box p {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #242424;
+        z-index: 5;
+        height: 0;
+        transition: .2s linear;
+        overflow: hidden;
+        text-align: start;
+    }
 
-main .boxes .box p span {
-    display: block;
-    text-align: start;
-    color: #FF8A00;
-    text-decoration: underline;
-}
+    main .boxes .box p span {
+        display: block;
+        text-align: start;
+        color: #FF8A00;
+        text-decoration: underline;
+    }
 
-main .boxes .box p span:hover {
-    color: #0004ff;
-}
-/* ---------------------------------------------------------------------------- */
+    main .boxes .box p span:hover {
+        color: #0004ff;
+    }
+
+    /* ---------------------------------------------------------------------------- */
     main .slideshow {
         display: flex;
         flex-direction: column;
@@ -124,6 +129,7 @@ main .boxes .box p span:hover {
         width: 100%;
         /* margin: 15px; */
     }
+
     /* animated statisctics counter - slideshow section */
     main .slideshow .statistics {
         display: flex;
@@ -134,13 +140,166 @@ main .boxes .box p span:hover {
         background-size: cover;
         margin: 15px;
     }
-    
+
     main .slideshow .statistics .card {
         padding: 1rem;
         background-color: rgba(0, 0, 4, .8);
         backdrop-filter: blur(10px);
         transform: translate(0, 0);
     }
-    
-    
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    * {
+        /* border: 1px solid blue; */
+    }
+
+    main .landing {
+        background-image: url(../images/nalondo21.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        /* min-height: 100dvh; */
+        width: 100vw;
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        position: relative;
+    }
+
+    /* landing section */
+    main .landing .welcome {
+        text-align: center;
+    }
+
+    main .landing .welcome>div {
+        margin: 10px;
+    }
+
+    main .landing .welcome .welcome-text {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 30px 0;
+    }
+
+    main .landing .welcome .school-name {
+        color: blue;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .anim-typewriter {
+        border-right-style: none;
+        overflow: hidden;
+        white-space: wrap;
+        animation: none;
+    }
+
+    main .landing .welcome .button {
+        padding: 0;
+    }
+
+
+
+    /* interactive boxes  */
+    main .boxes {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    main .boxes .box {
+        width: 100%;
+        padding: 0rem;
+        margin: 10px;
+    }
+
+    main .boxes .box:hover img {
+        scale: 0.6;
+        filter: drop-shadow(5px 5px 30px white);
+    }
+
+    main .boxes .box:hover h4 {
+        color: #0004ff;
+        scale: 1.1;
+        text-decoration: underline;
+    }
+
+    main .boxes .box:hover p {
+        height: 350px;
+        padding: 1rem;
+    }
+
+    main .boxes .box img {
+        width: 100px;
+        transition: .2s ease;
+
+    }
+
+    main .boxes .box h4 {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        transition: .2s ease;
+    }
+
+    main .boxes .box p {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #242424;
+        z-index: 5;
+        height: 0;
+        transition: .2s linear;
+        overflow: hidden;
+        text-align: start;
+    }
+
+    main .boxes .box p span {
+        display: block;
+        text-align: start;
+        color: #FF8A00;
+        text-decoration: underline;
+    }
+
+    main .boxes .box p span:hover {
+        color: #0004ff;
+    }
+
+    /* ---------------------------------------------------------------------------- */
+    main .slideshow {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    main .slideshow .slides {
+        width: 100%;
+        /* margin: 15px; */
+    }
+
+    /* animated statisctics counter - slideshow section */
+    main .slideshow .statistics {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/nalondo3.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 15px;
+    }
+
+    main .slideshow .statistics .card {
+        padding: 1rem;
+        background-color: rgba(0, 0, 4, .8);
+        backdrop-filter: blur(10px);
+        transform: translate(0, 0);
+    }
+
+
 }
