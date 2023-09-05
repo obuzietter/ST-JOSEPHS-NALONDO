@@ -87,7 +87,7 @@
             <!-- DEPARTMENT 1-->
             <div class="department-1 department">
                 <!-- DEP TITLE -->
-                <div class="title">MATHEMATICS</div>
+                <div class="title">MATHEMATICS DEPARTMENT</div>
 
                 <!-- TEACHER'S IMAGES AND DESCRIPTIONS -->
                 <div class="slider">
@@ -202,7 +202,7 @@
 
             <!-- DEPARTMENT 2 -->
             <div class="department-2 department">
-                <div class="title">SCIENCES</div>
+                <div class="title">SCIENCES DEPARTMENT</div>
                 <div class="slider">
                 <div class="cards">
                     <div class="card">
@@ -313,7 +313,7 @@
 
             <!-- DEPARTMENT 3 -->
             <div class="department-3 department">
-                <div class="title">CAREERS</div>
+                <div class="title">CAREERS DEPARTMENT</div>
                 <div class="slider">
                 <div class="cards">
                     <div class="card">
@@ -424,7 +424,7 @@
 
             <!-- DEPARTMENT 4 -->
             <div class="department-4 department">
-                <div class="title">GUIDANCE AND COUNSELLING</div>
+                <div class="title">GUIDANCE AND COUNSELLING DEPARTMENT</div>
                 <div class="slider">
                 <div class="cards">
                     <div class="card">
@@ -535,7 +535,7 @@
 
             <!-- DEPARTMENT  5-->
             <div class="department-5 department">
-                <div class="title">GAMES</div>
+                <div class="title">GAMES DEPARTMENT</div>
                 <div class="slider">
                 <div class="cards">
                     <div class="card">
@@ -646,7 +646,7 @@
 
             <!-- DEPARTMENT  6-->
             <div class="department-6 department">
-                <div class="title">BOARDING</div>
+                <div class="title">BOARDING DEPARTMENT</div>
                 <div class="slider">
                 <div class="cards">
                     <div class="card">
@@ -757,7 +757,7 @@
 
             <!-- DEPARTMENT  7-->
             <div class="department-7 department">
-                <div class="title">TECHNICALS</div>
+                <div class="title">TECHNICALS DEPARTMENT</div>
                 <div class="slider">
                     <div class="cards">
                         <div class="card">
@@ -871,7 +871,7 @@
 
             <!-- DEPARTMENT  8-->
             <div class="department-8 department">
-                <div class="title">HUMANITIES</div>
+                <div class="title">HUMANITIES DEPARTMENT</div>
                 <div class="slider">
                     <div class="cards">
                         <div class="card">
