@@ -19,6 +19,7 @@ document.getElementById("up").addEventListener("click", () => {
     location.href = "about";
 });
 
+// statistics intersection observer
 const coreValues = document.querySelectorAll(".core-value");
 
 const observer = new IntersectionObserver(
@@ -38,6 +39,8 @@ const observer = new IntersectionObserver(
 coreValues.forEach((coreValue) => {
     observer.observe(coreValue);
 });
+
+
 // window scroll event
 /*
 const revealElement = document.getElementById('revealElement');

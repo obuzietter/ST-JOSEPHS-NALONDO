@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: fade-in 1s;
 
 }
 
@@ -25,12 +26,10 @@ main .badge {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4), rgba(0, 0, 0, 1)), url(../images/nalondo14.jpeg);
     background-size: cover;
     background-position: center;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 
-/* main .badge video {
-    width: 100%;
-} */
+
 
 main .badge .intro {
     position: absolute;
@@ -43,7 +42,7 @@ main .badge .intro {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 1rem;
     backdrop-filter: blur(10px);
 }
 
@@ -53,7 +52,8 @@ main .badge .intro .text {
 }
 
 main .badge .intro .image {
-    width: 250px;
+
+    width: 9rem;
 }
 
 main .badge .intro .image img {
@@ -73,20 +73,20 @@ main .values {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 
 main .values .vision {
     display: flex;
     width: 70%;
-    /* height: 350px; */
+
 }
 
 main .values .vision .vision-image {
     background-image: url(https://img.freepik.com/free-photo/stack-books-with-word-front_1340-27740.jpg?size=626&ext=jpg);
     background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
 }
 
@@ -97,12 +97,17 @@ main .values .vision .vision-text {
     gap: 30px;
     align-items: center;
     width: 50%;
-    padding: 30px;
-    /* text-align: justify; */
+    padding: 1rem;
+
 }
 
 main .values .vision .vision-text h1 {
+
+    width: 100%;
+    text-align: center;
     font-size: 2rem;
+    color: white;
+    background: linear-gradient(to left, #000000, #000062);
 }
 
 main .values .vision .vision-text p {
@@ -112,7 +117,7 @@ main .values .vision .vision-text p {
 main .values .mission {
     display: flex;
     width: 70%;
-    /* height: 350px; */
+
 }
 
 main .values .mission .mission-image {
@@ -127,15 +132,19 @@ main .values .mission .mission-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 1rem;
     align-items: center;
     width: 50%;
-    padding: 30px;
-    /* text-align: justify; */
+    padding: 1rem;
+
 }
 
 main .values .mission .mission-text h1 {
+    width: 100%;
+    text-align: center;
     font-size: 2rem;
+    color: white;
+    background: linear-gradient(to left, #000000, #000062);
 }
 
 main .values .mission .mission-text p {
@@ -143,14 +152,18 @@ main .values .mission .mission-text p {
 }
 
 main .values .motto-banner {
-    /* position: absolute; */
-    bottom: 10px;
-    width: 50%;
+    
+    
+    width: 70%;
     text-align: center;
 }
 
 main .values .motto-banner h1 {
     font-size: 2rem;
+    
+    color: #040479;
+    color: white;
+        background: linear-gradient(to left, #000000, #000062);
 }
 
 main .values .motto-banner p {
@@ -159,56 +172,64 @@ main .values .motto-banner p {
 
 /* core-values section */
 main .core-values {
-    background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg);
+    background-image: url(https://img.freepik.com/premium-photo/globe-graduation-cap-illustration-ai-generativexa_118124-31765.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: orange; */
+    
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* scroll-snap-align: start; */
+    
+    scroll-snap-align: start;
 }
 
 main .core-values h1 {
     font-size: 3rem;
     color: white;
+    /* border: 1px solid red; */
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, #000000, #000062);
 }
 
 main .core-values ol {
+    /* border: 1px solid red; */
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(4, 0, 65, 0.2), rgba(0, 0, 0, .5));
     list-style-type: none;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     font-size: 2rem;
     position: relative;
     text-align: center;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
+    flex-grow: 1;
+    align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
 
 }
 
 main .core-values ol li {
-    margin: 20px;
+    margin: 1.5rem;
     cursor: default;
     background-color: #272727;
     color: white;
     transition: .3s linear;
-    padding: 15px 15px;
+    padding: .5rem;
     text-shadow: rgb(0, 0, 255) 2px 5px;
 
 }
 
 main .core-values ol li:nth-child(odd) {
     transform: perspective(1000px) rotateY(30deg);
-    translate: -100%;
+    translate: -100px;
 }
 
 main .core-values ol li:nth-child(even) {
     transform: perspective(1000px) rotateY(-30deg);
-    translate: 100%;
+    translate: 100px;
 }
 
 main .core-values ol li:hover {
@@ -223,7 +244,7 @@ main .history {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 
 main .history .history-nav {
@@ -250,7 +271,7 @@ main .history .history-nav ul {
 }
 
 main .history .history-nav ul li {
-    margin: 30px 0px;
+    margin: 1rem 0;
     border-bottom: 2px solid #040479;
     position: relative;
 }
@@ -283,12 +304,12 @@ main .history .history-nav ul li a {
     text-align: center;
     width: 100%;
     color: white;
-    padding: 20px 5px;
+    padding: 0.5rem 0.5rem;
     background-color: transparent;
 }
 
 main .history .history-items {
-    max-width: 50%;
+    min-width: 50%;
     height: 90vh;
     display: flex;
     overflow-x: scroll;
@@ -308,14 +329,16 @@ main .history .history-items .item h1 {
     font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 900;
-    padding: 30px 0px;
+    /* padding: 30px 0px; */
+    padding: 1rem;
 }
 
 main .history .history-items .item p {
     font-size: 1.5rem;
     text-align: justify;
-    margin: 30px 0px;
-    padding: 0px 30px;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+    line-height: 1.8rem;
 }
 
 #history-items::-webkit-scrollbar {
@@ -335,4 +358,13 @@ main .history .history-items .item p {
     height: 10px;
 }
 
-/* media queries */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
