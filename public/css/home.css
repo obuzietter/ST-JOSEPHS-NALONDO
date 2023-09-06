@@ -20,6 +20,10 @@ body{
     overflow-x: hidden;
     /* border: 2px solid blue; */
 }
+/* main{
+    border: 2px solid red;
+        width: 100%;
+} */
 
 /* main section styling */
 main .landing {
@@ -29,12 +33,12 @@ main .landing {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100dvh;
-    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    
 }
 
 /* landing section */
@@ -42,11 +46,12 @@ main .landing .welcome .welcome-text {
     font-size: 2.8rem;
     font-weight: 600;
     padding: 30px 0;
+    text-align: center;
 }
 
 main .landing .welcome .school-name {
     color: blue;
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: 900;
     text-align: center;
 }
@@ -174,17 +179,18 @@ main .slideshow {
     display: grid;
     place-items: center;
     position: relative;
+    /* gap: 5rem; */
 }
 
 main .slideshow .slides {
-    width: 50%;
+    width: 70%;
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     cursor: pointer;
-
+    margin: 5rem 0;
 }
 
 main .slideshow .slides::-webkit-scrollbar {
@@ -258,6 +264,8 @@ main .slideshow .slide img {
 /* animated statisctics counter - slideshow section */
 main .slideshow .statistics {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
@@ -268,6 +276,7 @@ main .slideshow .statistics .card {
     /* flex-basis: 33.333%; */
     padding: 3rem;
     cursor: default;
+    
 }
 
 main .slideshow .statistics div:hover h1 {
@@ -311,7 +320,8 @@ main .slideshow .statistics div:nth-child(2) span {
 .anim-typewriter {
     border-right: 2px solid blue;
     overflow: hidden;
-    white-space: nowrap;
+    
+    /* white-space: nowrap; */
     animation: typewriter 4s steps(34) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
