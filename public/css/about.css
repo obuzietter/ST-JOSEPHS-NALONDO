@@ -68,21 +68,25 @@ main .values {
     position: relative;
     min-height: 100dvh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 3rem;
     /* scroll-snap-align: start; */
 }
 
 main .values .vision {
     display: flex;
     width: 70%;
-    height: 350px;
+    /* height: 350px; */
 }
 
 main .values .vision .vision-image {
-    background-image: url(https://img.freepik.com/free-photo/young-business-man-standing-front-stickers-glass-wall-looking-futures-plans-his-office-place_231208-2277.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+    background-image: url(https://img.freepik.com/free-photo/stack-books-with-word-front_1340-27740.jpg?size=626&ext=jpg);
+    background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     width: 50%;
 }
 
@@ -94,7 +98,7 @@ main .values .vision .vision-text {
     align-items: center;
     width: 50%;
     padding: 30px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 main .values .vision .vision-text h1 {
@@ -108,11 +112,14 @@ main .values .vision .vision-text p {
 main .values .mission {
     display: flex;
     width: 70%;
-    height: 350px;
+    /* height: 350px; */
 }
 
 main .values .mission .mission-image {
-    background-image: url(https://img.freepik.com/premium-photo/businessman-making-notes-sticky-notes_274679-37656.jpg?size=626&ext=jpg&uid=R97350360&ga=GA1.2.328877591.1686104943&semt=ais);
+    background-image: url(https://img.freepik.com/free-photo/school-stationery-with-accessories_1101-373.jpg?size=626&ext=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50%;
 }
 
@@ -124,7 +131,7 @@ main .values .mission .mission-text {
     align-items: center;
     width: 50%;
     padding: 30px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 main .values .mission .mission-text h1 {
@@ -220,7 +227,7 @@ main .history {
 }
 
 main .history .history-nav {
-    max-width: 20%;
+    min-width: 20%;
     height: 90vh;
     display: flex;
     flex-direction: column;

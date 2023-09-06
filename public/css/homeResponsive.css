@@ -152,10 +152,6 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    * {
-        /* border: 1px solid blue; */
-    }
-
     main .landing {
         background-image: url(../images/nalondo21.jpeg);
         background-position: center;
