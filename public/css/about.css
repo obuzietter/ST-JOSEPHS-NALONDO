@@ -187,22 +187,22 @@ main .core-values {
 main .core-values h1 {
     font-size: 3rem;
     color: white;
-    /* border: 1px solid red; */
+    
     text-align: center;
     backdrop-filter: blur(10px);
     background: linear-gradient(to right, #000000, #000062);
 }
 
 main .core-values ol {
-    /* border: 1px solid red; */
+    
     backdrop-filter: blur(10px);
     background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(4, 0, 65, 0.2), rgba(0, 0, 0, .5));
     list-style-type: none;
-    /* padding-left: 30px; */
+    
     font-size: 2rem;
     position: relative;
     text-align: center;
-    /* height: 80vh; */
+    
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -304,7 +304,7 @@ main .history .history-nav ul li a {
     text-align: center;
     width: 100%;
     color: white;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     background-color: transparent;
 }
 
@@ -329,7 +329,6 @@ main .history .history-items .item h1 {
     font-size: 2.5rem;
     text-transform: capitalize;
     font-weight: 900;
-    /* padding: 30px 0px; */
     padding: 1rem;
 }
 

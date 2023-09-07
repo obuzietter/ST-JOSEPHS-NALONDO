@@ -1,5 +1,4 @@
 @media only screen and (max-width: 600px) {
-    
     html {
         scroll-snap-type: none;
     }
@@ -8,26 +7,17 @@
         overflow-y: auto;
     }
 
-    
-
     main .badge .intro .text {
         text-align: center;
     }
 
-   
-
-    
-
     main .values {
-        
         gap: 2.5rem;
     }
 
     main .values .vision {
-        
         flex-direction: column;
         width: 100%;
-        
     }
 
     main .values .vision .vision-image {
@@ -43,9 +33,7 @@
     }
 
     main .values .vision .vision-text h1 {
-        
         padding: 0.5rem;
-        
     }
 
     main .values .vision .vision-text p {
@@ -55,10 +43,8 @@
     }
 
     main .values .mission {
-        
         flex-direction: column;
         width: 100%;
-        
         position: relative;
     }
 
@@ -82,12 +68,10 @@
         padding: 0.5rem;
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.5);
-
     }
 
     main .values .motto-banner {
         width: 100%;
-        
     }
 
     main .values .motto-banner h1 {
@@ -100,7 +84,6 @@
 
     /* core-values section */
     main .core-values {
-       
         overflow-x: hidden;
     }
 
@@ -109,38 +92,12 @@
     }
 
     main .core-values ol {
-        list-style-type: none;
         padding-left: 0;
-
-        height: auto;
 
         justify-content: start;
     }
 
-    main .core-values ol li {
-        padding: 5px 5px;
-    }
-
-    main .core-values ol li:nth-child(odd) {
-        transform: perspective(1000px) rotateY(30deg);
-        translate: -100px;
-    }
-
-    main .core-values ol li:nth-child(even) {
-        transform: perspective(1000px) rotateY(-30deg);
-        translate: 100px;
-    }
-
-    main .core-values ol li:hover {
-        transform: perspective(1000px) rotateY(0deg);
-        box-shadow: 10px 10px 36px 0px rgba(255, 255, 255, 0.75);
-        text-shadow: 1px 1px 2px rgb(16, 22, 105), 0 0 1em blue, 0 0 0.2em blue;
-        scale: 1.12;
-    }
-
     main .history {
-        min-height: 100dvh;
-
         flex-direction: column;
     }
 
@@ -170,10 +127,6 @@
         height: 0;
     }
 
-    main .history .history-nav ul li a {
-        padding: 0.5rem 0.5rem;
-    }
-
     main .history .history-items {
         width: 100%;
         height: auto;
@@ -182,31 +135,21 @@
         overflow-x: hidden;
     }
 
-    main .history .history-items .item {
-        text-align: center;
-        scroll-snap-align: start;
-    }
-
     main .history .history-items .item h1 {
         font-size: 2rem;
-        padding: 1rem;
     }
 
     main .history .history-items .item p {
         font-size: 1rem;
-        text-align: justify;
+
         line-height: 1.3rem;
-        margin: 1rem 0;
+
         padding: 0 1rem;
     }
-
-
 }
 
 /* tablet view */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-
-
     main .badge {
         position: relative;
         overflow-y: auto;
@@ -274,7 +217,6 @@
     main .values .vision .vision-text h1 {
         backdrop-filter: blur(5px);
         padding: 0.5rem;
-        /* background-color: rgba(255, 255, 255, 0.5); */
         background: linear-gradient(to right, #000000, #000062);
     }
 
@@ -307,7 +249,7 @@
     main .values .mission .mission-text h1 {
         backdrop-filter: blur(5px);
         padding: 0.5rem;
-        /* background-color: rgba(255, 255, 255, 0.5); */
+
         background: linear-gradient(to right, #000000, #000062);
     }
 
@@ -319,7 +261,6 @@
 
     main .values .motto-banner {
         width: 100%;
-        /* text-align: center; */
     }
 
     main .values .motto-banner h1 {
@@ -330,22 +271,11 @@
         padding: 0.5rem;
     }
 
-    /* core-values section */
-    main .core-values {
-        /* background-image: url(https://img.freepik.com/free-photo/diploma-tassel-rustic-wooden-table-generated-by-ai_188544-25912.jpg); */
-        /* overflow-x: hidden; */
-    }
-
     main .core-values h1 {
         font-size: 2rem;
     }
 
     main .core-values ol {
-        /* list-style-type: none; */
-        /* padding-left: 0; */
-
-        /* height: auto; */
-
         justify-content: start;
     }
 
@@ -353,26 +283,7 @@
         padding: 5px 5px;
     }
 
-    /* main .core-values ol li:nth-child(odd) {
-        transform: perspective(1000px) rotateY(30deg);
-        translate: -100px;
-    } */
-
-    /* main .core-values ol li:nth-child(even) {
-        transform: perspective(1000px) rotateY(-30deg);
-        translate: 100px;
-    } */
-
-    /* main .core-values ol li:hover {
-        transform: perspective(1000px) rotateY(0deg);
-        box-shadow: 10px 10px 36px 0px rgba(255, 255, 255, 0.75);
-        text-shadow: 1px 1px 2px rgb(16, 22, 105), 0 0 1em blue, 0 0 0.2em blue;
-        scale: 1.12;
-    } */
-
     main .history {
-
-
         flex-direction: column;
     }
 
@@ -402,35 +313,24 @@
         height: 0;
     }
 
-    /* main .history .history-nav ul li a {
-        padding: 0.5rem 0.5rem;
-    } */
-
     main .history .history-items {
         width: 100%;
         height: auto;
-
         flex-direction: column;
         overflow-x: hidden;
     }
 
     main .history .history-items .item {
-        /* text-align: center; */
         scroll-snap-align: start;
     }
 
     main .history .history-items .item h1 {
         font-size: 2rem;
-        /* padding: 1rem; */
     }
 
     main .history .history-items .item p {
         font-size: 1rem;
-
         line-height: 1.3rem;
-
         padding: 0 1rem;
     }
-
-
 }
