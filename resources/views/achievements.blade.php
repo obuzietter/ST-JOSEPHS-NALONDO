@@ -323,7 +323,7 @@ body, h1, h2, p {
     gap: 1000px; /* Add some spacing between columns */
     justify-items: center; /* Center the items horizontally */
     align-items: flex-start; /* Align items to the top */
-    margin-top: 90px; /* Add some spacing from the title */
+    margin-top: 50px; /* Add some spacing from the title */
     background-image: url('images/achieve.jpg'); /* Background image */
     background-size: cover;
     background-repeat: no-repeat;
@@ -392,11 +392,23 @@ body, h1, h2, p {
 /* Style for the achievement images */
 .achievement-image {
     max-width: 40%;
-    height:10vh;
+    height: 10vh;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     margin: 20px;
+    animation: bounce 1.5s infinite alternate; /* Apply the bounce animation */
 }
+
+/* Define the bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
 
 /* Style for Achievement 1 */
 .achievement-container:nth-child(1) .achievement {
