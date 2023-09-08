@@ -58,6 +58,7 @@ main .landing .welcome .school-name {
 
 main .landing .welcome .button {
     padding: 30px 0;
+    text-align: center;
 }
 
 /* button styling */

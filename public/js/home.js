@@ -8,11 +8,11 @@ const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             entry.isIntersecting
-                ? ((entry.target.style.transform = "translate(0)"),
-                  (entry.target.style.backgroundColor = "rgba(0, 0, 4, .8)"),
+                ? ((entry.target.style.transform = "translateX(0)"),
+                  (entry.target.style.backgroundColor = "rgba(0, 0, 4, 1)"),
                   counter())
-                : // (entry.target.style.transform = "translateX(100%)"),
-                  (entry.target.style.backgroundColor = "blue");
+                : ((entry.target.style.transform = "translateX(20%)"),
+                  (entry.target.style.backgroundColor = "blue"))
         });
     },
     {
