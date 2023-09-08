@@ -541,6 +541,7 @@ p {
     font-size: 20px;
     margin: 0;
     color: #031a32;
+    
 
 }
 
@@ -548,22 +549,14 @@ p {
 .additional-description-container {
     display: flex;
     align-items: center;
-    padding: 0; /* Remove the original padding */
+    padding: 20px;
     margin: 8px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 40vh;
+    border-radius: 10px; /* Match the border-radius with the achievement container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Match the box-shadow with the achievement container */
+    height: 60vh;
     background-color: #031a32;
 }
-
-.additional-description-image {
-    flex: 1.5;
-    padding: 20px;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    height: max-content;
-}
+   
 
 .additional-description-content {
     flex: 2;
@@ -572,6 +565,12 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
+    border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
+    background-color: #031a32;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .additional-description-content .read-more-button {
@@ -579,17 +578,21 @@ p {
     color: white;
     padding: 10px 20px;
     font-size: 18px;
-    border: none;
+   
     cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
     margin-top: 20px; /* Add some spacing between the button and header */
+    border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
+    border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
 }
+
 
 .additional-description-content .additional-description p {
     font-size: 20px;
     color: var(--primary-color);
-    margin: 20px;
+    margin-top: 40px;
     display: flex;
     align-content: center;
     box-shadow: 0 0 10px burlywood;
@@ -598,7 +601,32 @@ p {
     fill: var(--background-color);
     border-radius: 10px;
     background-color: var(--background-color);
+    padding: 20px;
+    margin: 20px;
 }
+
+.additional-description-image {
+    flex: 1.5;
+    padding: 30px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    height: 30vh;
+}
+
+
+.additional-description-header {
+    background-color: burlywood;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: center;
+    border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
+    border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
+}
+
  </style>
 </head>
 <body>
@@ -769,24 +797,24 @@ p {
 
 <div class="footer">
     <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> Email: info@nalonduhighschool.com</p>
-        <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
-        <p><i class="fas fa-map-marker-alt"></i> Address: 123 School Street, City, Country</p>
+        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email: info@nalonduhighschool.com</p>
+        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-map-marker-alt"></i> Address: 123 School Street, City, Country</p>
     </div>
     <div class="footer-line"></div>
     <div class="footer-icons-container">
         <div class="footer-icons-row">
-            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook" ></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter" ></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram" ></i></a>
         </div>
     </div>
-    <div>
-        <p>&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
+    <div style="color: #fff;">
+        <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
     </div>
 </div>
-</div>
-</footer>
+
+
 
 <script>
 
@@ -802,7 +830,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (achievementsHeight - scrollY <= windowHeight) {
             // Reached the end of achievements, but still allow button click
-            window.scrollBy(0, 100); // Scroll by 1 pixel to trigger scroll event
+            window.scrollBy(0, 1000); // Scroll by 1 pixel to trigger scroll event
         } else {
             // Scroll to the achievements section
             achievementsContainer.scrollIntoView({ behavior: "smooth" });
@@ -835,7 +863,7 @@ document.addEventListener("DOMContentLoaded", function () {
             readMoreButton.textContent = "Read Less";
         } else {
             // Show the shortened version
-            paragraph.textContent = originalText.substring(0, 200); // Adjust the length as needed
+            paragraph.textContent = originalText.substring(0, 100); // Adjust the length as needed
             readMoreButton.textContent = "Read More";
         }
     });
