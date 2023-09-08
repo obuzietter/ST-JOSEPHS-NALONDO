@@ -2,7 +2,7 @@ const departments=document.querySelectorAll('.department')
 const adminOpener=document.querySelectorAll('.adm-position')
 const adminContent=document.querySelectorAll('main-adm')
 const cards=document.querySelectorAll('.cards')
-
+const individualCards=document.querySelectorAll('.card')
 adminOpener.forEach(adm=>{
     adm.addEventListener('click',()=>{
         if(adm.parentElement.classList.contains("opened")){
@@ -17,34 +17,35 @@ adminOpener.forEach(adm=>{
 })
 
 
-// cards.forEach(card=>{
-//     card.addEventListener('mouseover',()=>{
-//         card.style.animationPlayState="paused"
-//     })
-// })
-
+    
 
 let playState=["paused","running"]
-let playTime=[720,4000]
+let playTime=[700,3500]
 
-console.log(playState[1])
+// console.log(playState[1])
 
-cards.forEach(card=>{
-    let t=1
-    player()
-   function player(){
-    if(t==0){
-        t++
-    }
-    else if(t==1){
-        t--
-    }
-    setTimeout(()=>{
-            card.style.animationPlayState=playState[t] 
-            player()
-    },playTime[t])
-   }
-})
+
+    cards.forEach(card=>{
+        let t=1 
+        player()  
+       function player(){
+        if(t==0){
+            t++
+        }
+        else if(t==1){
+            t--
+        }
+        setTimeout(()=>{
+                card.style.animationPlayState=playState[t] 
+               
+                    player()
+                
+        },playTime[t])
+       }
+    }) 
+
+
+
 
 
 const observer=new IntersectionObserver(entries=>{
@@ -71,3 +72,8 @@ departments.forEach(department=>{
 })
 
 
+
+  
+
+
+   

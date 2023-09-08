@@ -85,7 +85,7 @@
             <div class="dep-heading">OUR DEPARTMENTS</div>
 
             <!-- DEPARTMENT 1-->
-            <div class="department-1 department">
+            <div class="department-1 department" id="department-1">
                 <!-- DEP TITLE -->
                 <div class="title">MATHEMATICS DEPARTMENT</div>
 
@@ -199,6 +199,10 @@
                 </div>
             </div>
             </div>
+            
+            <!-- button to scroll back up to the first department -->
+            <div class="top"><a href="#department-1"><img src="{{asset('icons/arrow (1).png')}}" alt=""></a></div>
+
 
             <!-- DEPARTMENT 2 -->
             <div class="department-2 department">
@@ -459,7 +463,7 @@
                     </div>
                     <div class="card">
                         <div class="image">
-                                                <img src="{{ asset('images/nalondo19.jpeg') }}" alt="">                   
+                                                <img src="{{ asset('images/nalondo23.jpeg') }}" alt="">                   
 
                         </div>
                         <div class="description">
@@ -511,7 +515,7 @@
                     </div>
                     <div class="card">
                         <div class="image">
-                                                <img src="{{ asset('images/nalondo19.jpeg') }}" alt="">                   
+                                                <img src="{{ asset('images/nalondo23.jpeg') }}" alt="">                   
 
                         </div>
                         <div class="description">
@@ -792,7 +796,7 @@
                         </div>
                         <div class="card">
                             <div class="image">
-                                                    <img src="{{ asset('images/nalondo19.jpeg') }}" alt="">                   
+                                                    <img src="{{ asset('images/nalondo26.jpeg') }}" alt="">                   
     
                             </div>
                             <div class="description">
@@ -802,7 +806,7 @@
                         </div>
                         <div class="card">
                             <div class="image">
-                                                    <img src="{{ asset('images/nalondo20.jpeg') }}" alt="">                   
+                                                    <img src="{{ asset('images/nalondo25.jpeg') }}" alt="">                   
     
                             </div>
                             <div class="description">
@@ -846,7 +850,7 @@
                         </div>
                         <div class="card">
                             <div class="image">
-                                                    <img src="{{ asset('images/nalondo19.jpeg') }}" alt="">                   
+                                                    <img src="{{ asset('images/nalondo25.jpeg') }}" alt="">                   
     
                             </div>
                             <div class="description">
@@ -906,7 +910,7 @@
                         </div>
                         <div class="card">
                             <div class="image">
-                                                    <img src="{{ asset('images/nalondo19.jpeg') }}" alt="">                   
+                                                    <img src="{{ asset('images/nalondo24.jpeg') }}" alt="">                   
     
                             </div>
                             <div class="description">
@@ -960,7 +964,7 @@
                         </div>
                         <div class="card">
                             <div class="image">
-                                                    <img src="{{ asset('images/nalondo19.jpeg') }}" alt="">                   
+                                                    <img src="{{ asset('images/nalondo22.jpeg') }}" alt="">                   
     
                             </div>
                             <div class="description">

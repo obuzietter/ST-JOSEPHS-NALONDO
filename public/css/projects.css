@@ -46,7 +46,7 @@ html{
 .intro-div::after{
     width:100%;
     height:100%;
-    background:rgba(0,0,0,.6);
+    background:rgba(0,0,0,.55);
     position:absolute;
     content:"";
 }
@@ -74,18 +74,55 @@ html{
 }
 
 .intro-div button{
-    padding:1% 2.5%;
+    /* padding:1% 2.5%; */
     display:flex;
     justify-content:center;
     align-items:center;
     border:none;
-    background:blue;
+    background:transparent;
+    outline:2px solid blue;
+    border-radius:10%;
+    padding:1% 5%;
     z-index:2;
+    position:relative;
+
 }
+
+.intro-div button:hover{
+    cursor:pointer;
+}
+
+.intro-div button span{
+    width:100%;
+    height:0%;
+    position:absolute;
+    background:blue;
+    transition:0.4s;
+    left:0;
+    top:0;
+    z-index:1;
+
+}
+
+.intro-div button:hover span{
+    width:100%;
+    height:100%;
+    border-radius:10%;
+    /* background:blue; */
+}
+
+
+.intro-div button:hover a{
+    font-weight:bold;
+    letter-spacing:0.15rem;
+}
+
 
 .intro-div button a{
     color:white;
     text-decoration:none;
+    z-index:4;
+    transition:0.3s;
 }
 
 .projects{
