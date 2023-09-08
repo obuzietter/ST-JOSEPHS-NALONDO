@@ -218,7 +218,7 @@
         }
 
         .achievements-title {
-            font-size: 60px;
+            font-size: 40px;
             color:var(--background-color);
             margin-top: 20px;
             font-weight: bolder;
@@ -232,7 +232,7 @@
         }
 
         .achievements-description {
-            font-size: 24px;
+            font-size: 18px;
             color: var(--secondary-color);
             margin-top: 20px;
             position: absolute;
@@ -243,7 +243,7 @@
             font-weight: bolder;
         }
        /* Updated CSS for the achievements section */
-/* Style for achievement containers */
+
 /* Reset some default styles */
 body, h1, h2, p {
     margin: 0;
@@ -318,38 +318,41 @@ body, h1, h2, p {
 /* Style for achievement containers */
 
 /* Style for the achievements container */
-.achievements-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Add some spacing between columns */
+.achievement-container {
+    display:flex;
+    gap: 1000px; /* Add some spacing between columns */
     justify-items: center; /* Center the items horizontally */
     align-items: flex-start; /* Align items to the top */
-    margin-top: 20px; /* Add some spacing from the title */
-    position: relative; /* Add relative positioning */
+    margin-top: 90px; /* Add some spacing from the title */
     background-image: url('images/achieve.jpg'); /* Background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 10px;
-}
-
-/* Style for achievement containers */
-.achievement-container {
-    width: 100%; /* Occupy full width of the column */
-    display: flex;
-    flex-direction: column; /* Stack image and description vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: left; /* Align text to the left */
-    padding: 20px; /* Add padding around each achievement */
     position: relative; /* Add relative positioning */
-    z-index: 1; /* Ensure text is above the background image */
-    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
-    border-radius: 10px; /* Rounded corners for the container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the overlay covers the entire container */
+    width: 100%;
+    text-emphasis-color: white;
+
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Style the achievement containers */
-.achievement {
+/* Style for the achievement containers */
+.achievement-container {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -360,114 +363,134 @@ body, h1, h2, p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    height: 100%;
+}
+/* Style for the achievements */
+.achievement {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Add this line */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    width: 100%;
+
+}
+.achievement-content {
+    width: 100%; /* Set the width to 100% */
 }
 
-/* Style the achievement titles */
-h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: var(--primary-color);
+/* Style for the achievement text */
+.achievement-text {
+    width: 100%; /* Set the width to 100% */
 }
 
-/* Style the achievement text */
-p {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-}
 
-/* Style the images for achievements */
-/* Style the images for achievements */
+/* Style for the achievement images */
 .achievement-image {
-    max-width: 500px;
-    height: 300px; /* Set a fixed height for the image container */
-    overflow: hidden; /* Hide image overflow */
-    position: relative;
+    max-width: 40%;
+    height:10vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin: 20px;
 }
 
+/* Style for Achievement 1 */
+.achievement-container:nth-child(1) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    max-width: 100%;
+    height: 30vh;
+    align-items: center;
+}
 
-/* Style the container for all achievements */
-.achievements-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('images/achieve.jpg'); /* Replace with your image path */
+/* Style for Achievement 2 */
+.achievement-container:nth-child(2) .achievement {
+    display: flex;
+    flex-direction: row; /* Image on the right, text on the left */
+    max-width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+.achievement-container:nth-child(3) .achievement {
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    opacity: 0.6; /* Adjust the opacity as needed */
-    z-index: -1; /* Place the pseudo-element behind the content */
-    border-radius: 10px; /* Rounded corners for the background */
-}
-
-
-
-
-/* Style the blurred achievements */
-.blurred-achievement {
-    position: relative;
-}
-
-/* Position the text on blurred achievements */
-.blurred-achievement .achievement-description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-/* Style the achievement rows */
-.achievement-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-}
-
-/* Style the square images for achievements 1, 2, 9, and 10 */
-.achievement-image-left,
-.achievement-image-right {
-    max-width: 500px;
-    height: 10vh;
-}
-
-/* Style the left-aligned images for achievements 1 and 9 */
-.achievement-image-left {
-    float: right;
-    margin-right: 400px;
-}
-
-/* Style the right-aligned images for achievements 2 and 10 */
-.achievement-image-right {
-    float: left;
-    margin-left: 500px;
-}
-
-/* Style the full-width images for achievements 3 and 4 */
-.achievement-image-full {
-    width: 100%;
+    background-attachment: fixed;
+    max-width: 100%;
     height: 40vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Style the achievement text below images for achievements 5, 6, 7, and 8 */
-.achievement-image {
-    max-width:500px;
-    height: 10vh;
+/* Additional styles specific to Achievement 6 (if needed) */
+.achievement-container:nth-child(6) .achievement {
+    background-image: url('images/achieve.jpeg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+
+
+
+/* Style for Achievements 4 and 5 (Similar to Achievements 1 and 2) */
+.achievement-container:nth-child(4) .achievement,
+.achievement-container:nth-child(5) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    max-width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+
+
+/* Style for Achievements 7 and 8 (Similar to Achievements 1 and 2) */
+.achievement-container:nth-child(7) .achievement,
+.achievement-container:nth-child(8) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    max-width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+/* Style for Achievements 9 and 10 (Similar to Achievements 1 and 2) */
+.achievement-container:nth-child(9) .achievement,
+.achievement-container:nth-child(10) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    max-width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+
 
 /* Style the achievement text below images */
 .achievement-description {
     text-align:center;
     padding: auto;
-    color: var(--background-color);
+    color: #fff !important;
     margin-top: 20px;
+    width: 100%;
+}
+.achievement-text{
+    color: var(--background-color);
 }
 /* 
 
@@ -626,6 +649,14 @@ p {
     border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
     border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
 }
+/* Style for the achievements row container */
+.achievements-row {
+    display: flex;
+    gap: 20px; /* Add some spacing between achievements */
+    justify-content: center; /* Center the achievements horizontally */
+    align-items: flex-start; /* Align achievements to the top */
+}
+
 
  </style>
 </head>
@@ -677,120 +708,139 @@ p {
         </div>
     </div>
 </div>
-<!-- Updated HTML structure for the achievements section -->
-<!-- Updated HTML structure for the achievements section -->
-<!-- Updated HTML structure for the achievements section -->
-<div class="achievements-container">
-    <!-- Achievement 1 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement1.jpeg" alt="Achievement 1" class="achievement-image-left">
-            <div class="achievement-description">
+
+<!-- Achievements 1 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <div class="achievement-content">
+            <div class="achievement-text">
                 <h2>Achievement 1</h2>
-                <p>Description of Achievement 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Completed a challenging project under tight deadline, showcasing exceptional time-management and problem-solving skills.</p>
             </div>
         </div>
+        <img src="images/achievement1.jpeg" alt="Achievement 1" class="achievement-image">
     </div>
+</div>
 
-    <!-- Achievement 2 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement2.jpeg" alt="Achievement 2" class="achievement-image-left">
-            <div class="achievement-description">
+<!-- Achievements 2 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <img src="images/achievement2.jpeg" alt="Achievement 2" class="achievement-image">
+        <div class="achievement-content">
+            <div class="achievement-text">
                 <h2>Achievement 2</h2>
-                <p>Description of Achievement 2. Nulla eget libero eget sapien varius posuere.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 3 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement3.jpeg" alt="Achievement 3" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 3</h2>
-                <p>Description of Achievement 3. Vestibulum sodales elit at magna volutpat, nec euismod quam cursus.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 4 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement4.jpeg" alt="Achievement 4" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 4</h2>
-                <p>Description of Achievement 4. Phasellus tristique justo eu leo congue, nec placerat purus pulvinar.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 5 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement5.jpeg" alt="Achievement 5" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 5</h2>
-                <p>Description of Achievement 5. Maecenas facilisis nulla id quam feugiat, sit amet suscipit nisl malesuada.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 6 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement6.jpeg" alt="Achievement 6" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 6</h2>
-                <p>Description of Achievement 6. Fusce vel purus in risus placerat finibus.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 7 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/sports red.jpeg" alt="Achievement 7" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 7</h2>
-                <p>Description of Achievement 7. Integer scelerisque libero et mauris bibendum, eu pharetra quam dignissim.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 8 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement1.jpeg" alt="Achievement 8" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 8</h2>
-                <p>Description of Achievement 8. Sed dapibus tortor eget ipsum varius, ac dapibus justo malesuada.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 9 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/achievement2.jpeg" alt="Achievement 9" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 9</h2>
-                <p>Description of Achievement 9. Donec quis arcu at metus finibus congue.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Achievement 10 -->
-    <div class="achievement-container">
-        <div class="achievement large-achievement">
-            <img src="images/basketball.jpeg" alt="Achievement 10" class="achievement-image-left">
-            <div class="achievement-description">
-                <h2>Achievement 10</h2>
-                <p>Description of Achievement 10. Nam id arcu eget dui malesuada auctor.</p>
+                <p>Received Employee of the Month award for consistently exceeding performance targets and providing outstanding customer service.</p>
             </div>
         </div>
     </div>
 </div>
+
+<div class="grid-container">
+<!-- Achievement 3 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 3</h2>
+                <p>Your achievement description goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Achievements 6 -->
+<div class="achievement-container no-image">
+    <div class="achievement">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 6</h2>
+                <p>Initiated and managed a community outreach program that resulted in a 50% increase in volunteer participation and positive community feedback.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Achievements 4 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 4</h2>
+                <p>Implemented an innovative cost-saving strategy that reduced departmental expenses by 15% while maintaining high-quality standards.</p>
+            </div>
+        </div>
+        <img src="images/achievement4.jpeg" alt="Achievement 4" class="achievement-image">
+    </div>
+</div>
+
+<!-- Achievements 5 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <img src="images/achievement5.jpeg" alt="Achievement 5" class="achievement-image">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 5</h2>
+                <p>Developed and delivered a series of training sessions that improved overall team efficiency and productivity by 20% within three months.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Achievements 7 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 7</h2>
+                <p>Received the Innovation Excellence Award for conceptualizing and implementing a groundbreaking solution that revolutionized internal processes.</p>
+            </div>
+        </div>
+        <img src="images/achievement1.jpeg" alt="Achievement 7" class="achievement-image">
+    </div>
+</div>
+<div class="achievement-row">
+<!-- Achievements 8 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <img src="images/trumpet.jpg" alt="Achievement 8" class="achievement-image">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 8</h2>
+                <p>Collaborated with cross-functional teams to successfully launch a product in a new international market, achieving a 25% increase in market share.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Achievements 9 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 9</h2>
+                <p>Implemented a data-driven marketing strategy that led to a 40% increase in online sales and a 30% improvement in customer retention.</p>
+            </div>
+        </div>
+        <img src="images/sports red.jpeg" alt="Achievement 9" class="achievement-image">
+    </div>
+</div>
+
+<!-- Achievements 10 -->
+<div class="achievement-container">
+    <div class="achievement">
+        <img src="images/basketball.jpeg" alt="Achievement 10" class="achievement-image">
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 10</h2>
+                <p>Designed and executed a comprehensive rebranding campaign that resulted in a 50% increase in brand awareness and positive customer perception.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 
 
 
@@ -823,7 +873,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Handle clicking the "See More Achievements" button
     showAchievementsButton.addEventListener("click", function () {
-        const achievementsContainer = document.querySelector(".achievements-container");
+        const achievementsContainer = document.querySelector(".achievement-container");
         const windowHeight = window.innerHeight;
         const achievementsHeight = achievementsContainer.getBoundingClientRect().height;
         const scrollY = window.scrollY;
