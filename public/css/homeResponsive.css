@@ -1,7 +1,5 @@
 @media only screen and (max-width: 600px) {
-    * {
-        /* border: 1px solid blue; */
-    }
+    
 
     main .landing {
         background-image: url(../images/nalondo21.jpeg);
@@ -9,12 +7,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
-        /* min-height: 100dvh; */
+        
         width: 100vw;
         display: flex;
-        /* flex-direction: column; */
-        /* justify-content: space-around; */
-        /* align-items: center; */
+        
         position: relative;
     }
 
@@ -56,7 +52,7 @@
     main .boxes {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+        
     }
 
     main .boxes .box {
@@ -73,7 +69,7 @@
     main .boxes .box:hover h4 {
         color: #0004ff;
         scale: 1.1;
-        text-decoration: underline;
+        /* text-decoration: underline; */
     }
 
     main .boxes .box:hover p {
@@ -91,6 +87,7 @@
         font-size: 1.8rem;
         padding: 10px 0;
         transition: .2s ease;
+        text-decoration: underline;
     }
 
     main .boxes .box p {
@@ -118,7 +115,7 @@
         color: #0004ff;
     }
 
-    /* ---------------------------------------------------------------------------- */
+    
     main .slideshow {
         display: flex;
         flex-direction: column;
@@ -127,7 +124,7 @@
 
     main .slideshow .slides {
         width: 100%;
-        /* margin: 15px; */
+        
     }
 
     /* animated statisctics counter - slideshow section */
@@ -158,12 +155,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: scroll;
-        /* min-height: 100dvh; */
+        
         width: 100vw;
         display: flex;
-        /* flex-direction: column; */
-        /* justify-content: space-around; */
-        /* align-items: center; */
+        
         position: relative;
     }
 
@@ -222,7 +217,7 @@
     main .boxes .box:hover h4 {
         color: #0004ff;
         scale: 1.1;
-        text-decoration: underline;
+        /* text-decoration: underline; */
     }
 
     main .boxes .box:hover p {
@@ -240,6 +235,7 @@
         font-size: 1.8rem;
         padding: 10px 0;
         transition: .2s ease;
+        text-decoration: underline;
     }
 
     main .boxes .box p {
