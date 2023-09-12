@@ -1,23 +1,8 @@
 @media only screen and (max-width: 600px) {
 
 
-    main .landing {
-        background-image: url(../images/nalondo21.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-
-        width: 100vw;
-        display: flex;
-
-        position: relative;
-    }
 
     /* landing section */
-    main .landing .welcome {
-        text-align: center;
-    }
 
     main .landing .welcome>div {
         margin: 10px;
