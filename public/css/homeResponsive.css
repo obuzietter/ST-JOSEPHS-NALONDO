@@ -179,7 +179,7 @@
     main .boxes {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+        
     }
 
     main .boxes .box {
@@ -196,7 +196,7 @@
     main .boxes .box:hover h4 {
         color: #0004ff;
         scale: 1.1;
-        /* text-decoration: underline; */
+        
     }
 
     main .boxes .box:hover p {
@@ -242,7 +242,6 @@
         color: #0004ff;
     }
 
-    /* ---------------------------------------------------------------------------- */
     main .slideshow {
         display: flex;
         flex-direction: column;
@@ -251,7 +250,7 @@
 
     main .slideshow .slides {
         width: 100%;
-        /* margin: 15px; */
+        
     }
 
     /* animated statisctics counter - slideshow section */
