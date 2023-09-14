@@ -50,31 +50,17 @@
 
     }
 
-    main .boxes .box img {
-        width: 100px;
-        transition: .2s ease;
-
-    }
+    
 
     main .boxes .box h4 {
-        font-size: 1.8rem;
-        padding: 10px 0;
-        transition: .2s ease;
+        
         text-decoration: underline;
     }
 
     main .boxes .box p {
-        font-size: 1.2rem;
+        
         position: relative;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #000000;
-        z-index: 5;
-        height: 0;
-        transition: .2s linear;
-        overflow: hidden;
-        text-align: start;
+        
     }
 
     main .boxes .box p span {
@@ -154,13 +140,10 @@
     main .boxes .box {
         width: 100%;
         padding: 0rem;
-        margin: 10px;
+        
     }
 
-    main .boxes .box:hover img {
-        scale: 0.6;
-        filter: drop-shadow(5px 5px 30px white);
-    }
+   
 
     main .boxes .box:hover h4 {
         color: #0004ff;
@@ -169,35 +152,20 @@
     }
 
     main .boxes .box:hover p {
-        height: 350px;
-        padding: 1rem;
+        height: auto;
+        
     }
 
-    main .boxes .box img {
-        width: 100px;
-        transition: .2s ease;
-
-    }
+    
 
     main .boxes .box h4 {
-        font-size: 1.8rem;
-        padding: 10px 0;
-        transition: .2s ease;
+        
         text-decoration: underline;
     }
 
     main .boxes .box p {
-        font-size: 1.2rem;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #242424;
-        z-index: 5;
-        height: 0;
-        transition: .2s linear;
-        overflow: hidden;
-        text-align: start;
+        position: relative;
+        
     }
 
     main .boxes .box p span {
