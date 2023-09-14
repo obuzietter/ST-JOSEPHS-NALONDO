@@ -18,12 +18,7 @@
         
     }
 
-    .anim-typewriter {
-        border-right-style: none;
-        overflow: hidden;
-        white-space: wrap;
-        animation: none;
-    }
+  
 
     
 
@@ -128,52 +123,26 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    main .landing {
-        background-image: url(../images/nalondo21.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-
-        width: 100vw;
-        display: flex;
-
-        position: relative;
-    }
-
+   
     /* landing section */
-    main .landing .welcome {
-        text-align: center;
-    }
+   
 
     main .landing .welcome>div {
-        margin: 10px;
+        margin: .5rem;
     }
 
     main .landing .welcome .welcome-text {
         font-size: 1.8rem;
-        font-weight: 600;
-        padding: 30px 0;
+        
     }
 
     main .landing .welcome .school-name {
-        color: blue;
+        
         font-size: 2rem;
-        font-weight: 900;
+        
     }
 
-    .anim-typewriter {
-        border-right-style: none;
-        overflow: hidden;
-        white-space: wrap;
-        animation: none;
-    }
-
-    main .landing .welcome .button {
-        padding: 0;
-    }
-
-
+    
 
     /* interactive boxes  */
     main .boxes {

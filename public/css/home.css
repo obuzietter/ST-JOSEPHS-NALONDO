@@ -316,14 +316,14 @@ main .slideshow .statistics div:nth-child(2) span {
 }
 
 /* typewriter styling */
-.anim-typewriter {
+/* .anim-typewriter {
     border-right: 2px solid blue;
     overflow: hidden;
 
     white-space: nowrap;
     animation: typewriter 4s steps(34) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
-}
+} */
 
 /* type writer animation */
 @keyframes typewriter {
