@@ -6,8 +6,6 @@
     /* border: 1px   red solid; */
 }
 
-
-
 /* snap and smooth scrolling */
 html {
     scroll-snap-type: y mandatory;
@@ -31,7 +29,6 @@ main .landing {
     flex-direction: column;
     justify-content: center;
     position: relative;
-
 }
 
 main .landing .welcome {
@@ -55,10 +52,8 @@ main .landing .welcome .school-name {
     text-align: center;
 }
 
-
 /* button styling */
 #btn {
-
     background-color: transparent;
     display: inline-block;
     padding: 30px;
@@ -116,7 +111,6 @@ main .boxes .box {
     animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
     text-align: center;
     cursor: pointer;
-
 }
 
 main .boxes .box:hover img {
@@ -137,14 +131,13 @@ main .boxes .box:hover p {
 
 main .boxes .box img {
     width: 100px;
-    transition: .2s ease;
-
+    transition: 0.2s ease;
 }
 
 main .boxes .box h4 {
     font-size: 1.8rem;
     padding: 10px 0;
-    transition: .2s ease;
+    transition: 0.2s ease;
 }
 
 main .boxes .box p {
@@ -156,7 +149,7 @@ main .boxes .box p {
     background-color: #000000;
     z-index: 5;
     height: 0;
-    transition: .2s linear;
+    transition: 0.2s linear;
     overflow: hidden;
     text-align: start;
 }
@@ -164,7 +157,7 @@ main .boxes .box p {
 main .boxes .box p span {
     display: block;
     text-align: start;
-    color: #FF8A00;
+    color: #ff8a00;
     text-decoration: underline;
 }
 
@@ -178,40 +171,33 @@ main .slideshow {
     display: grid;
     place-items: center;
     position: relative;
-    /* gap: 5rem; */
 }
 
 main .slideshow .slides {
     width: 70%;
     display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
+    overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     cursor: pointer;
     margin: 5rem 0;
 }
 
-main .slideshow .slides::-webkit-scrollbar {
-    display: none;
-}
-
 .active {
     box-shadow: 15px 15px 15px black;
     scale: 1.04;
-
 }
 
 main .slideshow .slide {
     scroll-snap-align: start;
     position: relative;
     flex: 0 0 100%;
-    transition: .5s ease;
-
+    transition: 0.5s ease;
 }
 
 main .slideshow .slide:hover .brief {
-    background-color: rgba(0, 0, 3, .8);
+    background-color: rgba(0, 0, 3, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,13 +207,13 @@ main .slideshow .slide:hover .brief {
     border-radius: 0;
 }
 
-main .slideshow .slide:hover .brief>h1,
-.brief>p {
+main .slideshow .slide:hover .brief > h1,
+.brief > p {
     opacity: 1;
     width: fit-content;
 }
 
-main .slideshow .slide:hover .brief>p {
+main .slideshow .slide:hover .brief > p {
     opacity: 1;
     width: fit-content;
 }
@@ -240,9 +226,8 @@ main .slideshow .slide .brief {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    transition: .3s ease;
+    transition: 0.3s ease;
     border-radius: 100%;
-
 }
 
 main .slideshow .slide .brief h1,
@@ -251,8 +236,8 @@ main .slideshow .slide .brief p {
     transition: 2s ease;
     width: 0;
     overflow: hidden;
+    border: 1px solid white;
 }
-
 
 main .slideshow .slide img {
     width: 100%;
@@ -270,12 +255,11 @@ main .slideshow .statistics {
 
 main .slideshow .statistics .card {
     transform: translateX(100%);
-    transition: .5s ease;
+    transition: 0.5s ease;
     background-color: black;
-    /* flex-basis: 33.333%; */
+
     padding: 3rem;
     cursor: default;
-
 }
 
 main .slideshow .statistics div:hover h1 {
@@ -288,20 +272,20 @@ main .slideshow .statistics div:hover span {
 
 main .slideshow .statistics div h1 {
     font-size: 1.7rem;
-    padding: .7rem;
-    transition: .3s ease-in-out;
+    padding: 0.7rem;
+    transition: 0.3s ease-in-out;
 }
 
 main .slideshow .statistics div span {
     font-size: 2.7rem;
     display: block;
     color: #0004ff;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main .slideshow .statistics div:nth-child(2) span {
-    color: #FF8A00;
+    color: #ff8a00;
 }
 
 /* keyframe animations */

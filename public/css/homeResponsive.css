@@ -1,11 +1,8 @@
 @media only screen and (max-width: 600px) {
-
-
-
     /* landing section */
 
-    main .landing .welcome>div {
-        margin: .5rem;
+    main .landing .welcome > div {
+        margin: 0.5rem;
     }
 
     main .landing .welcome .welcome-text {
@@ -13,172 +10,103 @@
     }
 
     main .landing .welcome .school-name {
-        
         font-size: 2rem;
-        
     }
-
-  
-
-    
-
 
     /* interactive boxes  */
     main .boxes {
         display: flex;
         flex-direction: column;
-
     }
 
     main .boxes .box {
-        width: 90%;
+        /* width: 90%; */
         padding: 0rem;
-        margin: 1rem auto;
+        /* margin: 1rem auto; */
     }
-
-
 
     main .boxes .box:hover h4 {
         color: #0004ff;
         scale: 1.1;
-
     }
 
     main .boxes .box:hover p {
-
         height: auto;
-
     }
 
-    
-
     main .boxes .box h4 {
-        
         text-decoration: underline;
     }
 
     main .boxes .box p {
-        
         position: relative;
-        
     }
 
-    main .boxes .box p span {
-        display: block;
-        text-align: start;
-        color: #FF8A00;
-        text-decoration: underline;
-    }
-
-    main .boxes .box p span:hover {
-        color: #0004ff;
-    }
-
+    /* slide slideshow section styling */
 
     main .slideshow {
         display: flex;
         flex-direction: column;
-        padding: 15px;
     }
 
     main .slideshow .slides {
         width: 100%;
-
     }
 
     /* animated statisctics counter - slideshow section */
     main .slideshow .statistics {
-        display: flex;
         flex-direction: column;
-        background-image: url(../images/nalondo3.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 15px;
-
     }
 
     main .slideshow .statistics .card {
         padding: 1rem;
-        background-color: rgba(0, 0, 4, .8);
-        backdrop-filter: blur(10px);
-        transform: translate(0, 0);
     }
-
-
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-   
     /* landing section */
-   
 
-    main .landing .welcome>div {
-        margin: .5rem;
+    main .landing .welcome > div {
+        margin: 0.5rem;
     }
 
     main .landing .welcome .welcome-text {
         font-size: 1.8rem;
-        
     }
 
     main .landing .welcome .school-name {
-        
         font-size: 2rem;
-        
     }
-
-    
 
     /* interactive boxes  */
     main .boxes {
         display: flex;
         flex-direction: column;
-        
     }
 
     main .boxes .box {
         width: 100%;
         padding: 0rem;
-        
     }
-
-   
 
     main .boxes .box:hover h4 {
         color: #0004ff;
         scale: 1.1;
-        
     }
 
     main .boxes .box:hover p {
         height: auto;
-        
     }
 
-    
-
     main .boxes .box h4 {
-        
         text-decoration: underline;
     }
 
     main .boxes .box p {
         position: relative;
-        
     }
 
-    main .boxes .box p span {
-        display: block;
-        text-align: start;
-        color: #FF8A00;
-        text-decoration: underline;
-    }
-
-    main .boxes .box p span:hover {
-        color: #0004ff;
-    }
-
+    /* slide slideshow section styling */
     main .slideshow {
         display: flex;
         flex-direction: column;
@@ -187,26 +115,17 @@
 
     main .slideshow .slides {
         width: 100%;
-        
     }
 
     /* animated statisctics counter - slideshow section */
     main .slideshow .statistics {
-        display: flex;
         flex-direction: column;
-        background-image: url(../images/nalondo3.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 15px;
     }
 
     main .slideshow .statistics .card {
         padding: 1rem;
-        background-color: rgba(0, 0, 4, .8);
+        background-color: rgba(0, 0, 4, 0.8);
         backdrop-filter: blur(10px);
         transform: translate(0, 0);
     }
-
-
 }
