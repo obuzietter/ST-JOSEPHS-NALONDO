@@ -21,6 +21,7 @@
     <main>
         {{-- home page landing section --}}
         <section class="landing">
+            <marquee behavior="scroll" direction="left">26 April 2022TERM 1 2022 OPENING DATE 04 May 2021OFFICIAL SCHOOL REPORT 04 M</marquee>
             <div class="welcome">
                 <div class="welcome-text">
                     WE WELCOME YOU TO

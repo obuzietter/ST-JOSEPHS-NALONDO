@@ -16,7 +16,11 @@ body {
     overflow-x: hidden;
     /* border: 2px solid blue; */
 }
-
+marquee{
+    background-color: orangered;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
 /* main section styling */
 main .landing {
     background-image: url(../images/nalondo21.jpeg);
