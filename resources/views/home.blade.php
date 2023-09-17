@@ -5,133 +5,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url('css/home.css') }}">
-    <link rel="stylesheet" href="{{ url('css/homeResponsive.css') }}">
-    <script src="{{ url('js/home.js') }}" defer></script>
     <title>Nalondo - Home</title>
-    {{-- <script src="{{ url('js/draggableSlider.js') }}" defer></script> --}}
 </head>
 
 <body>
-    {{-- navigation bar --}}
-    <nav>
+    <header>
 
-    </nav>
-    {{-- This is the main container --}}
+    </header>
     <main>
-        {{-- home page landing section --}}
         <section class="landing">
-            <marquee behavior="scroll" direction="left">26 April 2022TERM 1 2022 OPENING DATE 04 May 2021OFFICIAL SCHOOL REPORT 04 M</marquee>
-            <div class="welcome">
-                <div class="welcome-text">
-                    WE WELCOME YOU TO
+            <div class="slide 1">
+                <div class="welcome">
+                    welcome to
                 </div>
-                <div class="school-name anim-typewriter">
-                    ST JOSEPH'S NALONDO BOYS HIGH SCHOOL
-                </div>
-                <div class="button">
-                    <button id="btn">LEARN MORE</button>
+                <div class="banner">
+                    ST JOSEPHS NALONDO BOYS HIGHSCHOOL
                 </div>
             </div>
+            <div class="slide 2">
 
-            <div class="boxes">
-                <div class="box">
-                    <img src="{{ asset('icons/faculty.png') }}" alt="">
-                    <h4>
-                        FACULTY
-                    </h4>
-                    <p>
-                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
-                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.
+            </div>
+            <div class="slide 3">
 
-                        <span>Learn More</span>
-                    </p>
+            </div>
+            <nav>
+                <a href="">A</a>
+                <a href="">B</a>
+                <a href="">C</a>
+            </nav>
+        </section>
+        <section class="brief">
+            <div class="card student-life">
+                <div class="icon">
+                    <img src="" alt="">
                 </div>
-                <div class="box">
-                    <img src="{{ asset('icons/student-life.png') }}" alt="">
-                    <h4>
-                        STUDENT LIFE
-                    </h4>
-                    <p>
-                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
-                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.
-
-                        <span>Learn More</span>
-                    </p>
+                <div class="desc">
+                    <h3>STUDENT LIFE</h3>
+                    <p>Our 'Student Life' page is your hub for an engaging high school experience. Explore a dynamic
+                        calendar of events, from sports tournaments to club meetings, and stay updated on important
+                        school announcements. </p>
                 </div>
-                <div class="box">
-                    <img src="{{ asset('icons/projects.png') }}" alt="">
-                    <h4>
-                        PROJECTS
-                    </h4>
-                    <p>
-                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
-                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.
-
-                        <span>Learn More</span>
-                    </p>
+            </div>
+            <div class="card projects">
+                <div class="icon">
+                    <img src="" alt="">
+                </div>
+                <div class="desc">
+                    <h3>SCHOOL PROJECTS</h3>
+                    <p>Our 'Student Life' page is your hub for an engaging high school experience. Explore a dynamic
+                        calendar of events, from sports tournaments to club meetings, and stay updated on important
+                        school announcements. </p>
                 </div>
             </div>
         </section>
+        <section class="news">
+            <div class="heading">
+                <hr>Latest News
+                <hr>
+            </div>
+            <div class="content">
+                <article>
+                    <div class="image">
 
-        {{-- home page slideshow section --}}
-        <section class="slideshow">
+                    </div>
+                    <div class="body">
+                        <h3>Drastic IMprovement in kcse</h3>
+                        <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
+                        <span>
+                            See article
+                        </span>
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
 
-            {{-- slides container --}}
+                    </div>
+                    <div class="body">
+                        <h3>Drastic IMprovement in kcse</h3>
+                        <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
+                        <span>
+                            See article
+                        </span>
+                    </div>
+                </article>
+                <article>
+                    <div class="image">
+
+                    </div>
+                    <div class="body">
+                        <h3>Drastic IMprovement in kcse</h3>
+                        <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
+                        <span>
+                            See article
+                        </span>
+                    </div>
+                </article>
+            </div>
+            <div class="more">
+                <button>SEE MORE ARTICLES</button>
+            </div>
+        </section>
+        <section class="events">
+
+            <div class="event-items">
+                <div class="event">
+                    <div class="date">
+                        <div class="widget">
+                            <div class="month">MAY</div>
+                            <div class="day">23</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h3>Regional Competitions</h3>
+                        <p>Will be held at Nalondo Boys Highschool</p>
+                        <span>
+                            See event details ->
+                        </span>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="date">
+                        <div class="widget">
+                            <div class="month">MAY</div>
+                            <div class="day">23</div>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h3>Regional Competitions</h3>
+                        <p>Will be held at Nalondo Boys Highschool</p>
+                        <span>
+                            See event details ->
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                <h1>SEE CALENDAER OF EVENTS</h1>
+            </div>
+
+
+        </section>
+        <section class="about">
             <div class="slides">
-                <div class="slide">
-                    <img src="{{ asset('images/nalondo1.jpeg') }}" alt="">
-                    <div class="brief">
-                        <h1>TITLE</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
-                    </div>
+                <div class="content slide">
+                    <h1>ABOUT OUR SCHOOL</h1>
+                    <p>
+                        We don’t just give students an education and experiences that set them up for success in a
+                        career. We help them succeed in their career—to discover a field they’re passionate about and
+                        dare to lead it.</p>
+                    <p>
+                        A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                        which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                        which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed
+                        in the exquisite sense of mere.
+                    </p>
                 </div>
-                <div class="slide">
-                    <img src="{{ asset('images/nalondo8.jpeg') }}" alt="">
-                    <div class="brief">
-                        <h1>TITLE</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
-                    </div>
+                <div class="button">
+                    <button>LEARN MORE</button>
                 </div>
-                <div class="slide">
-                    <img src="{{ asset('images/nalondo10.jpeg') }}" alt="">
-                    <div class="brief">
-                        <h1>TITLE</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('images/nalondo11.jpeg') }}" alt="">
-                    <div class="brief">
-                        <h1>TITLE</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('images/nalondo13.jpeg') }}" alt="">
-                    <div class="brief">
-                        <h1>TITLE</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptates.</p>
-                    </div>
-                </div>
+                <nav>
+                    <a href="">A</a>
+                    <a href="">B</a>
+                    <a href="">C</a>
+                </nav>
             </div>
-
-            {{-- animated statistics counter container --}}
-            <div class="statistics">
-                <div class="teachers card">
-                    <h1>TEACHERS</h1>
-                    <span class="num" data-val="68">0</span>
-                </div>
-                <div class="candidates card">
-                    <h1>CANDIDATES</h1>
-                    <span class="num" data-val="299">0</span>
-                </div>
-                <div class="students card">
-                    <h1>STUDENTS</h1>
-                    <span class="num" data-val="1875">0</span>
-                </div>
+        </section>
+        <section class="counters">
+            <div class="counter">
+                <span>46</span>
+                <h3>TEACHERS</h3>
             </div>
-
+            <div class="counter">
+                <span>1453</span>
+                <h3>STUDENTS</h3>
+            </div>
+            <div class="counter">
+                <span>217</span>
+                <h3>CANDIDATES</h3>
+            </div>
         </section>
     </main>
     <footer>
