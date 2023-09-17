@@ -58,3 +58,51 @@ text-decoration: none;
 color: white;
 margin: 1rem;
 }
+
+/* brief section styling */
+.brief{
+    display: flex;
+    justify-content: space-evenly ;
+}
+.brief .card {
+    max-width: 27%;
+    text-align: center;
+    
+}
+.brief .card .icon{
+    /* border: 1px solid red; */
+}
+.brief .card .desc{
+    text-align: justify;
+}
+.brief .card .desc h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.brief .card .desc p{
+    font-size: 1rem;
+}
+
+/* news section styling */
+.news{
+    background-image: url(../images/nalondo6.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+}
+.news .blue-bg-color{
+    background-color: rgb(9, 9, 143, .5);
+}
+.news .heading{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.news .content{
+column-count: 2;
+}
+
+.news .content article{
+    max-width: 27%;
+}

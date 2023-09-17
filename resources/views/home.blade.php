@@ -54,7 +54,8 @@
         <section class="brief">
             <div class="card student-life">
                 <div class="icon">
-                    <img src="" alt="">
+                    <img src="{{ asset('/icons/student-life.png') }}" alt="">
+
                 </div>
                 <div class="desc">
                     <h3>STUDENT LIFE</h3>
@@ -65,7 +66,18 @@
             </div>
             <div class="card projects">
                 <div class="icon">
-                    <img src="" alt="">
+                    <img src="{{ asset('/icons/projects.png') }}" alt="">
+                </div>
+                <div class="desc">
+                    <h3>SCHOOL PROJECTS</h3>
+                    <p>Our 'Student Life' page is your hub for an engaging high school experience. Explore a dynamic
+                        calendar of events, from sports tournaments to club meetings, and stay updated on important
+                        school announcements. </p>
+                </div>
+            </div>
+            <div class="card faculty">
+                <div class="icon">
+                    <img src="{{ asset('/icons/faculty.png') }}" alt="">
                 </div>
                 <div class="desc">
                     <h3>SCHOOL PROJECTS</h3>
@@ -76,50 +88,52 @@
             </div>
         </section>
         <section class="news">
-            <div class="heading">
-                <hr>Latest News
-                <hr>
-            </div>
-            <div class="content">
-                <article>
-                    <div class="image">
+            <div class="blue-bg-color">
+                <div class="heading">
+                    Latest News
 
-                    </div>
-                    <div class="body">
-                        <h3>Drastic IMprovement in kcse</h3>
-                        <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
-                        <span>
-                            See article
-                        </span>
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-
-                    </div>
-                    <div class="body">
-                        <h3>Drastic IMprovement in kcse</h3>
-                        <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
-                        <span>
-                            See article
-                        </span>
-                    </div>
-                </article>
-                <article>
-                    <div class="image">
-
-                    </div>
-                    <div class="body">
-                        <h3>Drastic IMprovement in kcse</h3>
-                        <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
-                        <span>
-                            See article
-                        </span>
-                    </div>
-                </article>
-            </div>
-            <div class="more">
-                <button>SEE MORE ARTICLES</button>
+                </div>
+                <div class="content">
+                    <article>
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2899/2899415.png" alt="">
+                        </div>
+                        <div class="body">
+                            <h3>Drastic IMprovement in kcse</h3>
+                            <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
+                            <span>
+                                See article
+                            </span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2899/2899415.png" alt="">
+                        </div>
+                        <div class="body">
+                            <h3>Drastic IMprovement in kcse</h3>
+                            <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
+                            <span>
+                                See article
+                            </span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2899/2899415.png" alt="">
+                        </div>
+                        <div class="body">
+                            <h3>Drastic IMprovement in kcse</h3>
+                            <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
+                            <span>
+                                See article
+                            </span>
+                        </div>
+                    </article>
+                </div>
+                <div class="more">
+                    <button>SEE MORE ARTICLES</button>
+                </div>
             </div>
         </section>
         <section class="events">
