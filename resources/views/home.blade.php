@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nalondo - Home</title>
+    {{-- css linking --}}
+    <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
 </head>
 
 <body>
@@ -13,25 +15,40 @@
 
     </header>
     <main>
+        {{-- section landing --}}
         <section class="landing">
-            <div class="slide 1">
-                <div class="welcome">
-                    welcome to
+            <div class="slides">
+                <div class="slide one" id="one">
+                    <div class="welcome">
+                        WELCOME TO
+                    </div>
+                    <div class="banner">
+                        ST JOSEPHS NALONDO BOYS HIGHSCHOOL
+                    </div>
                 </div>
-                <div class="banner">
-                    ST JOSEPHS NALONDO BOYS HIGHSCHOOL
+                <div class="slide" id="two">
+                    <div class="welcome">
+                        THIS IS WHERE
+                    </div>
+                    <div class="banner">
+                        BOYS ARE TURNED INTO MEN
+                    </div>
                 </div>
-            </div>
-            <div class="slide 2">
+                <div class="slide" id="three">
+                    <div class="welcome">
+                        OUR MOTTO
+                    </div>
+                    <div class="banner">
+                        WE USE COMMON SENSE
+                    </div>
+                </div>
 
             </div>
-            <div class="slide 3">
 
-            </div>
             <nav>
-                <a href="">A</a>
-                <a href="">B</a>
-                <a href="">C</a>
+                <a href="#one">A</a>
+                <a href="#two">B</a>
+                <a href="#three">C</a>
             </nav>
         </section>
         <section class="brief">
