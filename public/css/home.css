@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid red; */
 }
 
 /* main section styling */
@@ -13,6 +15,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
 
 }
@@ -67,7 +70,7 @@ margin: 1rem;
 .brief .card {
     max-width: 27%;
     text-align: center;
-    
+    margin: 4rem 0;
 }
 .brief .card .icon{
     /* border: 1px solid red; */
@@ -89,20 +92,81 @@ margin: 1rem;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         color: white;
+        
+        
 }
 .news .blue-bg-color{
-    background-color: rgb(9, 9, 143, .5);
+    background-color: rgb(9, 9, 143, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .news .heading{
     font-size: 1.5rem;
     font-weight: 900;
     text-align: center;
+    padding: 2rem;
 }
 .news .content{
-column-count: 2;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    row-gap: 1rem;
 }
 
 .news .content article{
-    max-width: 27%;
+    /* max-width: 27%; */
+    flex: 0 0 50%;
+    display: flex;
+}
+.news .content article .image{
+    /* border: 2px solid red; */
+    display: grid;
+    place-items: center;
+    width: 4rem;
+
+}
+.news .content article .image img{
+    width: 100%;
+}
+.news .content article .body{
+    padding: 1rem;
+}
+.news .content article .body h3{
+    font-family:'Poppins', sans-serif ;
+    text-transform: capitalize;
+}
+.news .content article .body p{
+    line-height: 1.5rem;
+}
+.news .content article .body span{
+    line-height: 1.5rem;
+    color: orange;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.news .more{
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+.news .more button {
+padding: .7rem 1rem;
+color: white;
+font-weight: 700;
+background-color: orange;
+border-style: none;
+cursor: pointer;
+}
+
+/* events section styling */
+.event .event-items{
+    border: ;
 }

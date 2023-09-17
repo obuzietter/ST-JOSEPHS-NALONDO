@@ -96,10 +96,10 @@
                 <div class="content">
                     <article>
                         <div class="image">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2899/2899415.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/514/514938.png" alt="">
                         </div>
                         <div class="body">
-                            <h3>Drastic IMprovement in kcse</h3>
+                            <h3>Drastic Improvement in kcse</h3>
                             <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
                             <span>
                                 See article
@@ -108,10 +108,11 @@
                     </article>
                     <article>
                         <div class="image">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2899/2899415.png" alt="">
+
+                            <img src="https://cdn-icons-png.flaticon.com/128/514/514938.png" alt="">
                         </div>
                         <div class="body">
-                            <h3>Drastic IMprovement in kcse</h3>
+                            <h3>Drastic Improvement in kcse</h3>
                             <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
                             <span>
                                 See article
@@ -120,10 +121,10 @@
                     </article>
                     <article>
                         <div class="image">
-                            <img src="https://cdn-icons-png.flaticon.com/128/2899/2899415.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/514/514938.png" alt="">
                         </div>
                         <div class="body">
-                            <h3>Drastic IMprovement in kcse</h3>
+                            <h3>Drastic Improvement in kcse</h3>
                             <p>Positive Vibes as Nalondo Boys threaten the great Kmausinga . . .</p>
                             <span>
                                 See article
