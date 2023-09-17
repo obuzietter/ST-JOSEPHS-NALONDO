@@ -138,7 +138,9 @@
             </div>
         </section>
         <section class="events">
-
+<div class="heading">
+    <h1>Upcoming Events</h1>
+</div>
             <div class="event-items">
                 <div class="event">
                     <div class="date">
@@ -158,21 +160,23 @@
                 <div class="event">
                     <div class="date">
                         <div class="widget">
-                            <div class="month">MAY</div>
-                            <div class="day">23</div>
+                            <div class="month">JULY</div>
+                            <div class="day">4</div>
                         </div>
                     </div>
                     <div class="desc">
-                        <h3>Regional Competitions</h3>
-                        <p>Will be held at Nalondo Boys Highschool</p>
+                        <h3>Science and Engineering fair</h3>
+                        <p>Will be held at Friends School Kamusinga
+                            
+                        </p>
                         <span>
                             See event details ->
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="calendar">
-                <h1>SEE CALENDAER OF EVENTS</h1>
+            <div class="calender">
+                <h1>SEE CALENDER OF EVENTS</h1>
             </div>
 
 

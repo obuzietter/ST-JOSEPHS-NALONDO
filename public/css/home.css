@@ -36,80 +36,93 @@
     justify-content: center;
     align-items: center;
     color: white;
-    
+
 }
-.landing .slides .slide .welcome{
+
+.landing .slides .slide .welcome {
     font-size: 2rem;
     font-weight: 600;
     padding: 1rem;
 }
-.landing .slides .slide .banner{
+
+.landing .slides .slide .banner {
     font-size: 3rem;
     font-weight: 900;
     background-color: blue;
     padding: 1rem;
+    text-align: center;
 }
- .landing nav{
+
+.landing nav {
     position: absolute;
     /* background-color: orange; */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-.landing nav a{
-text-decoration: none;
-color: white;
-margin: 1rem;
+
+.landing nav a {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
 }
 
 /* brief section styling */
-.brief{
+.brief {
     display: flex;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
 }
+
 .brief .card {
     max-width: 27%;
     text-align: center;
     margin: 4rem 0;
 }
-.brief .card .icon{
+
+.brief .card .icon {
     /* border: 1px solid red; */
 }
-.brief .card .desc{
+
+.brief .card .desc {
     text-align: justify;
 }
-.brief .card .desc h3{
+
+.brief .card .desc h3 {
     font-size: 1.5rem;
     text-align: center;
 }
-.brief .card .desc p{
+
+.brief .card .desc p {
     font-size: 1rem;
 }
 
 /* news section styling */
-.news{
+.news {
     background-image: url(../images/nalondo6.jpeg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: white;
-        
-        
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+
 }
-.news .blue-bg-color{
+
+.news .blue-bg-color {
     background-color: rgb(9, 9, 143, .7);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.news .heading{
+
+.news .heading {
     font-size: 1.5rem;
     font-weight: 900;
     text-align: center;
     padding: 2rem;
 }
-.news .content{
+
+.news .content {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -118,32 +131,38 @@ margin: 1rem;
     row-gap: 1rem;
 }
 
-.news .content article{
+.news .content article {
     /* max-width: 27%; */
     flex: 0 0 50%;
     display: flex;
 }
-.news .content article .image{
+
+.news .content article .image {
     /* border: 2px solid red; */
     display: grid;
     place-items: center;
     width: 4rem;
 
 }
-.news .content article .image img{
+
+.news .content article .image img {
     width: 100%;
 }
-.news .content article .body{
+
+.news .content article .body {
     padding: 1rem;
 }
-.news .content article .body h3{
-    font-family:'Poppins', sans-serif ;
+
+.news .content article .body h3 {
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
-.news .content article .body p{
+
+.news .content article .body p {
     line-height: 1.5rem;
 }
-.news .content article .body span{
+
+.news .content article .body span {
     line-height: 1.5rem;
     color: orange;
     font-style: italic;
@@ -151,22 +170,112 @@ margin: 1rem;
     cursor: pointer;
 }
 
-.news .more{
+.news .more {
     /* border: 2px solid red; */
     width: 100%;
     text-align: center;
     padding: 2rem 0;
 }
+
 .news .more button {
-padding: .7rem 1rem;
-color: white;
-font-weight: 700;
-background-color: orange;
-border-style: none;
-cursor: pointer;
+    padding: .7rem 1rem;
+    color: white;
+    font-weight: 700;
+    background-color: orange;
+    border-style: none;
+    cursor: pointer;
 }
 
 /* events section styling */
-.event .event-items{
-    border: ;
+.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .heading {
+    text-align: center;
+
+}
+
+.events .heading h1 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.events .event-items {
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+
+}
+
+.events .event-items .event {
+    flex: 0 0 50%;
+    display: flex;
+}
+
+.events .event-items .event .date {
+    /* border: 1px solid blue; */
+}
+
+.events .event-items .event .date .widget {
+    background-color: rgb(234, 234, 234);
+    height: 100%;
+    text-align: center;
+}
+
+.events .event-items .event .date .widget .month {
+    background-color: rgb(9, 9, 143);
+    color: white;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    font-weight: 500;
+
+}
+
+.events .event-items .event .date .widget .day {
+    font-size: 1.5rem;
+
+    font-weight: 900;
+    padding: 1rem;
+
+}
+
+.events .event-items .event .desc {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: .5rem;
+}
+
+.events .event-items .event .desc h3 {
+    font-size: 1.2rem;
+}
+
+.events .event-items .event .desc p {
+    font-size: 1rem;
+
+}
+
+.events .event-items .event .desc span {
+    color: rgb(9, 9, 143);
+    /* text-decoration: underline; */
+    font-style: italic;
+    cursor: pointer;
+}
+
+.events .calender{
+    /* border: 2px solid green; */
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+.events .calender h1{
+    color: orange;
+    text-decoration: underline;
+    cursor: pointer;
 }
