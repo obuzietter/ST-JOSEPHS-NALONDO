@@ -26,17 +26,24 @@
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
-
+    position: relative;
 }
 
 .landing .slides .slide {
-    flex: 0 0 100%;
+    
+    position: absolute;
+    
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-
+    
+    transform: translateY(-100%);
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .landing .slides .slide .welcome {
@@ -53,20 +60,34 @@
     text-align: center;
 }
 
+.landing .slides .slide.active {
+    transform: translateY(0);
+    transform-origin: center;
+    
+    transition: 1s;
+    
+    
+}
+
 .landing nav {
     position: absolute;
-    /* background-color: orange; */
-    bottom: 0;
+    
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.landing nav a {
-    text-decoration: none;
+.landing nav span {
+    cursor: pointer;
     color: white;
     margin: 1rem;
 }
-
+.landing nav span.active{
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: orange;
+}
 /* brief section styling */
 .brief {
     display: flex;
@@ -98,7 +119,7 @@
 
 /* news section styling */
 .news {
-    background-image: url(../images/nalondo6.jpeg);
+    background-image: url(../images/BACKGROUND.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -187,11 +208,12 @@
 }
 
 /* events section styling */
-.events{
+.events {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .events .heading {
     text-align: center;
 
@@ -268,14 +290,89 @@
     cursor: pointer;
 }
 
-.events .calender{
+.events .calender {
     /* border: 2px solid green; */
     width: 100%;
     text-align: center;
     padding: 1rem 0;
 }
-.events .calender h1{
+
+.events .calender h1 {
     color: orange;
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* about section styling */
+.about {
+    background-image: url(../images/nalondo6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.about .slides {
+    background-color: rgb(9, 9, 143, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.about .slides .content {
+    max-width: 80%;
+    text-align: center;
+}
+
+.about .slides .content h1 {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+
+.about .slides .content p {
+    line-height: 1.5rem;
+    padding: .5rem 0;
+}
+
+.about .slides .button {
+    padding: 1rem 0;
+}
+
+.about .slides .button button {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: orange;
+    font-weight: 700;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* animated counters section styling */
+.counters {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.counters .counter {
+    text-align: center;
+    border: 1px solid orange;
+    padding: 1rem 0;
+    flex: 0 0 20%;
+    flex-wrap: wrap;
+}
+
+.counters .counter span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: orange;
+}
+
+.counters .counter h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: .5rem;
 }

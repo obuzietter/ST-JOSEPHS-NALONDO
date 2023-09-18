@@ -18,7 +18,7 @@
         {{-- section landing --}}
         <section class="landing">
             <div class="slides">
-                <div class="slide one" id="one">
+                <div class="slide active" id="one">
                     <div class="welcome">
                         WELCOME TO
                     </div>
@@ -46,9 +46,9 @@
             </div>
 
             <nav>
-                <a href="#one">A</a>
-                <a href="#two">B</a>
-                <a href="#three">C</a>
+                <span class="navBtns active">0</span>
+                <span class="navBtns">0</span>
+                <span class="navBtns">0</span>
             </nav>
         </section>
         <section class="brief">
@@ -96,7 +96,7 @@
                 <div class="content">
                     <article>
                         <div class="image">
-                            <img src="https://cdn-icons-png.flaticon.com/128/514/514938.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/458/458555.png" alt="">
                         </div>
                         <div class="body">
                             <h3>Drastic Improvement in kcse</h3>
@@ -108,8 +108,7 @@
                     </article>
                     <article>
                         <div class="image">
-
-                            <img src="https://cdn-icons-png.flaticon.com/128/514/514938.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/458/458555.png" alt="">
                         </div>
                         <div class="body">
                             <h3>Drastic Improvement in kcse</h3>
@@ -121,7 +120,7 @@
                     </article>
                     <article>
                         <div class="image">
-                            <img src="https://cdn-icons-png.flaticon.com/128/514/514938.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/128/458/458555.png" alt="">
                         </div>
                         <div class="body">
                             <h3>Drastic Improvement in kcse</h3>
@@ -138,9 +137,9 @@
             </div>
         </section>
         <section class="events">
-<div class="heading">
-    <h1>Upcoming Events</h1>
-</div>
+            <div class="heading">
+                <h1>Upcoming Events</h1>
+            </div>
             <div class="event-items">
                 <div class="event">
                     <div class="date">
@@ -167,7 +166,7 @@
                     <div class="desc">
                         <h3>Science and Engineering fair</h3>
                         <p>Will be held at Friends School Kamusinga
-                            
+
                         </p>
                         <span>
                             See event details ->
@@ -183,7 +182,7 @@
         </section>
         <section class="about">
             <div class="slides">
-                <div class="content slide">
+                <div class="content">
                     <h1>ABOUT OUR SCHOOL</h1>
                     <p>
                         We don’t just give students an education and experiences that set them up for success in a
@@ -225,5 +224,31 @@
 
     </footer>
 </body>
+<script>
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.navBtns')
+    let currentSlide = 1;
+
+    // manual navigation
+    var manualNav = function(manual) {
+        slides.forEach((slide) => {
+            slide.classList.remove('active')
+
+            btns.forEach((btn) => {
+                btn.classList.remove('active')
+            })
+        });
+        
+        slides[manual].classList.add('active')
+        btns[manual].classList.add('active')
+    }
+
+    btns.forEach((btn, i)=>{
+        btn.addEventListener("click", ()=>{
+            manualNav(i)
+            currentSlide = i
+        })
+    })
+</script>
 
 </html>
