@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nalondo - Home</title>
     {{-- css linking --}}
-    <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('/css/home.css') }}"> --}}
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
@@ -46,9 +47,9 @@
             </div>
 
             <nav>
-                <span class="navBtns active">0</span>
-                <span class="navBtns">0</span>
-                <span class="navBtns">0</span>
+                <span class="navBtns active">O</span>
+                <span class="navBtns">O</span>
+                <span class="navBtns">O</span>
             </nav>
         </section>
         <section class="brief">

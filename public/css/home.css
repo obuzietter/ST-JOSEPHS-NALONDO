@@ -17,7 +17,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 .landing .slides {
@@ -80,6 +81,7 @@
 .landing nav span {
     cursor: pointer;
     color: white;
+    font-weight: 900;
     margin: 1rem;
 }
 
@@ -94,20 +96,28 @@
 .brief {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .brief .card {
-    max-width: 27%;
+    /* max-width: 20%; */
+    flex: 0 0 20%;
     text-align: center;
     margin: 4rem 0;
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 15px 10px 32px 0px rgba(0, 0, 0, 0.75);
 }
 
 .brief .card .icon {
     /* border: 1px solid red; */
 }
-
+.brief .card .icon img{
+    width: 50px;
+}
 .brief .card .desc {
-    text-align: justify;
+    text-align: center;
 }
 
 .brief .card .desc h3 {
@@ -479,5 +489,14 @@
 
     100% {
         transform: rotate(-5deg);
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity : 0 ;
+    }
+    to{
+        opacity : 1 ;
     }
 }
