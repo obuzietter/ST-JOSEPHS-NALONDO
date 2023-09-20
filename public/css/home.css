@@ -107,15 +107,23 @@
     border: 1px solid black;
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 15px 10px 32px 0px rgba(0, 0, 0, 0.75);
+    transition: .5s ease;
+    cursor: default;
+    &:hover {
+        box-shadow: 19px 10px 32px -15px rgba(0, 0, 0, 0.75);
+        scale: 1.005;
+    }
+
 }
 
 .brief .card .icon {
     /* border: 1px solid red; */
 }
-.brief .card .icon img{
+
+.brief .card .icon img {
     width: 50px;
 }
+
 .brief .card .desc {
     text-align: center;
 }
@@ -451,6 +459,7 @@
     padding: 1rem 0;
     flex: 0 0 20%;
     flex-wrap: wrap;
+    box-shadow: 19px 10px 32px -15px rgba(0, 0, 0, 0.75);
 }
 
 .counters .counter span {
@@ -493,10 +502,11 @@
 }
 
 @keyframes fade-in {
-    from{
-        opacity : 0 ;
+    from {
+        opacity: 0;
     }
-    to{
-        opacity : 1 ;
+
+    to {
+        opacity: 1;
     }
 }
