@@ -208,15 +208,15 @@
             </div>
         </section>
         <section class="counters">
-            <div class="counter">
+            <div class="counter ob">
                 <span class="count" data-target="64">0</span>
                 <h3>TEACHERS</h3>
             </div>
-            <div class="counter">
+            <div class="counter ob">
                 <span class="count" data-target="1453">0</span>
                 <h3>STUDENTS</h3>
             </div>
-            <div class="counter">
+            <div class="counter ob">
                 <span class="count" data-target="217">0</span>
                 <h3>CANDIDATES</h3>
             </div>
