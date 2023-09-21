@@ -9,6 +9,7 @@
     {{-- css linking --}}
     {{-- <link rel="stylesheet" href="{{ asset('/css/home.css') }}"> --}}
     <link rel="stylesheet" href="/css/home.css">
+    <script src="{{asset('/js/home.js')}}" defer></script>
 </head>
 
 <body>
@@ -208,15 +209,15 @@
         </section>
         <section class="counters">
             <div class="counter">
-                <span>46</span>
+                <span class="count" data-target="64">0</span>
                 <h3>TEACHERS</h3>
             </div>
             <div class="counter">
-                <span>1453</span>
+                <span class="count" data-target="1453">0</span>
                 <h3>STUDENTS</h3>
             </div>
             <div class="counter">
-                <span>217</span>
+                <span class="count" data-target="217">0</span>
                 <h3>CANDIDATES</h3>
             </div>
         </section>
