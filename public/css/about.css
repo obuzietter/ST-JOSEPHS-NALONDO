@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    /* border: 1px solid green; */
 }
 
 /* main section styling */
@@ -75,11 +75,49 @@
 
 .school-desc .text {
     /* border: 1px solid red; */
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 .school-desc .text p {
     /* border: 1px solid red; */
+    max-width: 90%;
+    margin: auto;
     text-align: center;
     font-style: italic;
+    /* padding-bottom: 2rem; */
+}
+
+/* history section styling */
+.history{
+    max-width: 90%;
+    margin: auto;
+    background-color: rgb(232, 232, 232);
+}
+
+.history .heading{
+    text-align: center;
+}
+.history .chunks {
+
+}
+.history .chunks .chunk{
+    display: flex;
+}
+.history .chunks .chunk > div{
+    flex:0 0 50%;
+}
+.history .chunks .chunk .title{
+    display: grid;
+    place-items: center;
+
+}
+.history .chunks .chunk .title h3{
+    color: orange;
+    font-size: 1.2rem;
+}
+.history .chunks .chunk .description {
+    padding: 1rem;
+}
+.history .chunks .chunk .description p{
+    padding: .5rem 0;
 }

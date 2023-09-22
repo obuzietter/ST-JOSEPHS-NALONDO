@@ -40,7 +40,7 @@
             </div>
         </section>
         <section class="history">
-            <div class="title">
+            <div class="heading">
                 <h1>History of the School</h1>
             </div>
             <hr>
@@ -63,9 +63,7 @@
                 </div>
                 <hr>
                 <div class="chunk">
-                    <div class="title">
-                        <h3>Purpose</h3>
-                    </div>
+
                     <div class="description">
                         <p>At the time, there were only a few government supported secondary schools within the then
                             Bungoma District i.e. Bungoma High School and Kibabii High School. The school was therefore
@@ -73,6 +71,9 @@
                             high fees charged by the available secondary schools over 20 km away. The first case KJSE
                             was in 1975 And EACE was done in 1977 with seven students. Their performance was impressive
                             as they all passed their exams. This encouraged more students to enroll at the school.</p>
+                    </div>
+                    <div class="title">
+                        <h3>Purpose</h3>
                     </div>
                 </div>
                 <hr>
@@ -103,9 +104,7 @@
                 </div>
                 <hr>
                 <div class="chunk">
-                    <div class="title">
-                        <h3>Geographical Location</h3>
-                    </div>
+                    
                     <div class="description">
                         <p>The school is the only boy school in Sirare location of Nalondo Division, Bungoma Central,
                             Sub County and Bungoma County. The people of the area are small scale farmers and some also
@@ -114,6 +113,9 @@
                             suffer from inadequate resources to venture into serious economic undertakings, while the
                             market for farm produce, mainly milk, maize, sugar cane and coffee, is unreliable as prices
                             are generally uncompetitive and keep fluctuating.</p>
+                    </div>
+                    <div class="title">
+                        <h3>Geographical Location</h3>
                     </div>
                 </div>
                 <hr>
