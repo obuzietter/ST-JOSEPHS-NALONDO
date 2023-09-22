@@ -26,7 +26,7 @@
         </section>
         <section class="school-desc">
             <div class="quote">
-                <h1>-"-</h1>
+                <h1>"</h1>
             </div>
             <div class="text">
                 <p>

@@ -7,6 +7,7 @@
 
 /* main section styling */
 
+/* hero section styling */
 .hero {
     min-height: 40vh;
     background-image: url(../images/nalondo14.jpeg);
@@ -25,8 +26,60 @@
     align-items: center;
     justify-content: center;
 }
-.hero .content .title{
+
+.hero .content .title {
     color: white;
     font-size: 2rem;
     font-weight: 700;
+}
+
+/* school description styling */
+.school-desc {
+    color: black;
+
+}
+
+.school-desc .quote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5rem;
+
+}
+
+.school-desc .quote h1 {
+
+    position: relative;
+    font-size: 3rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 5px;
+        top: 25%;
+        left: -220%;
+        background-color: black;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 5px;
+        top: 25%;
+        left: 120%;
+        background-color: black;
+    }
+}
+
+.school-desc .text {
+    /* border: 1px solid red; */
+    padding: 0 2rem;
+}
+
+.school-desc .text p {
+    /* border: 1px solid red; */
+    text-align: center;
+    font-style: italic;
 }
