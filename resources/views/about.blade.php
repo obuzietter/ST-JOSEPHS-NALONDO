@@ -104,7 +104,7 @@
                 </div>
                 <hr>
                 <div class="chunk">
-                    
+
                     <div class="description">
                         <p>The school is the only boy school in Sirare location of Nalondo Division, Bungoma Central,
                             Sub County and Bungoma County. The people of the area are small scale farmers and some also
@@ -125,17 +125,17 @@
             <div class="mmv">
                 <div class="mission">
                     <h3>MISSION</h3>
-                    <p>To become a school of excellence in education through commitment, diligence and integrity in the
-                        country.</p>
+                    {{-- <p>To become a school of excellence in education through commitment, diligence and integrity in the
+                        country.</p> --}}
                 </div>
                 <div class="motto">
                     <h3>MOTTO</h3>
-                    <p>Learning for empowerment</p>
+                    {{-- <p>Learning for empowerment</p> --}}
                 </div>
                 <div class="vision">
                     <h3>VISION</h3>
-                    <p>To attain academic excellence and bring out talent in young people to help the develop mentally,
-                        physically, socially and spiritually.</p>
+                    {{-- <p>To attain academic excellence and bring out talent in young people to help the develop mentally,
+                        physically, socially and spiritually.</p> --}}
                 </div>
             </div>
             <div class="core-values">

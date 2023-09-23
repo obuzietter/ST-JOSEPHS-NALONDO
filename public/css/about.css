@@ -6,9 +6,10 @@
 }
 
 /* main section styling */
-main{
+main {
     background-color: rgb(232, 232, 232);
 }
+
 /* hero section styling */
 .hero {
     min-height: 40vh;
@@ -90,37 +91,91 @@ main{
 }
 
 /* history section styling */
-.history{
+.history {
     max-width: 90%;
     margin: auto;
     background-color: white;
     box-shadow: 7px 8px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.history .heading{
+.history .heading {
     text-align: center;
 }
-.history .chunks {
 
-}
-.history .chunks .chunk{
+.history .chunks {}
+
+.history .chunks .chunk {
     display: flex;
 }
-.history .chunks .chunk > div{
-    flex:0 0 50%;
+
+.history .chunks .chunk>div {
+    flex: 0 0 50%;
 }
-.history .chunks .chunk .title{
+
+.history .chunks .chunk .title {
     display: grid;
     place-items: center;
 
 }
-.history .chunks .chunk .title h3{
+
+.history .chunks .chunk .title h3 {
     color: orange;
     font-size: 1.2rem;
 }
+
 .history .chunks .chunk .description {
     padding: 1rem;
 }
-.history .chunks .chunk .description p{
+
+.history .chunks .chunk .description p {
     padding: .5rem 0;
+}
+
+/* school values section styling */
+.school-values {
+    display: flex;
+}
+
+.school-values .mmv {
+    /* width: 210px; */
+    height: 254px;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+}
+
+.school-values .mmv>div {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        flex: 4;
+    }
+
+    &:hover h3 {
+        transform: rotate(0);
+    }
+}
+
+.school-values .mmv div h3 {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+
 }
