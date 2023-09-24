@@ -130,7 +130,7 @@
                 </div>
                 <div class="motto">
                     <h3>MOTTO</h3>
-                    {{-- <p>Learning for empowerment</p> --}}
+                    <p>Learning for empowerment</p>
                 </div>
                 <div class="vision">
                     <h3>VISION</h3>

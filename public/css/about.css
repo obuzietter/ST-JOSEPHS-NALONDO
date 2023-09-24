@@ -138,12 +138,13 @@ main {
 
 .school-values .mmv {
     /* width: 210px; */
-    height: 254px;
-    border-radius: 4px;
+    /* height: 254px;    */
+    /* border-radius: 4px; */
     background: #212121;
     display: flex;
-    gap: 5px;
-    padding: .4em;
+    
+    gap: .5rem;  
+    /* padding: .4em; */
 }
 
 .school-values .mmv>div {
@@ -151,11 +152,12 @@ main {
     flex: 1;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     transition: all .5s;
     background: #212121;
-    border: 1px solid #ff5a91;
+    border: 1px solid orange;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -166,16 +168,29 @@ main {
     &:hover h3 {
         transform: rotate(0);
     }
+     &:hover p {
+        transform: rotate(0);
+        opacity: 1;
+    }
 }
 
 .school-values .mmv div h3 {
-    min-width: 14em;
-    padding: .5em;
-    text-align: center;
+    /* min-width: 14em; */
+    /* padding: .5em; */
+    /* text-align: center;  */
     transform: rotate(-90deg);
     transition: all .5s;
-    text-transform: uppercase;
-    color: #ff568e;
-    letter-spacing: .1em;
+    /* text-transform: uppercase; */
+    color: orange;
+    /* letter-spacing: .1em; */
+    font-size: 1.5rem;
 
+}
+.school-values .mmv div p{
+    /* border: 1px solid orange; */
+    /* transform: rotate(-90deg); */
+        transition: all 2s;
+        opacity: 0;
+        font-size: 1.2rem;
+        color: white;
 }
