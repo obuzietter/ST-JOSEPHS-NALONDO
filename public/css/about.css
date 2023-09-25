@@ -204,18 +204,20 @@ main {
 }
 
 /* core-values styling */
-.core-values{
+.core-values {
     flex: 0 0 50%;
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
 }
-.core-values h1{
+
+.core-values h1 {
     border: 1px solid red;
     text-align: center;
 }
-.core-values ul{
+
+.core-values ul {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -226,18 +228,27 @@ main {
     list-style: none;
     flex-grow: 1;
 }
-.core-values ul li{
+
+.core-values ul li {
     background-color: rgb(9, 9, 143);
     color: white;
-    margin-left: 2rem;
+    margin-left: 3rem;
     position: relative;
-    padding: 0 1rem;
-&::before{
-    content: "1";
-    position: absolute;
-    background-color: red;
-    /* top: -50%; */
-    left: -0.5rem;
-    padding: 1rem;
-}
+    padding: .5rem 2rem;
+    transition: all 1s linear;
+
+    &::before {
+        content: "01";
+        position: absolute;
+        background-color: white;
+        color: rgb(9, 9, 143);
+        /* top: -50%; */
+        left: -2rem;
+        top: -0.5rem;
+        padding: .5rem .5rem;
+        box-shadow: -9px 6px 5px 1px rgba(0, 0, 0, 0.75);
+    }
+    &:hover{
+        width: 90%;
+    }
 }
