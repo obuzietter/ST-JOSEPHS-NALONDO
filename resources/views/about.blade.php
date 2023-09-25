@@ -125,8 +125,8 @@
             <div class="mmv">
                 <div class="mission">
                     <h3>MISSION</h3>
-                    {{-- <p>To become a school of excellence in education through commitment, diligence and integrity in the
-                        country.</p> --}}
+                    <p>To become a school of excellence in education through commitment, diligence and integrity in the
+                        country.</p>
                 </div>
                 <div class="motto">
                     <h3>MOTTO</h3>
@@ -134,20 +134,20 @@
                 </div>
                 <div class="vision">
                     <h3>VISION</h3>
-                    {{-- <p>To attain academic excellence and bring out talent in young people to help the develop mentally,
-                        physically, socially and spiritually.</p> --}}
+                    <p>To attain academic excellence and bring out talent in young people to help the develop mentally,
+                        physically, socially and spiritually.</p>
                 </div>
             </div>
             <div class="core-values">
                 <h1>CORE VALUES</h1>
                 <ul>
-                    <li class="core-value "> HARDWORK AND TEAMWORK</li>
-                    <li class="core-value "> TIMELINESS</li>
-                    <li class="core-value "> INTEGRITY AND HUMILITY</li>
-                    <li class="core-value "> CHASTITY</li>
-                    <li class="core-value "> PERSERVERENCE</li>
-                    <li class="core-value "> CONTINUAL IMPROVEMENT</li>
-                    <li class="core-value "> INNOVATION AND CREATIVITY</li>
+                    <li class="core-value"> HARDWORK AND TEAMWORK</li>
+                    <li class="core-value"> TIMELINESS</li>
+                    <li class="core-value"> INTEGRITY AND HUMILITY</li>
+                    <li class="core-value"> CHASTITY</li>
+                    <li class="core-value"> PERSERVERENCE</li>
+                    <li class="core-value"> CONTINUAL IMPROVEMENT</li>
+                    <li class="core-value"> INNOVATION AND CREATIVITY</li>
                 </ul>
             </div>
         </section>

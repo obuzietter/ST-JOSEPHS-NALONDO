@@ -134,16 +134,18 @@ main {
 /* school values section styling */
 .school-values {
     display: flex;
+    min-height: 75vh;
 }
 
 .school-values .mmv {
+    flex: 0 0 50%;
     /* width: 210px; */
     /* height: 254px;    */
     /* border-radius: 4px; */
-    background: #212121;
+    /* background: #212121; */
     display: flex;
-    
-    gap: .5rem;  
+
+    /* gap: .5rem; */
     /* padding: .4em; */
 }
 
@@ -153,13 +155,14 @@ main {
     overflow: hidden;
     cursor: pointer;
     /* border-radius: 2px; */
-    transition: all .5s;
+    transition: all .5s linear;
     background: #212121;
     border: 1px solid orange;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     &:hover {
         flex: 4;
@@ -168,9 +171,11 @@ main {
     &:hover h3 {
         transform: rotate(0);
     }
-     &:hover p {
-        transform: rotate(0);
+
+    &:hover p {
+        transform: translateY(0);
         opacity: 1;
+
     }
 }
 
@@ -179,18 +184,60 @@ main {
     /* padding: .5em; */
     /* text-align: center;  */
     transform: rotate(-90deg);
-    transition: all .5s;
+    transition: all .5s linear;
     /* text-transform: uppercase; */
     color: orange;
     /* letter-spacing: .1em; */
     font-size: 1.5rem;
+    border: 1px solid red;
 
 }
-.school-values .mmv div p{
+
+.school-values .mmv div p {
     /* border: 1px solid orange; */
     /* transform: rotate(-90deg); */
-        transition: all 2s;
-        opacity: 0;
-        font-size: 1.2rem;
-        color: white;
+    transition: all .5s;
+    opacity: 0;
+    font-size: 1.2rem;
+    color: white;
+    transform: translateY(500%);
+}
+
+/* core-values styling */
+.core-values{
+    flex: 0 0 50%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.core-values h1{
+    border: 1px solid red;
+    text-align: center;
+}
+.core-values ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 1px solid red;
+    list-style: none;
+    flex-grow: 1;
+}
+.core-values ul li{
+    background-color: rgb(9, 9, 143);
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    padding: 0 1rem;
+&::before{
+    content: "1";
+    position: absolute;
+    background-color: red;
+    /* top: -50%; */
+    left: -0.5rem;
+    padding: 1rem;
+}
 }

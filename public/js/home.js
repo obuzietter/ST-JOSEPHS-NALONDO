@@ -57,3 +57,7 @@ const animationObserver = new IntersectionObserver(
 observerItems.forEach((ob) => {
     animationObserver.observe(ob);
 });
+
+document.getElementById("btn").addEventListener("click", ()=>{
+    location.href = "/about"
+})

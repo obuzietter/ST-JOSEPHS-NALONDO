@@ -198,7 +198,7 @@
                     </p>
                 </div>
                 <div class="button">
-                    <button>LEARN MORE</button>
+                    <button id="btn">LEARN MORE</button>
                 </div>
                 <nav>
                     <a href="">A</a>
