@@ -262,10 +262,11 @@ main {
     display: flex;
     align-items: start;
     justify-content: start;
+    border: 1px solid red;
 }
 .statistics .counters{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     /* display: flex; */
     border: 1px solid red;
     /* justify-content: space-evenly; */
