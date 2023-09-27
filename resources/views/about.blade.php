@@ -169,26 +169,27 @@
                 </div>
             </div>
         </section>
-        <section class="anthem">
+        <section class="traditions">
             <div class="container">
                 <div class="toggle">
-                    <div class="anthem">School Anthem</div>
-                    <div class="prayer">School Prayer</div>
+                    <div class="anthem"><a href="#anthem">School Anthem</a></div>
+                    <div class="prayer"><a href="#prayer">School Prayer</a></div>
                 </div>
                 <div class="content">
                     <div id="anthem">
                         <h2>School Anthem</h2>
                         <h3>(Verse 1)</h3>
-                        In St. Joseph's Nalondo, our hearts unite, Guided by knowledge, we reach for the light. With
-                        courage and honor, we proudly stand, In our beloved school, hand in hand.
+                        <p>In St. Joseph's Nalondo, our hearts unite, Guided by knowledge, we reach for the light. With
+                            courage and honor, we proudly stand, In our beloved school, hand in hand.</p>
 
                         <h3>(Chorus)</h3>
-                        Hail, St. Joseph's Nalondo, alma mater dear, In your hallowed halls, we find purpose clear.
-                        Through trials and triumphs, we'll always be, Loyal to your name, for eternity.
-
+                        <p>Hail, St. Joseph's Nalondo, alma mater dear, In your hallowed halls, we find purpose clear.
+                            Through trials and triumphs, we'll always be, Loyal to your name, for eternity.
+                        </p>
                         <h3>(Verse 2)</h3>
-                        In the classroom's wisdom, we find our way, In every challenge, we'll never sway. With mentors
-                        and friends, we'll conquer all, As we answer the noblest of calls.
+                        <p>In the classroom's wisdom, we find our way, In every challenge, we'll never sway. With
+                            mentors
+                            and friends, we'll conquer all, As we answer the noblest of calls.</p>
                     </div>
                     <div id="prayer">
                         <h2>School Prayer</h2>
