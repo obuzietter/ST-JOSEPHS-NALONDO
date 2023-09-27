@@ -129,6 +129,7 @@ main {
 
 .history .chunks .chunk .description p {
     padding: .5rem 0;
+    font-size: 1.2rem;
 }
 
 /* school values section styling */
@@ -319,6 +320,7 @@ main {
 .traditions .container{
     max-width: 80%;
     margin: 2rem auto;
+    
 }
 .traditions .container .toggle{
     display: flex;
@@ -326,6 +328,7 @@ main {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
+   
 }
 a{
     text-decoration: none;
@@ -333,12 +336,30 @@ a{
 .traditions .container .toggle .anthem{
     background-color: rgb(9, 9, 143);
     flex: 1;
+    &:hover {
+            background-color: orange;
+        }
+    
+}
+.traditions .container .toggle .anthem a{
     color: white;
 }
 .traditions .container .toggle .prayer{
     background-color: rgb(201, 201, 201);
     flex: 1;
+
+    &:hover {
+            background-color: orange;
+            
+        }
+        &:hover a{
+            color: white;
+        }
 }
+.traditions .container .toggle .prayer a{
+    color: black;
+}
+
 .traditions .container .content{
     /* border: 1px solid green; */
     display: flex;
@@ -348,6 +369,7 @@ a{
 }
 .traditions .container .content>div{
     flex: 0 0 100%;
+    padding: 1.5rem 0;
     background-color: white;
     scroll-snap-align: start;
     text-align: center;
@@ -357,11 +379,11 @@ a{
 
 }
 .traditions .container .content>div h3{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-style: italic;
 }
 .traditions .container .content>div p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem 2rem;
     font-style: italic;
     /* font-weight: lighter; */
