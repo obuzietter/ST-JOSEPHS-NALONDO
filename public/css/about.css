@@ -3,11 +3,12 @@
     margin: 0;
     box-sizing: border-box;
     /* border: 1px solid green;     */
+    /* color-scheme: dark light; */
 }
 
 /* main section styling */
 main {
-    background-color: rgb(232, 232, 232);
+    /* background-color: rgb(232, 232, 232); */
 }
 
 /* hero section styling */
@@ -79,6 +80,7 @@ main {
 .school-desc .text {
     /* border: 1px solid red; */
     /* padding: 0 2rem; */
+    font-size: 1.2rem;
 }
 
 .school-desc .text p {
@@ -95,7 +97,7 @@ main {
     max-width: 90%;
     margin: auto;
     background-color: white;
-    box-shadow: 7px 8px 14px 0px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 7px 8px 14px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .history .heading {
@@ -134,6 +136,8 @@ main {
 
 /* school values section styling */
 .school-values {
+    margin: 5rem auto;
+    max-width: 90%;
     display: flex;
     min-height: 75vh;
 }
@@ -174,7 +178,7 @@ main {
     }
 
     &:hover p {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
 
     }
@@ -184,7 +188,7 @@ main {
     /* min-width: 14em; */
     /* padding: .5em; */
     /* text-align: center;  */
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
     transition: all .5s linear;
     /* text-transform: uppercase; */
     color: orange;
@@ -201,20 +205,20 @@ main {
     opacity: 0;
     font-size: 1.2rem;
     color: white;
-    transform: translateY(500%);
+    transform: translateX(500%);
 }
 
 /* core-values styling */
 .core-values {
     flex: 0 0 50%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
 }
 
 .core-values h1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 
@@ -223,11 +227,12 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: space-evenly;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     list-style: none;
     flex-grow: 1;
+    counter-reset: li;
 }
 
 .core-values ul li {
@@ -236,12 +241,13 @@ main {
     margin-left: 3rem;
     position: relative;
     padding: .5rem 2rem;
-    transition: all .2s linear;
-    /* width: 50%; */
-  
+    transition: all .5s cubic-bezier(.58, .29, .83, .67);
+    cursor: default;
+    transform: translateX(80%);
 
     &::before {
-        content: "01";
+        content: "0" counter(li);
+        counter-increment: li;
         position: absolute;
         background-color: white;
         color: rgb(9, 9, 143);
@@ -253,12 +259,13 @@ main {
     }
 
 }
-.core-values ul li:hover{
-    width: 90%;
-}
+
+
+
+
 
 /* statistics section styling */
-.statistics{
+.statistics {
     background-image: url(../images/nalondo2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -269,16 +276,18 @@ main {
     place-items: center;
     margin: 3rem 0;
 }
-.statistics .container{
+
+.statistics .container {
     background-color: rgb(9, 9, 143, .8);
     width: 100%;
     height: 100%;
-    
+
     display: grid;
     place-items: center;
-    
+
 }
-.statistics .container .counters{
+
+.statistics .container .counters {
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem;
@@ -289,7 +298,8 @@ main {
     border-radius: 5px;
     padding: 3rem 0;
 }
-.statistics .container .counters .counter{
+
+.statistics .container .counters .counter {
     color: white;
     /* max-width: 30%; */
     font-weight: 700;
@@ -297,92 +307,108 @@ main {
     transition: .3s ease;
     /* border: 1px solid red; */
     cursor: default;
-    &:hover{
+
+    &:hover {
         scale: 1.1;
     }
 }
-.statistics .container .counters .counter span{
+
+.statistics .container .counters .counter span {
     color: orange;
     font-size: 3rem;
     font-weight: 700;
-    
+
 }
-.statistics .container .counters .counter h3{
-    
+
+.statistics .container .counters .counter h3 {
+
     font-size: 2rem;
 }
 
 /* anthem section styling */
-.traditions{
+.traditions {
     border: 1px solid red;
-    min-height: 75dvh;
+    /* min-height: 75dvh; */
 }
-.traditions .container{
+
+.traditions .container {
     max-width: 80%;
     margin: 2rem auto;
-    
+
 }
-.traditions .container .toggle{
+
+.traditions .container .toggle {
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-   
+
 }
-a{
+
+a {
     text-decoration: none;
 }
-.traditions .container .toggle .anthem{
+
+.traditions .container .toggle .anthem {
     background-color: rgb(9, 9, 143);
     flex: 1;
+
     &:hover {
-            background-color: orange;
-        }
-    
+        background-color: orange;
+    }
+
 }
-.traditions .container .toggle .anthem a{
+
+.traditions .container .toggle .anthem a {
     color: white;
 }
-.traditions .container .toggle .prayer{
+
+.traditions .container .toggle .prayer {
     background-color: rgb(201, 201, 201);
     flex: 1;
 
     &:hover {
-            background-color: orange;
-            
-        }
-        &:hover a{
-            color: white;
-        }
+        background-color: orange;
+
+    }
+
+    &:hover a {
+        color: white;
+    }
 }
-.traditions .container .toggle .prayer a{
+
+.traditions .container .toggle .prayer a {
     color: black;
 }
 
-.traditions .container .content{
+.traditions .container .content {
     /* border: 1px solid green; */
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
 }
-.traditions .container .content>div{
+
+.traditions .container .content>div {
     flex: 0 0 100%;
     padding: 1.5rem 0;
     background-color: white;
     scroll-snap-align: start;
     text-align: center;
 }
-.traditions .container .content>div h2{
+
+.traditions .container .content>div h2 {
     font-size: 2rem;
 
 }
-.traditions .container .content>div h3{
+
+.traditions .container .content>div h3 {
     font-size: 1.5rem;
     font-style: italic;
 }
-.traditions .container .content>div p{
+
+.traditions .container .content>div p {
     font-size: 1.2rem;
     padding: 1rem 2rem;
     font-style: italic;
