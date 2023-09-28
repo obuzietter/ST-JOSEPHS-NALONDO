@@ -733,7 +733,6 @@ body, h1, h2, p {
 <body>
 <header>
 <script src="navbar.js"></script>
-<script src="footer.js"></script>
 
 
     <div class="school-info">
@@ -933,7 +932,7 @@ body, h1, h2, p {
         <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
     </div>
 </div>
-<div id="footerContainer"></div>
+
 
 
 <script>
@@ -959,21 +958,7 @@ document.addEventListener('DOMContentLoaded', function () {
         headerLinks.appendChild(listItem);
     });
 });
-   // Use JavaScript to load the footer content
-   document.addEventListener('DOMContentLoaded', function () {
-        const footerContainer = document.getElementById('footerContainer');
 
-        // Create a new element to hold the footer content
-        const footerElement = document.createElement('div');
-
-        // Load the content of footer.html using fetch
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                footerElement.innerHTML = data;
-                footerContainer.appendChild(footerElement);
-            });
-    });
 document.addEventListener("DOMContentLoaded", function () {
     const showAchievementsButton = document.getElementById("showAchievementsButton");
 
