@@ -9,6 +9,7 @@
 /* main section styling */
 main {
     /* background-color: rgb(232, 232, 232); */
+    background-color: white;
 }
 
 /* hero section styling */
@@ -102,6 +103,7 @@ main {
 
 .history .heading {
     text-align: center;
+    padding: 2rem 0;
 }
 
 .history .chunks {}
