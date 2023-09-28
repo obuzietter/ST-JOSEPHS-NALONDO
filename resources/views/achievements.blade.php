@@ -408,6 +408,14 @@ body, h1, h2, p {
         transform: translateY(-10px);
     }
 }
+@keyframes slideInLeft{
+    from{
+        transform:translateX(-200px);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
 
 
 /* Style for Achievement 1 */
@@ -415,7 +423,7 @@ body, h1, h2, p {
     display: flex;
     flex-direction: row-reverse; /* Image on the left, text on the right */
     max-width: 100%;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
 }
 
@@ -424,7 +432,7 @@ body, h1, h2, p {
     display: flex;
     flex-direction: row; /* Image on the right, text on the left */
     max-width: 100%;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
 }
 
@@ -433,7 +441,7 @@ body, h1, h2, p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     max-width: 100%;
-    height: 40vh;
+    height: 50vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -447,7 +455,7 @@ body, h1, h2, p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     max-width: 100%;
-    height: 40vh;
+    height: 50vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -465,7 +473,7 @@ body, h1, h2, p {
     display: flex;
     flex-direction: row-reverse; /* Image on the left, text on the right */
     max-width: 100%;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
 }
 
@@ -475,9 +483,9 @@ body, h1, h2, p {
 .achievement-container:nth-child(7) .achievement,
 .achievement-container:nth-child(8) .achievement {
     display: flex;
-    flex-direction: row-reverse; /* Image on the left, text on the right */
+    flex-direction: row-reverse; /* Image on the right, text on the left */
     max-width: 100%;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
 }
 
@@ -485,9 +493,9 @@ body, h1, h2, p {
 .achievement-container:nth-child(9) .achievement,
 .achievement-container:nth-child(10) .achievement {
     display: flex;
-    flex-direction: row-reverse; /* Image on the left, text on the right */
+    flex-direction: row-reverse; /* Image on the right, text on the left */
     max-width: 100%;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
 }
 
@@ -521,6 +529,14 @@ body, h1, h2, p {
             cursor: pointer;
             z-index: 1000;
             margin-left: 20px;
+            animation-name: slideInLeft;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+
         }
 
         .scroll-to-top-button {
@@ -674,6 +690,10 @@ body, h1, h2, p {
 </head>
 <body>
 <header>
+<script src="navbar.js"></script>
+<script src="footer.js"></script>
+
+
     <div class="school-info">
         <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
         <div class="hamburger" id="hamburger">
@@ -682,15 +702,7 @@ body, h1, h2, p {
             <span></span>
         </div>
     </div>
-    <ul class="header-links hidden-links" id="headerLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="faculty.html">Faculty</a></li>
-        <li><a href="student-life.html">Student Life</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li class="active-link"><a href="achievements.html">Achievements</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
+    <ul class="header-links hidden-links" id="headerLinks"></ul>
 </header>
 <div class="title-container">
     <div class="title-text">
@@ -757,6 +769,7 @@ body, h1, h2, p {
                 <p>Your achievement description goes here.</p>
             </div>
         </div>
+        
     </div>
 </div>
 
@@ -813,31 +826,34 @@ body, h1, h2, p {
     </div>
 </div>
 <div class="achievement-row">
-<!-- Achievements 8 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <img src="images/trumpet.jpg" alt="Achievement 8" class="achievement-image">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 8</h2>
-                <p>Collaborated with cross-functional teams to successfully launch a product in a new international market, achieving a 25% increase in market share.</p>
+    <div class="grid-container">
+        <!-- Achievements 8 -->
+        <div class="achievement-container">
+            <div class="achievement">
+                <img src="images/trumpet.jpg" alt="Achievement 8" class="achievement-image">
+                <div class="achievement-content">
+                    <div class="achievement-text">
+                        <h2>Achievement 8</h2>
+                        <p>Collaborated with cross-functional teams to successfully launch a product in a new international market, achieving a 25% increase in market share.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Achievements 9 -->
+        <div class="achievement-container">
+            <div class="achievement">
+                <img src="images/sports red.jpeg" alt="Achievement 9" class="achievement-image">
+                <div class="achievement-content">
+                    <div class="achievement-text">
+                        <h2>Achievement 9</h2>
+                        <p>Implemented a data-driven marketing strategy that led to a 40% increase in online sales and a 30% improvement in customer retention.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Achievements 9 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 9</h2>
-                <p>Implemented a data-driven marketing strategy that led to a 40% increase in online sales and a 30% improvement in customer retention.</p>
-            </div>
-        </div>
-        <img src="images/sports red.jpeg" alt="Achievement 9" class="achievement-image">
-    </div>
-</div>
+    
 
 <!-- Achievements 10 -->
 <div class="achievement-container">
@@ -875,11 +891,47 @@ body, h1, h2, p {
         <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
     </div>
 </div>
-
+<div id="footerContainer"></div>
 
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = [
+        { text: 'Home', link: 'index.html' },
+        { text: 'AboutUs', link: 'about.html' },
+        { text: 'Faculty', link: 'faculty.html' },
+        { text: 'StudentLife', link: 'student-life.html' },
+        { text: 'Community', link: 'community.html' },
+        { text: 'Achievements', link: 'achievements.html' },
+        { text: 'ContactUs', link: 'contact.html' },
+    ];
 
+    const headerLinks = document.getElementById('headerLinks');
+
+    navLinks.forEach(link => {
+        const listItem = document.createElement('li');
+        const anchor = document.createElement('a');
+        anchor.href = link.link;
+        anchor.textContent = link.text;
+        listItem.appendChild(anchor);
+        headerLinks.appendChild(listItem);
+    });
+});
+   // Use JavaScript to load the footer content
+   document.addEventListener('DOMContentLoaded', function () {
+        const footerContainer = document.getElementById('footerContainer');
+
+        // Create a new element to hold the footer content
+        const footerElement = document.createElement('div');
+
+        // Load the content of footer.html using fetch
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                footerElement.innerHTML = data;
+                footerContainer.appendChild(footerElement);
+            });
+    });
 document.addEventListener("DOMContentLoaded", function () {
     const showAchievementsButton = document.getElementById("showAchievementsButton");
 
