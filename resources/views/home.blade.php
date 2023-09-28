@@ -9,12 +9,131 @@
     {{-- css linking --}}
     {{-- <link rel="stylesheet" href="{{ asset('/css/home.css') }}"> --}}
     <link rel="stylesheet" href="/css/home.css">
-    <script src="{{asset('/js/home.js')}}" defer></script>
+    <script src="{{ asset('/js/home.js') }}" defer></script>
+    <style>
+                :root {
+            --primary-color: #031a32;
+            --secondary-color: #062744;
+            --background-color: #F8F9FA;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        /* Header styles */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }/* Updated CSS for the header styles */
+        .header-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+.header-links li {
+    margin: 0;
+    position: relative; /* Add relative positioning */
+}
+
+.header-links a {
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative; /* Add relative positioning */
+}
+
+/* Add a hover effect for the links */
+.header-links a:hover {
+    color: burlywood;
+    /* Add animation for smoother transition */
+    transition: color 0.3s ease;
+}
+
+/* Add a line below the link when hovered */
+.header-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the position as needed */
+    width: 100%;
+    height: 2px; /* Height of the line */
+    background-color: #fff; /* Color of the line */
+    transform: scaleX(0); /* Initially, the line is not visible */
+    transform-origin: center; /* Set the transform origin to center */
+    transition: transform 0.3s ease; /* Add animation for smoother transition */
+}
+
+.header-links a:hover::after {
+    transform: scaleX(1); /* When hovered, make the line visible */
+}
+
+/* Add a background color for the active link */
+.header-links a.active {
+    background-color: #062744;
+    /* Add animation for smoother transition */
+    transition: background-color 0.3s ease;
+}
+
+/* Add a line below the active link */
+.header-links a.active::after {
+    transform: scaleX(1); /* Make the line visible */
+}
+
+
+        .school-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .school-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 3px 0;
+        }
+
+    </style>
 </head>
 
 <body>
-    <header>
+    <header style="background-color: rgb(2, 2, 85); color: white;">
+        <script src="navbar.js"></script>
 
+
+        <div class="school-info">
+            <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="header-links hidden-links" id="headerLinks"></ul>
     </header>
     <main>
         {{-- section landing --}}
@@ -240,17 +359,41 @@
                 btn.classList.remove('active')
             })
         });
-        
+
         slides[manual].classList.add('active')
         btns[manual].classList.add('active')
     }
 
-    btns.forEach((btn, i)=>{
-        btn.addEventListener("click", ()=>{
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
             manualNav(i)
             currentSlide = i
         })
     })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = [
+        { text: 'Home', link: '/' },
+        { text: 'AboutUs', link: 'about' },
+        { text: 'Faculty', link: 'faculty' },
+        { text: 'StudentLife', link: 'student life' },
+        { text: 'Community', link: 'community.html' },
+        { text: 'Achievements', link: 'achievements' },
+        { text: 'ContactUs', link: 'contact.html' },
+    ];
+
+    const headerLinks = document.getElementById('headerLinks');
+
+    navLinks.forEach(link => {
+        const listItem = document.createElement('li');
+        const anchor = document.createElement('a');
+        anchor.href = link.link;
+        anchor.textContent = link.text;
+        listItem.appendChild(anchor);
+        headerLinks.appendChild(listItem);
+    });
+});
 </script>
 
 </html>
