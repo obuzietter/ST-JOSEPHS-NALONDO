@@ -2,350 +2,515 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid red; */
 }
-
-/* selection background color */
-::selection {
-    background-color: orangered;
-}
-
-/* snap and smooth scrolling */
-html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-body{
-    overflow-x: hidden;
-    /* border: 2px solid blue; */
-}
-/* main{
-    border: 2px solid red;
-        width: 100%;
-} */
 
 /* main section styling */
-main .landing {
-    background-image: url(../images/nalondo21.jpeg);
+
+/* landing section styling */
+.landing {
+    min-height: 75vh;
+    background-image: url(../images/nalondo8.jpeg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100dvh;
+    position: relative;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.landing .slides {
+    background-color: rgb(9, 9, 143, .5);
+    min-height: 75vh;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.landing .slides .slide {
+
+    position: absolute;
+
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    
-}
-
-/* landing section */
-main .landing .welcome .welcome-text {
-    font-size: 2.8rem;
-    font-weight: 600;
-    padding: 30px 0;
-    text-align: center;
-}
-
-main .landing .welcome .school-name {
-    color: blue;
-    font-size: 3.3rem;
-    font-weight: 900;
-    text-align: center;
-}
-
-main .landing .welcome .button {
-    padding: 30px 0;
-}
-
-/* button styling */
-#btn {
-    --color: blue;
-    background-color: transparent;
-    display: inline-block;
-    padding: 30px;
-    overflow: hidden;
-    font-size: 1.3rem;
-    z-index: 1;
-    color: var(--color);
-    border: 2px solid var(--color);
-    position: relative;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-#btn::before {
-    position: absolute;
-    content: "";
-    background: var(--color);
-    width: 400px;
-    height: 300px;
-    z-index: -1;
-    border-radius: 50%;
-}
-
-#btn:hover {
-    color: white;
-    box-shadow: 5px 5px 15px blue;
-}
-
-#btn:before {
-    top: 100%;
-    left: 100%;
-    transition: 0.3s all;
-}
-
-#btn:hover::before {
-    top: -50px;
-    left: -50px;
-}
-
-main .boxes {
-    display: flex;
     justify-content: center;
+    align-items: center;
+    color: white;
+
+    transform: translateY(-100%);
+    width: 100%;
+    overflow: hidden;
+
 }
 
-/* interactive boxes  */
-main .boxes .box {
-    width: 33.3%;
-    position: relative;
-    padding: 2rem;
-    background-color: #000006;
-    animation-name: slide-in;
-    animation-duration: 1.4s;
-    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-    text-align: center;
-    cursor: pointer;
-}
-
-main .boxes .box:hover img {
-    scale: 0.6;
-    filter: drop-shadow(5px 5px 30px white);
-}
-
-main .boxes .box:hover h4 {
-    color: #0004ff;
-    scale: 1.1;
-    text-decoration: underline;
-}
-
-main .boxes .box:hover p {
-    height: 350px;
+.landing .slides .slide .welcome {
+    font-size: 2rem;
+    font-weight: 600;
     padding: 1rem;
 }
 
-main .boxes .box img {
-    width: 100px;
-    transition: .2s ease;
-
-}
-
-main .boxes .box h4 {
-    font-size: 1.8rem;
-    padding: 10px 0;
-    transition: .2s ease;
-}
-
-main .boxes .box p {
-    font-size: 1.2rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #242424;
-    z-index: 5;
-    height: 0;
-    transition: .2s linear;
-    overflow: hidden;
-    text-align: start;
-}
-
-main .boxes .box p span {
-    display: block;
-    text-align: start;
-    color: #FF8A00;
-    text-decoration: underline;
-}
-
-main .boxes .box p span:hover {
-    color: #0004ff;
-}
-
-/* slide slideshow section styling */
-main .slideshow {
-    min-height: 100dvh;
-    display: grid;
-    place-items: center;
-    position: relative;
-    /* gap: 5rem; */
-}
-
-main .slideshow .slides {
-    width: 70%;
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    cursor: pointer;
-    margin: 5rem 0;
-}
-
-main .slideshow .slides::-webkit-scrollbar {
-    display: none;
-}
-
-.active {
-    box-shadow: 15px 15px 15px black;
-    scale: 1.04;
-
-}
-
-main .slideshow .slide {
-    scroll-snap-align: start;
-    position: relative;
-    flex: 0 0 100%;
-    transition: .5s ease;
-
-}
-
-main .slideshow .slide:hover .brief {
-    background-color: rgba(0, 0, 3, .8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-}
-
-main .slideshow .slide:hover .brief>h1,
-.brief>p {
-    opacity: 1;
-    width: fit-content;
-}
-
-main .slideshow .slide:hover .brief>p {
-    opacity: 1;
-    width: fit-content;
-}
-
-main .slideshow .slide .brief {
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    transition: .3s ease;
-    border-radius: 100%;
-
-}
-
-main .slideshow .slide .brief h1,
-main .slideshow .slide .brief p {
-    opacity: 0;
-    transition: 2s ease;
-    width: 0;
-    overflow: hidden;
-}
-
-
-main .slideshow .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* animated statisctics counter - slideshow section */
-main .slideshow .statistics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.landing .slides .slide .banner {
+    font-size: 3rem;
+    font-weight: 900;
+    background-color: blue;
+    padding: 1rem;
     text-align: center;
 }
 
-main .slideshow .statistics .card {
-    transform: translateX(100%);
+.landing .slides .slide.active {
+    transform: translateY(0);
+    transform-origin: center;
+
+    transition: 1s;
+
+
+}
+
+.landing nav {
+    position: absolute;
+
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.landing nav span {
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    margin: 1rem;
+}
+
+.landing nav span.active {
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: orange;
+}
+
+/* brief section styling */
+.brief {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.brief .card {
+    /* max-width: 20%; */
+    flex: 0 0 20%;
+    text-align: center;
+    margin: 4rem 0;
+    border: 1px solid black;
+    padding: 1.5rem;
+    border-radius: 1rem;
     transition: .5s ease;
-    background-color: black;
-    /* flex-basis: 33.333%; */
-    padding: 3rem;
     cursor: default;
-    
+    &:hover {
+        box-shadow: 19px 10px 32px -15px rgba(0, 0, 0, 0.75);
+        scale: 1.005;
+    }
+
 }
 
-main .slideshow .statistics div:hover h1 {
-    scale: 0.85;
+.brief .card .icon {
+    /* border: 1px solid red; */
 }
 
-main .slideshow .statistics div:hover span {
-    scale: 1.5;
+.brief .card .icon img {
+    width: 50px;
 }
 
-main .slideshow .statistics div h1 {
+.brief .card .desc {
+    text-align: center;
+}
+
+.brief .card .desc h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.brief .card .desc p {
+    font-size: 1rem;
+}
+
+/* news section styling */
+.news {
+    background-image: url(../images/BACKGROUND.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+
+}
+
+.news .blue-bg-color {
+    background-color: rgb(9, 9, 143, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news .heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 2rem;
+}
+
+.news .content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    row-gap: 1rem;
+}
+
+.news .content article {
+    /* max-width: 27%; */
+    flex: 0 0 50%;
+    display: flex;
+    position: relative;
+}
+
+.news .content article::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: red;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+
+    animation: pulse 2s infinite;
+}
+
+.news .content article .image {
+    /* border: 2px solid red; */
+    display: grid;
+    place-items: center;
+    width: 4rem;
+
+}
+
+.news .content article .image img {
+    width: 100%;
+}
+
+.news .content article .body {
+    padding: 1rem;
+}
+
+.news .content article .body h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.news .content article .body p {
+    line-height: 1.5rem;
+}
+
+.news .content article .body span {
+    line-height: 1.5rem;
+    color: orange;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.news .more {
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.news .more button {
+    padding: .7rem 1rem;
+    color: white;
+    font-weight: 700;
+    background-color: orange;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* events section styling */
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .heading {
+    text-align: center;
+
+}
+
+.events .heading h1 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.events .heading h1::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    left: -110%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.events .heading h1::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.events .event-items {
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.events .event-items .event {
+    flex: 0 0 50%;
+    display: flex;
+
+}
+
+.events .event-items .event .date {
+    /* border: 1px solid blue; */
+}
+
+.events .event-items .event .date .widget {
+    background-color: rgb(234, 234, 234);
+    /* height: 100%; */
+    text-align: center;
+    position: relative;
+    transform-origin: center -20px;
+    animation: swing ease-in-out 1s infinite alternate;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    &:after {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -20px;
+        content: '';
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    &:hover {
+        animation: none;
+        scale: 1.1;
+    }
+}
+
+.events .event-items .event .date .widget .month {
+    background-color: rgb(9, 9, 143);
+    color: white;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    transition: .5s;
+
+}
+
+.events .event-items .event .date .widget .day {
+    font-size: 1.5rem;
+
+    font-weight: 900;
+    padding: 1rem;
+
+}
+
+.events .event-items .event .desc {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: .5rem;
+}
+
+.events .event-items .event .desc h3 {
+    font-size: 1.2rem;
+}
+
+.events .event-items .event .desc p {
+    font-size: 1rem;
+
+}
+
+.events .event-items .event .desc span {
+    color: rgb(9, 9, 143);
+    /* text-decoration: underline; */
+    font-style: italic;
+    cursor: pointer;
+}
+
+.events .calender {
+    /* border: 2px solid green; */
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.events .calender h1 {
+    color: orange;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* about section styling */
+.about {
+    background-image: url(../images/nalondo6.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.about .slides {
+    background-color: rgb(9, 9, 143, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.about .slides .content {
+    max-width: 80%;
+    text-align: center;
+}
+
+.about .slides .content h1 {
+    padding: 1rem 0;
     font-size: 1.7rem;
-    padding: .7rem;
-    transition: .3s ease-in-out;
 }
 
-main .slideshow .statistics div span {
-    font-size: 2.7rem;
-    display: block;
-    color: #0004ff;
-    transition: .3s ease-in-out;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.about .slides .content p {
+    line-height: 1.5rem;
+    padding: .5rem 0;
 }
 
-main .slideshow .statistics div:nth-child(2) span {
-    color: #FF8A00;
+.about .slides .button {
+    padding: 1rem 0;
 }
 
-/* keyframe animations */
-@keyframes slide-in {
-    from {
-        transform: translateX(-1500px);
-    }
-
-    to {
-        transform: translateX(0px);
-    }
+.about .slides .button button {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: orange;
+    font-weight: 700;
+    border-style: none;
+    cursor: pointer;
 }
 
-/* typewriter styling */
-.anim-typewriter {
-    border-right: 2px solid blue;
+/* animated counters section styling */
+.counters {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
     overflow: hidden;
-    
-    white-space: nowrap;
-    animation: typewriter 4s steps(34) 1s 1 normal both,
-        blinkTextCursor 500ms steps(44) infinite normal;
 }
 
-/* type writer animation */
-@keyframes typewriter {
+.counters .counter {
+    text-align: center;
+    border: 1px solid orange;
+    padding: 1rem 0;
+    /* width: 300px; */
+    flex: 0 0 20%;
+    flex-wrap: wrap;
+    box-shadow: 19px 10px 32px -15px rgba(0, 0, 0, 0.75);
+}
+
+.counters .counter span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: orange;
+}
+
+.counters .counter h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: .5rem;
+}
+.ob{
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(236, 7, 7, 0.7);
+    }
+
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes fade-in {
     from {
-        width: 0;
-        padding-right: 0;
+        opacity: 0;
     }
 
     to {
-        width: 100%;
-        padding-right: 10px;
-    }
-}
-
-/* cursor blinking animation */
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: blue;
-    }
-
-    to {
-        border-right-color: transparent;
+        opacity: 1;
     }
 }

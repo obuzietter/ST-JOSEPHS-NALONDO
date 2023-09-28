@@ -1,68 +1,63 @@
-let btn = document.getElementById("btn");
-btn.addEventListener("click", () => {
-    location.href = "about";
-});
-
-const cards = document.querySelectorAll(".card");
+const counters = document.querySelectorAll(".count");
+const speed = 64;
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            entry.isIntersecting
-                ? ((entry.target.style.transform = "translate(0)"),
-                  (entry.target.style.backgroundColor = "rgba(0, 0, 4, .8)"),
-                  counter())
-                : // (entry.target.style.transform = "translateX(100%)"),
-                  (entry.target.style.backgroundColor = "blue");
+            if (entry.isIntersecting) {
+                startCount()
+            }
+        });
+    },
+    {
+        threshold: 1,
+    }
+);
+counters.forEach((counter) => {
+    observer.observe(counter);
+});
+
+
+function startCount() {
+    counters.forEach((counter) => {
+        const updateCount = () => {
+            const target = parseInt(+counter.getAttribute("data-target"));
+            const count = parseInt(+counter.innerText);
+            const increment = Math.trunc(target / speed);
+            // console.log(increment);
+
+            if (count < target) {
+                counter.innerText = count + increment;
+                setTimeout(updateCount, 1);
+            } else {
+                count.innerText = target;
+            }
+        };
+        updateCount();
+    });
+}
+
+const observerItems = document.querySelectorAll(".ob");
+const animationObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting){
+
+                entry.target.style.transform = "translateX(0) translateY(-1rem)"
+            }
+            else{
+                entry.target.style.transform = "translateX(100%) translateY(0)";
+            }
+            
         });
     },
     {
         threshold: 0.1,
     }
 );
-cards.forEach((card) => {
-    observer.observe(card);
+observerItems.forEach((ob) => {
+    animationObserver.observe(ob);
 });
 
-// js animated counter function
-function counter() {
-    let valueDisplays = document.querySelectorAll(".num");
-    let interval = 4000;
-
-    valueDisplays.forEach((valueDisplay) => {
-        let startValue = 0;
-        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-        let duration = Math.floor(interval / endValue);
-        let counter = setInterval(function () {
-            startValue += 1;
-            valueDisplay.textContent = startValue;
-            if (startValue > endValue) {
-                clearInterval(counter);
-            }
-        }, duration);
-    });
-}
-
-function slideShow() {
-    const slides = document.querySelectorAll(".slide");
-    // console.log(typeof(slides));
-    // console.log(slides.length);
-    let offset = -100;
-    let i = -100;
-    setInterval(() => {
-        slides.forEach((slide) => {
-            // console.log(slide.clientWidth);
-            slide.style.transform = `translateX(${offset}%)`;
-        });
-        offset = offset + i;
-        // console.log(offset);
-        if (offset / i > slides.length) {
-            slides.forEach((slide) => {
-                offset = offset * -1;
-                slide.style.transform = `translateX(0%)`;
-            });
-            offset = -0;
-        }
-    }, 4000);
-}
-
-slideShow();
+document.getElementById("btn").addEventListener("click", ()=>{
+    location.href = "/about"
+})

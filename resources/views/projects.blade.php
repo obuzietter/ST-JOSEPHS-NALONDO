@@ -23,7 +23,7 @@
             <h1><span>PROJECTS</span> YOU REALLY<br>
                 <span>NEED</span> TO KNOW ABOUT</h1>
 
-            <button><a href="#projects">VIEW</a></button>
+            <button><span></span><a href="#projects">VIEW</a></button>
         </div>
 
         <!-- THE PROJECTS -->
