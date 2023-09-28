@@ -28,7 +28,65 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
+        }/* Updated CSS for the header styles */
+        .header-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
         }
+.header-links li {
+    margin: 0;
+    position: relative; /* Add relative positioning */
+}
+
+.header-links a {
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative; /* Add relative positioning */
+}
+
+/* Add a hover effect for the links */
+.header-links a:hover {
+    color: burlywood;
+    /* Add animation for smoother transition */
+    transition: color 0.3s ease;
+}
+
+/* Add a line below the link when hovered */
+.header-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the position as needed */
+    width: 100%;
+    height: 2px; /* Height of the line */
+    background-color: #fff; /* Color of the line */
+    transform: scaleX(0); /* Initially, the line is not visible */
+    transform-origin: center; /* Set the transform origin to center */
+    transition: transform 0.3s ease; /* Add animation for smoother transition */
+}
+
+.header-links a:hover::after {
+    transform: scaleX(1); /* When hovered, make the line visible */
+}
+
+/* Add a background color for the active link */
+.header-links a.active {
+    background-color: #062744;
+    /* Add animation for smoother transition */
+    transition: background-color 0.3s ease;
+}
+
+/* Add a line below the active link */
+.header-links a.active::after {
+    transform: scaleX(1); /* Make the line visible */
+}
+
 
         .school-info {
             display: flex;
@@ -55,23 +113,7 @@
             margin: 3px 0;
         }
 
-        .header-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            margin: 0;
-        }
-
-        .header-links li {
-            margin: 0;
-        }
-
-        .header-links a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
+        
 
         /* Container styles */
         .container {
