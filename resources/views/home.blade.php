@@ -133,20 +133,7 @@
 </head>
 
 <body>
-    <header style="background-color: rgb(2, 2, 85); color: white;">
-        <script src="navbar.js"></script>
-
-
-        <div class="school-info">
-            <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <ul class="header-links hidden-links" id="headerLinks"></ul>
-    </header>
+    
     <main>
         {{-- section landing --}}
         <section class="landing">
@@ -269,6 +256,7 @@
                 </div>
             </div>
         </section>
+        {{-- section events --}}
         <section class="events">
             <div class="heading">
                 <h1>Upcoming Events</h1>

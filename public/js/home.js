@@ -42,10 +42,10 @@ const animationObserver = new IntersectionObserver(
         entries.forEach((entry) => {
             if (entry.isIntersecting){
 
-                entry.target.style.transform = "translateX(0) translateY(-1rem)"
+                entry.target.style.transform = "translateX(0)"
             }
             else{
-                entry.target.style.transform = "translateX(100%) translateY(0)";
+                entry.target.style.transform = "translateX(50%)";
             }
             
         });
