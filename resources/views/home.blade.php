@@ -10,6 +10,8 @@
     {{-- <link rel="stylesheet" href="{{ asset('/css/home.css') }}"> --}}
     <link rel="stylesheet" href="/css/home.css">
     <script src="{{ asset('/js/home.js') }}" defer></script>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="{{ asset('/js/navbar.js') }}" defer></script>
     <style>
         :root {
             --primary-color: #031a32;

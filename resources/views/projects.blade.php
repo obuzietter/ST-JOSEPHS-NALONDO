@@ -7,6 +7,8 @@
     <title>COMMUNITY AND EVENTS</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="{{ url('css/projects.css') }}">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="{{ asset('/js/navbar.js') }}" defer></script>
 </head>
 <body>
     <nav>

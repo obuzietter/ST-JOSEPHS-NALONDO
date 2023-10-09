@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nalondo - About</title>
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="{{ asset('/js/navbar.js') }}" defer></script>
+    
 </head>
 
 <body>

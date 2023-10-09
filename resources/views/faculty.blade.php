@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="faculty.css">
     <link rel="stylesheet" href="{{ url('css/faculty.css') }}">
     <script src="{{ url('js/faculty.js') }}" defer></script>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script src="{{ asset('/js/navbar.js') }}" defer></script>
 </head>
 <body>
     <div class="main-container">
