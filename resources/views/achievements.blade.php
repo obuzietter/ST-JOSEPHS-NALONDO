@@ -6,14 +6,12 @@
     <title>High School Achievements</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/achievements.css">
-    <script src="{{ asset('/js/navbar.js') }}" defer></script>
+  
     
 </head>
 <body>
 <header>
-
-
-    <div class="school-info">
+<div class="school-info">
         <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -21,7 +19,18 @@
             <span></span>
         </div>
     </div>
-    <ul class="header-links hidden-links" id="headerLinks"></ul>
+    <nav>
+    <ul class="header-links">
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="{{ route('about') }}">About Us</a></li>
+        <li><a href="{{ route('faculty') }}">Faculty</a></li>
+        <li><a href="{{ route('studentLife') }}">Student Life</a></li>
+        <li><a href="{{ route('community') }}">Community</a></li>
+        <li><a href="{{ route('achievements') }}">Achievements</a></li>
+        <li><a href="{{ route('contact') }}">Contact Us</a></li>
+    </ul>
+</nav>
+
 </header>
 <div class="title-container">
     <div class="title-text">

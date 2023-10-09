@@ -15,15 +15,29 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
-Route::view('about', 'about');
-Route::view('achievements', 'achievements');
+})->name('home');
 
+Route::get('/about', function () {
+    return view('about'); 
+})->name('about');
 
 Route::get('/faculty', function () {
-    return view('faculty');
-});
+    return view('faculty'); 
+})->name('faculty');
 
-Route::get('/projects', function () {
-    return view('projects');
-});
+Route::get('/student-life', function () {
+    return view('student-life'); 
+})->name('studentLife');
+
+Route::get('/community', function () {
+    return view('community'); 
+})->name('community');
+
+Route::get('/achievements', function () {
+    return view('achievements'); 
+})->name('achievements');
+
+Route::get('/contact', function () {
+    return view('contact'); 
+})->name('contact');
+

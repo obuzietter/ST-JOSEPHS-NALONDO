@@ -6,14 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nalondo - About</title>
-    <link rel="stylesheet" href="/css/navbar.css">
-    <script src="{{ asset('/js/navbar.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+  
+    <link rel="stylesheet" href="/css/about.css">
+
+    
     
 </head>
 
 <body>
     <header>
         {{-- navigation bar goes here --}}
+        <div class="school-info">
+        <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav>
+    <ul class="header-links">
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="{{ route('about') }}">About Us</a></li>
+        <li><a href="{{ route('faculty') }}">Faculty</a></li>
+        <li><a href="{{ route('studentLife') }}">Student Life</a></li>
+        <li><a href="{{ route('community') }}">Community</a></li>
+        <li><a href="{{ route('achievements') }}">Achievements</a></li>
+        <li><a href="{{ route('contact') }}">Contact Us</a></li>
+    </ul>
+</nav>
+
     </header>
     <main>
         <section class="hero">
