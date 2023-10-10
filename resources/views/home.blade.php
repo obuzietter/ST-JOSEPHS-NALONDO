@@ -13,33 +13,33 @@
     <link rel="stylesheet" href="/css/navbar.css">
     {{-- <link rel="stylesheet" href="{{ asset('/css/navbar.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
-    
-   
-    
+
+
+
 </head>
 
 <body>
     <header>
-    
-    <div class="school-info">
-        <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <div class="school-info">
+            <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
-    <nav>
-    <ul class="header-links">
-        <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('about') }}">About Us</a></li>
-        <li><a href="{{ route('faculty') }}">Faculty</a></li>
-        <li><a href="{{ route('studentLife') }}">Student Life</a></li>
-        <li><a href="{{ route('community') }}">Community</a></li>
-        <li><a href="{{ route('achievements') }}">Achievements</a></li>
-        <li><a href="{{ route('contact') }}">Contact Us</a></li>
-    </ul>
-</nav>
+        <nav>
+            <ul class="header-links">
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('about') }}">About Us</a></li>
+                <li><a href="{{ route('faculty') }}">Faculty</a></li>
+                <li><a href="{{ route('studentLife') }}">Student Life</a></li>
+                <li><a href="{{ route('community') }}">Community</a></li>
+                <li><a href="{{ route('achievements') }}">Achievements</a></li>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li>
+            </ul>
+        </nav>
 
     </header>
     <main>
@@ -250,24 +250,27 @@
         </section>
     </main>
     <footer>
-    <div class="footer">
-    <div class="contact-info">
-        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email: info@nalonduhighschool.com</p>
-        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
-        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-map-marker-alt"></i> Address: 123 School Street, City, Country</p>
-    </div>
-    <div class="footer-line"></div>
-    <div class="footer-icons-container">
-        <div class="footer-icons-row">
-            <a href="https://www.facebook.com"><i class="fab fa-facebook" ></i></a>
-            <a href="https://www.twitter.com"><i class="fab fa-twitter" ></i></a>
-            <a href="https://www.instagram.com"><i class="fab fa-instagram" ></i></a>
+        <div class="footer">
+            <div class="contact-info">
+                <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email:
+                    info@nalonduhighschool.com</p>
+                <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-phone"></i> Phone: +1
+                    (123) 456-7890</p>
+                <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-map-marker-alt"></i>
+                    Address: 123 School Street, City, Country</p>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-icons-container">
+                <div class="footer-icons-row">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div style="color: #fff;">
+                <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
+            </div>
         </div>
-    </div>
-    <div style="color: #fff;">
-        <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
-    </div>
-</div>
     </footer>
 </body>
 <script>

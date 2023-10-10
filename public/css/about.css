@@ -153,14 +153,14 @@ main {
     /* border-radius: 4px; */
     /* background: #212121; */
     display: flex;
-
+    justify-content: space-evenly;
     /* gap: .5rem; */
     /* padding: .4em; */
 }
 
 .school-values .mmv>div {
     height: 100%;
-    flex: 1;
+    /* flex: 0 0 30%; */
     overflow: hidden;
     cursor: pointer;
     /* border-radius: 2px; */
@@ -174,7 +174,7 @@ main {
     text-align: center;
 
     &:hover {
-        flex: 4;
+        /* flex: 1; */
     }
 
     &:hover h3 {
