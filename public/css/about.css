@@ -107,7 +107,47 @@ main {
     padding: 2rem 0;
 }
 
-.history .chunks {}
+.history .chunks {
+    .beginning .title {
+        background-image: url(../images/nalondo1.jpeg);
+
+    }
+
+    .purpose .title {
+
+        background-image: url(../images/nalondo15.jpeg);
+    }
+
+    .community .title {
+
+        background-image: url(../images/nalondo11.jpeg);
+    }
+
+    .geolocation .title {
+        background-image: url(../images/achievement4.jpeg);
+    }
+
+    .chunk .title {
+        background-size: 150%;
+        transform-origin: center;
+        /* background-attachment: fixed; */
+        /* background-repeat: no-repeat; */
+        transition: background-size .3s linear;
+
+        &:hover {
+
+            background-size: 160%;
+        }
+
+        &:hover h3 {
+            background-color: var(--primary-color);
+            height: auto;
+            width: auto;
+            padding: 1rem;
+        }
+
+    }
+}
 
 .history .chunks .chunk {
     display: flex;
@@ -123,9 +163,9 @@ main {
 .history .chunks .chunk .title {
     display: grid;
     place-items: center;
-    background-position: center;
+    /* background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
 
 
@@ -142,9 +182,11 @@ hr {
     height: calc(100%);
     width: 100%;
     display: grid;
+    cursor: pointer;
     place-items: center;
-    background-color: rgba(0, 0, 57, 0.5);
+    background-color: rgba(0, 0, 43, 0.8);
     /* height: 100%; */
+    transition: .3s ease;
 
 }
 
@@ -422,7 +464,6 @@ hr {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-
 }
 
 a {
@@ -430,7 +471,7 @@ a {
 }
 
 .traditions .container .toggle .anthem {
-    background-color: rgba(0, 0, 64);
+    background-color: var(--primary-color);
     flex: 1;
     padding: 1rem 0;
     transition: .5s ease;
@@ -511,7 +552,8 @@ a {
             background-color: rgba(0, 0, 57);
             padding: .5rem;
         }
-        .description p{
+
+        .description p {
             font-size: 1.2rem;
         }
     }
