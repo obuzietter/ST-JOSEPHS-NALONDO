@@ -71,7 +71,7 @@
             </div>
             <hr>
             <div class="chunks">
-                <div class="chunk">
+                <div class="chunk beginning">
                     <div class="title">
                         <h3>The beginning </h3>
                     </div>
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="chunk">
+                <div class="chunk community">
                     <div class="title">
                         <h3>The Community</h3>
                     </div>
