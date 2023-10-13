@@ -346,6 +346,7 @@ hr {
     transform: translateX(80%);
     width: 80%;
     text-align: center;
+    margin: 1rem 0;
 
     &::before {
         content: "0" counter(li);
