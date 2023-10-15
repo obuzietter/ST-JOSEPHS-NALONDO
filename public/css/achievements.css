@@ -207,6 +207,8 @@ transform: scaleX(1); /* Make the line visible */
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 1px;
+    width: 100%;
 }
 
 .title-image {
@@ -276,19 +278,15 @@ transform: scaleX(1); /* Make the line visible */
     transform: translateX(-50%);
     z-index: 1;
     font-weight: bolder;
+    width: 100%;
 }
-/* Updated CSS for the achievements section */
 
-/* Reset some default styles */
+
 body, h1, h2, p {
 margin: 0;
 padding: 0;
 }
 
-/* Style the achievement containers */
-/* Updated CSS for responsive grid layout */
-/* Updated CSS for responsive grid layout */
-/* Mobile devices (320px - 480px) */
 @media screen and (max-width: 480px) {
 /* Adjust your styles for mobile devices here */
 body {
@@ -344,29 +342,22 @@ font-size: 18px; /* Adjust the font size for smaller screens */
 display: block; /* Show the hamburger menu */
 }
 
-/* You can modify other styles as needed for smaller screens */
 }
 
 
-/* Updated CSS for the achievements section */
-/* Create a grid layout with two columns */
-/* Style for achievement containers */
-
-/* Style for the achievements container */
 .achievement-container {
 display:flex;
 gap: 1000px; /* Add some spacing between columns */
-justify-items: center; /* Center the items horizontally */
-align-items: flex-start; /* Align items to the top */
-margin-top: 50px; /* Add some spacing from the title */
-background-image: url('images/achieve.jpg'); /* Background image */
+justify-items: center; 
+align-items: flex-start; 
+margin-top: 10px; 
+background-image: url('images/achieve.jpg'); 
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
-border-radius: 10px;
-position: relative; /* Add relative positioning */
-border-radius: 10px;
-overflow: hidden; /* Ensure the overlay covers the entire container */
+border-radius: 1px;
+position: relative;;
+overflow: hidden; 
 width: 100%;
 text-emphasis-color: white;
 
@@ -380,37 +371,25 @@ justify-items: center;
 align-items: flex-start;
 margin-top: 20px;
 position: relative;
-border-radius: 10px;
+border-radius: 1px;
 padding: 20px;
 backdrop-filter: blur(5px);
 background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Style for the achievement containers */
-.achievement-container {
-background-color: #fff;
-border: 1px solid #ddd;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-position: relative;
-z-index: 1;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-height: 100%;
-}
+
+
 /* Style for the achievements */
 .achievement {
 background-color: #fff;
-border: 1px solid #ddd;
-border-radius: 10px;
+border: 0px solid #ddd;
+border-radius: 1px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 position: relative; /* Add this line */
-background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
 width: 100%;
 
 }
@@ -539,7 +518,7 @@ align-items: center;
 /* Style the achievement text below images */
 .achievement-description {
 text-align:center;
-padding: auto;
+padding: 0;
 color: #fff !important;
 margin-top: 20px;
 width: 100%;
@@ -547,10 +526,7 @@ width: 100%;
 .achievement-text{
 color: var(--background-color);
 }
-/* 
 
-
-/* Add an overlay to make the background semi-transparent */
 
 
 
@@ -564,7 +540,7 @@ color: var(--background-color);
     cursor: pointer;
     z-index: 1000;
     margin-left: 20px;
-    animation-name: slideInLeft;
+   
     animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
@@ -635,9 +611,9 @@ color: #031a32;
 .additional-description-container {
 display: flex;
 align-items: center;
-padding: 20px;
+padding: 0px;
 margin: 8px;
-border-radius: 10px; /* Match the border-radius with the achievement container */
+border-radius: 1px; /* Match the border-radius with the achievement container */
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Match the box-shadow with the achievement container */
 height: 60vh;
 background-color: #031a32;
@@ -646,7 +622,7 @@ background-color: #031a32;
 
 .additional-description-content {
 flex: 2;
-padding: 20px;
+padding: 0px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;

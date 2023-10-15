@@ -16,7 +16,7 @@
     <header>
     
     <div class="school-info">
-        <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
+        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -1015,7 +1015,7 @@
     </div>
     <div class="footer">
     <div class="contact-info">
-        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email: info@nalonduhighschool.com</p>
+        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email: info@nalondohighschool.com</p>
         <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
         <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-map-marker-alt"></i> Address: 123 School Street, City, Country</p>
     </div>
@@ -1028,7 +1028,7 @@
         </div>
     </div>
     <div style="color: #fff;">
-        <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
+        <p style="color:var(--background-color);">&copy; 2023 NALONDOHIGH SCHOOL. ALL RIGHTS RESERVED.</p>
     </div>
 </div>
 </body>

@@ -19,7 +19,7 @@
     <header>
         {{-- navigation bar goes here --}}
         <div class="school-info">
-            <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
+            <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -27,16 +27,18 @@
             </div>
         </div>
         <nav>
-            <ul class="header-links">
-                {{-- <li><a href="{{ route('home') }}">Home</a></li>
+        <ul class="header-links">
+                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('faculty') }}">Faculty</a></li>
                 <li><a href="{{ route('studentLife') }}">Student Life</a></li>
                 <li><a href="{{ route('community') }}">Community</a></li>
                 <li><a href="{{ route('achievements') }}">Achievements</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li> --}}
+                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
             </ul>
         </nav>
+          
+        
 
     </header>
     <main>
@@ -244,7 +246,7 @@
         <div class="footer">
             <div class="contact-info">
                 <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email:
-                    info@nalonduhighschool.com</p>
+                    info@nalondohighschool.com</p>
                 <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-phone"></i> Phone: +1
                     (123) 456-7890</p>
                 <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-map-marker-alt"></i>
@@ -259,7 +261,7 @@
                 </div>
             </div>
             <div style="color: #fff;">
-                <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
+                <p style="color:var(--background-color);">&copy; 2023 NALONDO HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
     </footer>
