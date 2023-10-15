@@ -34,10 +34,10 @@
         <li><a href="{{ route('contact') }}">Contact Us</a></li>
     </ul>
 
-
+</nav>
     </header>
    
-    </nav>
+    
 <!-- MAIN CONTAINER -->
     <main class="main-container">
         <!-- THE MAIN INTODUCTORY CLAUSE -->
