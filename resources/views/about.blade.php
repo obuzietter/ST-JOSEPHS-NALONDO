@@ -8,7 +8,7 @@
     <title>Nalondo - About</title>
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
-
+    <script src="{{url('/js/about.js')}}" defer></script>
     <link rel="stylesheet" href="/css/about.css">
 
 
@@ -266,24 +266,24 @@
 </body>
 
 </html>
-<script>
-    // const listItems = document.querySelectorAll(".core-value");
-    // const observer = new IntersectionObserver(
-    //     (entries) => {
-    //         entries.forEach((entry) => {
-    //             if (entry.isIntersecting) {
+<!-- <script>
+    const listItems = document.querySelectorAll(".core-value");
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
 
-    //                 entry.target.style.transform = "translateX(0)"
-    //             } else {
-    //                 entry.target.style.transform = "translateX(80%)";
-    //             }
+                    entry.target.style.transform = "translateX(0)"
+                } else {
+                    entry.target.style.transform = "translateX(80%)";
+                }
 
-    //         });
-    //     }, {
-    //         threshold: 0.1,
-    //     }
-    // );
-    // listItems.forEach((li) => {
-    //     observer.observe(li);
-    // });
-</script>
+            });
+        }, {
+            threshold: 0.1,
+        }
+    );
+    listItems.forEach((li) => {
+        observer.observe(li);
+    });
+</script> -->

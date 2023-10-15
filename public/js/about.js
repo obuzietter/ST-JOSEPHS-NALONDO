@@ -1,64 +1,19 @@
-const chev = document.getElementById("chevron");
-chev.addEventListener("click", () => {
-    location.href = "#values";
-});
+const listItems = document.querySelectorAll(".core-value");
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
 
-const navItems = document.querySelectorAll(".history-nav .item");
+                    entry.target.style.transform = "translateX(0)"
+                } else {
+                    entry.target.style.transform = "translateX(80%)";
+                }
 
-navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-        let activeLinks = document.querySelectorAll(".active");
-        activeLinks.forEach((activeLink) => {
-            activeLink.classList.remove("active");
-        });
-        item.classList.add("active");
+            });
+        }, {
+            threshold: 0.1,
+        }
+    );
+    listItems.forEach((li) => {
+        observer.observe(li);
     });
-});
-
-document.getElementById("up").addEventListener("click", () => {
-    location.href = "about";
-});
-
-// statistics intersection observer
-const coreValues = document.querySelectorAll(".core-value");
-
-const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            entry.isIntersecting
-                ? (entry.target.style.translate = "0")
-                : entry.target.classList.contains("even")
-                ? (entry.target.style.translate = "100px")
-                : (entry.target.style.translate = "-100px");
-        });
-    },
-    {
-        threshold: 0.2,
-    }
-);
-coreValues.forEach((coreValue) => {
-    observer.observe(coreValue);
-});
-
-
-// window scroll event
-/*
-const revealElement = document.getElementById('revealElement');
-
-function checkScroll() {
-  const scrollPosition = window.scrollY;
-  const windowHeight = window.innerHeight;
-
-  if (scrollPosition > windowHeight) {
-    revealElement.style.opacity = 1;
-  } else {
-    revealElement.style.opacity = 0;
-  }
-}
-
-// Attach the scroll event listener
-window.addEventListener('scroll', checkScroll);
-
-// Initial check in case the user starts already scrolled down
-checkScroll();
-*/
