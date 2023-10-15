@@ -12,7 +12,7 @@
 <body>
 <header>
 <div class="school-info">
-        <div class="school-name">ST JOSEPH'S NALONDU HIGH SCHOOL</div>
+        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -54,7 +54,7 @@
         <button class="read-more-button" id="readMoreButton">Read More</button>
         <div class="additional-description">
             <p>
-    Step into the world of St. Joseph's Nalondu High School, where extraordinary achievements become everyday stories. Our path is illuminated by the pursuit of excellence in every facet of education and beyond. Dive into the narratives of our students' incredible feats, from conquering regional math competitions to emerging as champions in thrilling sports showdowns. Marvel at the innovative projects that not only impress but inspire. These achievements are more than accolades; they are the embodiment of our students' dedication, the cornerstone of our supportive faculty, and the heartbeat of our vibrant school community. Join us on this exhilarating journey through our accomplishments and witness the unwavering spirit of excellence that defines our school
+    Step into the world of St. Joseph's Nalondo High School, where extraordinary achievements become everyday stories. Our path is illuminated by the pursuit of excellence in every facet of education and beyond. Dive into the narratives of our students' incredible feats, from conquering regional math competitions to emerging as champions in thrilling sports showdowns. Marvel at the innovative projects that not only impress but inspire. These achievements are more than accolades; they are the embodiment of our students' dedication, the cornerstone of our supportive faculty, and the heartbeat of our vibrant school community. Join us on this exhilarating journey through our accomplishments and witness the unwavering spirit of excellence that defines our school
 
             </p>
         </div>
@@ -203,7 +203,7 @@
 
 <div class="footer">
     <div class="contact-info">
-        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email: info@nalonduhighschool.com</p>
+        <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-envelope"></i> Email: info@nalondohighschool.com</p>
         <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
         <p style="color: #fff; margin-bottom: 20px;font-size: 15px;"><i class="fas fa-map-marker-alt"></i> Address: 123 School Street, City, Country</p>
     </div>
@@ -216,10 +216,53 @@
         </div>
     </div>
     <div style="color: #fff;">
-        <p style="color:var(--background-color);">&copy; 2023 NALONDU HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
+        <p style="color:var(--background-color);">&copy; 2023 NALONDO HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const showAchievementsButton = document.getElementById("showAchievementsButton");
 
+    showAchievementsButton.addEventListener("click", function () {
+        const achievementsContainer = document.querySelector(".achievement-container");
+        const windowHeight = window.innerHeight;
+        const achievementsHeight = achievementsContainer.getBoundingClientRect().height;
+        const scrollY = window.scrollY;
+
+        if (achievementsHeight - scrollY <= windowHeight) {
+            window.scrollBy(0, 1000); // Scroll by 1 pixel to trigger scroll event
+        } else {
+            achievementsContainer.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
+    const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+    scrollToTopButton.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    const additionalDescription = document.querySelector(".additional-description");
+    const readMoreButton = document.getElementById("readMoreButton");
+    const paragraph = additionalDescription.querySelector("p");
+
+    const originalText = paragraph.textContent;
+    let isDescriptionExpanded = false;
+
+    readMoreButton.addEventListener("click", function () {
+        isDescriptionExpanded = !isDescriptionExpanded;
+
+        if (isDescriptionExpanded) {
+            paragraph.textContent = originalText;
+            readMoreButton.textContent = "Read Less";
+        } else {
+            paragraph.textContent = originalText.substring(0, 100); // Adjust the length as needed
+            readMoreButton.textContent = "Read More";
+        }
+    });
+});
+
+</script>
 
 </body>
 </html>
