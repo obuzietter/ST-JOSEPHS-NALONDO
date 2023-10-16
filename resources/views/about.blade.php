@@ -183,15 +183,15 @@
             <div class="container">
                 <div class="counters">
                     <div class="counter">
-                        <span>300</span>
+                        <span class="count" data-target="300">300</span>
                         <h3>TEACHERS</h3>
                     </div>
                     <div class="counter">
-                        <span>300</span>
+                        <span class="count" data-target="300">300</span>
                         <h3>STUDENTS</h3>
                     </div>
                     <div class="counter">
-                        <span>300</span>
+                        <span class="count" data-target="300">300</span>
                         <h3>CANDIDATES</h3>
                     </div>
                 </div>

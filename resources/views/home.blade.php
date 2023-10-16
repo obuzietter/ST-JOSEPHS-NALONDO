@@ -271,6 +271,7 @@
                 <p style="color:var(--background-color);">&copy; 2023 NALONDO HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
+        
     </footer>
 </body>
 <script>
