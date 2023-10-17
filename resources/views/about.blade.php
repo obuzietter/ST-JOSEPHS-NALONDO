@@ -27,18 +27,18 @@
             </div>
         </div>
         <nav>
-        <ul class="header-links">
-                 <li><a href="{{ route('home') }}">Home</a></li>
+            <!-- <ul class="header-links">
+                <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('faculty') }}">Faculty</a></li>
                 <li><a href="{{ route('studentLife') }}">Student Life</a></li>
                 <li><a href="{{ route('community') }}">Community</a></li>
                 <li><a href="{{ route('achievements') }}">Achievements</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
-            </ul>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li>
+            </ul> -->
         </nav>
-          
-        
+
+
 
     </header>
     <main>
@@ -183,15 +183,15 @@
             <div class="container">
                 <div class="counters">
                     <div class="counter">
-                        <span class="count" data-target="300">300</span>
+                        <span class="count" data-target="49">0</span>
                         <h3>TEACHERS</h3>
                     </div>
                     <div class="counter">
-                        <span class="count" data-target="300">300</span>
+                        <span class="count" data-target="1060">0</span>
                         <h3>STUDENTS</h3>
                     </div>
                     <div class="counter">
-                        <span class="count" data-target="300">300</span>
+                        <span class="count" data-target="136">0</span>
                         <h3>CANDIDATES</h3>
                     </div>
                 </div>

@@ -128,7 +128,7 @@ main {
     }
 
     .chunk .title {
-        background-size: 150%;
+        background-size: cover;
         transform-origin: center;
         /* background-attachment: fixed; */
         /* background-repeat: no-repeat; */
@@ -136,13 +136,13 @@ main {
 
         &:hover {
 
-            background-size: 160%;
+            /* background-size: 160%; */
         }
 
         &:hover h3 {
             background-color: var(--primary-color);
             height: auto;
-            width: auto;
+            /* width: auto; */
             padding: 1rem;
         }
 
@@ -163,11 +163,7 @@ main {
 .history .chunks .chunk .title {
     display: grid;
     place-items: center;
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
-
-
+    
 
 }
 
@@ -179,12 +175,13 @@ hr {
     color: orange;
     font-size: 2rem;
     /* border: 1px solid black; */
-    height: calc(100%);
+    height: 100%;
     width: 100%;
     display: grid;
     cursor: pointer;
     place-items: center;
-    background-color: rgba(0, 0, 43, 0.8);
+    /* background-color: rgba(0, 0, 43, 0.8); */
+    backdrop-filter: blur(5px);
     /* height: 100%; */
     transition: .3s ease;
 
@@ -196,7 +193,7 @@ hr {
 
 .history .chunks .chunk .description p {
     padding: .5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* school values section styling */
@@ -220,6 +217,7 @@ hr {
     align-items: center;
     /* gap: .5rem; */
     /* padding: .4em; */
+   
 
     margin-bottom: 5rem;
     /* border: 1px solid red; */
@@ -239,8 +237,7 @@ hr {
     cursor: pointer;
     /* border-radius: 2px; */
     transition: all .5s linear;
-    background-color: var(--primary-color);
-    border: 1px solid orange;
+    border: 2px solid var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,14 +245,16 @@ hr {
     text-align: center;
     margin: 2rem 0;
     padding: 2rem;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
 
     /* padding: 0 2rem; */
     &:hover {
+        background-color: var(--primary-color);
         flex: 2;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         margin-left: 2rem;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
     }
 
@@ -418,6 +417,8 @@ hr {
     justify-content: space-evenly;
     border-radius: 5px;
     padding: 3rem 0;
+    row-gap: 3rem;
+
 }
 
 .statistics .container .counters .counter {
@@ -426,7 +427,7 @@ hr {
     font-weight: 700;
     text-align: center;
     transition: .3s ease;
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
     cursor: default;
     min-width: 300px;
 
