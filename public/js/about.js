@@ -40,7 +40,7 @@ function animatedCounter() {
         updateCount();
     });
 }
-// animatedCounter()
+
 
 const counterObserver = new IntersectionObserver(
     (entries) => {
