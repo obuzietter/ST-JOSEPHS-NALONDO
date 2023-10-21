@@ -157,3 +157,17 @@ main .student-leaders .container {
 main .student-leaders .container .slide-show{
     
 }
+/* religion section styling */
+main .religion{
+    background-color: red;
+}
+main .religion .container{
+    position: relative;
+}
+main .religion .container .text{
+position: absolute;
+background-color: rgba(0, 0, 41, 0.71);
+backdrop-filter: blur(10px);
+width: 100%;
+height: 100%;
+}

@@ -114,8 +114,8 @@
                     <h1>RELIGION</h1>
                     <p>(VERTICAL SLIDESHOW AND TEXT OR A LOOPING VIDEO)</p>
                 </div>
-                <video controls loop autoplay>
-                    <source src="" type="">
+                <video autoplay loop>
+                    <source src="https://v.ftcdn.net/04/02/94/21/700_F_402942157_8pxYLPnmIHZzDHLnb4P46qHikf49yXzx_ST.mp4" type="">
                 </video>
             </div>
         </section>
