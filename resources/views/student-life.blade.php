@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Life</title>
     <link rel="stylesheet" href="/css/student-life.css">
-
+    <link rel="stylesheet" href="/css/student-leader.css">
+    <script src="/js/student-leader.js" defer></script>
 </head>
 
 <body>
@@ -89,22 +90,16 @@
         </section>
         <section class="student-leaders">
             <div class="container">
-                <div class="slide-show">
-                    <div class="slide">
-                        <img src="/images/nalondo22.jpeg" alt="">
+                <div id="carousel-wrapper">
+                    <div id="menu">
+                        <div id="current-option">
+                            <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                            <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                        </div>
+                        <button id="previous-option"></button>
+                        <button id="next-option"></button>
                     </div>
-                    <div class="slide">
-
-                    </div>
-                    <div class="slide">
-
-                    </div>
-                </div>
-                <div class="details">
-                    <h2>STUDENT LEADERS</h2>
-                    <h1>LEADER'S NAME</h1>
-                    <h3>CURRENT POST</h3>
-                    <h3>CLASS</h3>
+                    <div id="image"></div>
                 </div>
             </div>
         </section>
