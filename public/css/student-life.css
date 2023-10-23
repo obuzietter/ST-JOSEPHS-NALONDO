@@ -199,11 +199,19 @@ main .religion .container{
 main .religion .container .text{
 position: absolute;
 background-color: rgba(0, 0, 41, 0.71);
+color: white;
 backdrop-filter: blur(10px);
 width: 100%;
 height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
-                                                      
+main .religion .container video{
+    width: 100%;
+
+}                                                  
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,1);
