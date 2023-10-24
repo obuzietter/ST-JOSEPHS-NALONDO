@@ -1,8 +1,8 @@
 const text1_options = [
     "THE SCHOOL CAPTAIN",
-    "EDISON UWEZO CHARO",
-    "FORM 4 NORTH EAST",
-    "How to learn JS in 2 months"
+    "DEPUTY SCHOOL CAPTAIN ACADEMICS",
+    "DEPUTY SCHOOL CAPTAIN ADMINISTRATION",
+    "BOARDING CAPTAIN "
   ];
   const text2_options = [
     "69 min. read",
