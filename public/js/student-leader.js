@@ -1,7 +1,7 @@
 const text1_options = [
-    "Why art is so important",
-    "Why you shouldn't buy the new iPhone",
-    "Is life actually real?",
+    "THE SCHOOL CAPTAIN",
+    "EDISON UWEZO CHARO",
+    "FORM 4 NORTH EAST",
     "How to learn JS in 2 months"
   ];
   const text2_options = [
