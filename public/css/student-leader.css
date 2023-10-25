@@ -30,11 +30,13 @@ body {
   overflow: hidden;
 
   #menu {
-    height: 380px;
-    width: 720px;
+    border: 2px solid red;
+    min-height: 380px;
+    min-width: 720px;
     overflow: hidden;
     font-weight: 700;
-    line-height: 1;
+    color: white;
+    /* line-height: 1; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,15 +57,15 @@ body {
       overflow: hidden;
 
       #current-option-text1 {
-        font-size: 1.6rem;
-        line-height: 3rem;
-        width: 220px;
-        height: 200px;
+        font-size: 1.4rem;
+        /* line-height: 3rem; */
+        /* width: 220px; */
+        /* height: 200px; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        background: red;
+        background: rgb(7, 0, 68);
 
         &::before {
           content: attr(data-next-text);
