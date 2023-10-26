@@ -89,19 +89,40 @@
             </div>
         </section>
         <section class="student-leaders">
-            <div class="container">
-                <div id="carousel-wrapper">
-                    <div id="menu">
-                        <div id="current-option">
-                            <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
-                            <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
-                        </div>
-                        <button id="previous-option"></button>
-                        <button id="next-option"></button>
-                    </div>
-                    <div id="image"></div>
-                </div>
-            </div>
+           <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://img.freepik.com/premium-photo/generative-ai-image-african-american-man-front-blurred-background-usage-as-promo-ads_733217-908.jpg" style="width:100%">
+  <div class="text">SCHOOL CAPTAIN</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://img.freepik.com/free-photo/smiling-school-children-posing-cheerful-portrait-generated-by-ai_188544-29175.jpg" style="width:100%">
+  <div class="text">DEPUTY SCHOOL CAPTAIN - ACADEMICS</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://img.freepik.com/premium-photo/enchanted-educator-unveiling-magic-teaching-with-passion-wisdom-generative-ai_70251-4956.jpg" style="width:100%">
+  <div class="text">DEPUTY SCHOOL CAPTAIN - ADMINISTRATION</div>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
         </section>
         <section class="religion">
             <div class="container">
