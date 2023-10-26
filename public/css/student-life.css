@@ -99,7 +99,7 @@ main .clubs .cards .card {
     /* max-width: fit-content; */
     /* max-width: 500px;
     min-width: 300px; */
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     transition: .5s ease;
     position: relative;
     /* border: 2px solid red; */
@@ -188,7 +188,7 @@ main .student-leaders {
 /* religion section styling */
 main .religion {
     /* background-color: rgb(0, 0, 41); */
-    border: 3px solid green;
+    /* border: 3px solid green; */
     min-height: fit-content;
 }
 
@@ -252,9 +252,49 @@ main .religion .container .background-clip {
             width: 100%;
             height: 100%;
             display: flex;
-border: 2px solid red;
+/* border: 2px solid red; */
 }
+/* accomodation section styling */
+.accomodation{
+    /* border: 2px solid blue; */
 
+}
+.accomodation .title{
+    /* background-color: #0d013a; */
+    padding: 2rem 0;
+
+}
+.accomodation .title h1{
+    padding: 1rem 0;
+    text-align: center;
+    /* color: white; */
+    font-size: 2rem;
+}
+.accomodation .boxes{
+    margin: 3rem 0;
+    padding: 2rem 0;
+    columns: 4;
+    /* column-gap: 3rem; */
+    column-gap: 0;
+    /* row-gap: 3rem; */
+    /* break-inside: avoid; */
+
+}
+.accomodation .boxes .box{
+/* border: 2px solid red; */
+margin: 1rem;
+/* margin: 0; */
+
+}
+.accomodation .boxes img{
+width: 100%;
+transition: .3s ease;
+&:hover{
+    scale: 1.09;
+    transform: rotateZ(1deg);
+    box-shadow: 2px 3px 36px -9px rgba(0,0,0,0.75);
+}
+}
 /* keyframe animations */
 @keyframes float {
     0% {
