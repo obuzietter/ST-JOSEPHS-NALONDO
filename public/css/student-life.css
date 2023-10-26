@@ -8,7 +8,9 @@
 main .hero {
     background-image: url(../images/achievement2.jpeg);
     min-height: 40vh;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main .hero h1 {
@@ -23,38 +25,51 @@ main .hero h1 {
 
 main .brief {
     /* min-height: 30vh; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
 }
 
 main .brief .box {
     /* background-color: grey; */
-    max-width: 50%;
+    width: 80%;
     /* position: absolute; */
     display: flex;
-    justify-content: center;
-    margin-top: -10%;
-    margin-bottom: 10%;
+    justify-content: space-evenly;
+    /* margin-top: -10%; */
+    /* margin-bottom: 10%; */
+    /* border: 3px solid blue; */
+    /* background-color: white; */
+    flex-wrap: wrap;
+    padding: 4rem 0;
 
     .image {
         /* border: 3px solid blue; */
-        max-width: 50%;
+        /* max-width: 300px; */
+        flex: 0 0 30%;
+        min-width: 250px;
+
 
     }
 
     .image img {
         width: 100%;
-        /* height: 100%; */
+
+        height: 100%;
     }
 
     .description {
         display: flex;
+        flex: 1;
+        min-width: 300px;
+        /* width: min-content; */
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        text-align: justify;
         padding: 1rem;
-        background-color: aliceblue;
+        font-size: 1.5rem;
+        /* border: 2px solid green; */
+        /* background-color: aliceblue; */
     }
 }
 
@@ -66,22 +81,25 @@ main .clubs {
 
 main .clubs .heading {
     text-align: center;
+    padding: 2rem 0;
 }
 
 main .clubs .cards {
     display: flex;
     /* overflow-x: scroll; */
     justify-content: center;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 main .clubs .cards .card {
     /* width: 300px; */
-    margin: 1rem;
+    /* margin: 1rem; */
+
     /* max-width: fit-content; */
     /* max-width: 500px;
     min-width: 300px; */
-    flex: 0 0 400px;
+    flex: 1 1 300px;
     transition: .5s ease;
     position: relative;
     /* border: 2px solid red; */
@@ -118,6 +136,7 @@ main .clubs .cards .card .desc {
     background-color: rgb(0, 15, 69);
     transition: .5s ease;
     padding: 1rem;
+    text-align: center;
 }
 
 main .clubs .cards .card .desc h3 {
@@ -150,13 +169,13 @@ main .record .banner h1 {
 
 main .record .banner h1 span {
     background-color: rgb(0, 0, 47);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
     padding: 1.5rem;
     margin: 1rem;
     color: white;
-    
-    
+
+
 }
 
 /* student leader section styling */
@@ -167,43 +186,111 @@ main .student-leaders {
 
 
 /* religion section styling */
-main .religion{
-    background-color: red;
+main .religion {
+    /* background-color: rgb(0, 0, 41); */
+    border: 3px solid green;
+    min-height: fit-content;
 }
-main .religion .container{
-    position: relative;
-}
-main .religion .container .text{
-position: absolute;
-background-color: rgba(0, 0, 41, 0.71);
-color: white;
-backdrop-filter: blur(10px);
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-main .religion .container video{
-    width: 100%;
 
-}                                                  
+main .religion .container {
+    position: relative;
+    min-height: 100vh;
+}
+
+main .religion .container .text {
+    position: absolute;
+    background-color: rgba(0, 0, 41, 0.71);
+    color: white;
+    backdrop-filter: blur(10px);
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .animate-character {
+        
+        background-image: linear-gradient(-225deg,
+                #0d013a 0%,
+                #44107a 29%,
+                #de0700 67%,
+                #fff800 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        /* text-fill-color: transparent; */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 4rem;
+    }
+    .religion-text{
+        font-size: 1.5rem;
+        /* color: red; */
+        /* border: 2px solid red; */
+        font-weight: 100;
+        padding: 2rem 1rem;
+        max-width: 90%;
+    }
+
+}
+
+main .religion .container .background-clip {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: block; */
+    position: absolute;
+    z-index: -1;
+            /* top: 0;
+            left: 0; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+border: 2px solid red;
+}
+
+/* keyframe animations */
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,1);
-		transform: translateY(0px);
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
+        transform: translateY(0px);
         background-color: rgb(230, 184, 0);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translateY(-20px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translateY(-20px);
         background-color: rgb(0, 0, 47);
         color: white;
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,1);
-		transform: translateY(0px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
+        transform: translateY(0px);
         background-color: rgb(230, 184, 0);
-	}
+    }
 }
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+/* 
+  @media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+  } */

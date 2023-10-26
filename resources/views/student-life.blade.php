@@ -16,7 +16,7 @@
     </header>
     <main>
         <section class="hero">
-            <h1>LEARNING FOR EMPOWERMENT</h1>
+            <h1>SEE THE STUDENT LIFE</h1>
         </section>
         <section class="brief">
             <div class="box">
@@ -25,14 +25,15 @@
                 </div>
                 <div class="description">
                     <h3>STUDENT LIFE</h3>
-                    <p>LIFE AT NALONDO
-                        GIVES EVERY STUDENT A CHANCE TO PERFORM AT THEIR BEST LEVEL.</p>
+                    <p>
+                        The student-life webpage on our high school's website serves as a vibrant hub of information and connection for our students. Here, you'll discover a treasure trove of resources and activities that enrich your high school experience. Stay up-to-date with the latest events, club meetings, and sports fixtures through our interactive calendar. Explore the diverse array of student organizations and clubs that cater to a wide range of interests, from the arts to STEM and beyond. Our student-life webpage also features inspiring stories and achievements from our fellow students, creating a strong sense of community and celebrating our successes. Whether you're looking to get involved, find academic support, or simply stay informed about the pulse of our school, this webpage is your one-stop destination for all things related to high school life.</p>
                 </div>
             </div>
         </section>
         <section class="clubs">
             <div class="heading">
                 <h2>CLUBS AND EXTRA CURRICULAR ACTIVITIES</h2>
+
             </div>
             <div class="cards">
                 <div class="card">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="desc">
                         <h3>Eco-Warriors Club</h3>
-                        <p>The Eco-Warriors Club is a group of passionate high school students committed to making a positive impact on the environment. We organize regular clean-up events, promote recycling and sustainable living, and collaborate with local organizations to address environmental issues in our community. Join us to learn, advocate, and take practical steps toward a greener and more sustainable future.</p>
+                        <p>The Eco-Warriors Club is a group of passionate high school students committed to making a positive impact on the environment. We organize regular clean-up events, promote recycling and sustainable living, and collaborate with local organizations to address environmental issues in our community. </p>
                     </div>
                 </div>
                 <div class="card">
@@ -89,51 +90,52 @@
             </div>
         </section>
         <section class="student-leaders">
-           <!-- Slideshow container -->
-<div class="slideshow-container">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://img.freepik.com/premium-photo/generative-ai-image-african-american-man-front-blurred-background-usage-as-promo-ads_733217-908.jpg" style="width:100%">
-  <div class="text">SCHOOL CAPTAIN</div>
-</div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://img.freepik.com/free-photo/confident-businessman-smiles-city-night-generated-by-ai_188544-26175.jpg" style="width:100%">
+                    <div class="text">SCHOOL CAPTAIN</div>
+                </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://img.freepik.com/free-photo/smiling-school-children-posing-cheerful-portrait-generated-by-ai_188544-29175.jpg" style="width:100%">
-  <div class="text">DEPUTY SCHOOL CAPTAIN - ACADEMICS</div>
-</div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://img.freepik.com/free-photo/smiling-school-children-posing-cheerful-portrait-generated-by-ai_188544-29175.jpg" style="width:100%">
+                    <div class="text">DEPUTY SCHOOL CAPTAIN - ACADEMICS</div>
+                </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://img.freepik.com/premium-photo/enchanted-educator-unveiling-magic-teaching-with-passion-wisdom-generative-ai_70251-4956.jpg" style="width:100%">
-  <div class="text">DEPUTY SCHOOL CAPTAIN - ADMINISTRATION</div>
-</div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://img.freepik.com/premium-photo/enchanted-educator-unveiling-magic-teaching-with-passion-wisdom-generative-ai_70251-4956.jpg" style="width:100%">
+                    <div class="text">DEPUTY SCHOOL CAPTAIN - ADMINISTRATION</div>
+                </div>
 
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </section>
         <section class="religion">
             <div class="container">
                 <div class="text">
-                    <h1>RELIGION</h1>
-                    <p>(VERTICAL SLIDESHOW AND TEXT OR A LOOPING VIDEO)</p>
+                    <h1 class="animate-character">RELIGION</h1>
+                    <p class="religion-text"> At our school, we embrace the Catholic faith, and this section offers a space for students to connect with their spiritual beliefs and values. Here, you can access information about religious services, prayer groups, and events organized by the school's chapel. We aim to foster a sense of community and spiritual growth, in line with our Catholic tradition, ensuring that students have a supportive environment to explore their faith and engage in discussions about religion. Whether you seek guidance, want to participate in religious activities, or simply wish to learn more about our Catholic identity, our student-life webpage provides valuable resources to enrich your spiritual journey.</p>
                 </div>
-                <video autoplay loop>
-                    <source src="https://v.ftcdn.net/04/02/94/21/700_F_402942157_8pxYLPnmIHZzDHLnb4P46qHikf49yXzx_ST.mp4" type="">
+                <video autoplay loop class="background-clip">
+                    <source src="https://v.ftcdn.net/02/16/14/54/240_F_216145419_8ZL4rGJUqB6Ci4dRUrEOiRQh4Jgd2Ui1_ST.mp4" type="">
                 </video>
             </div>
+            
         </section>
         <section class="accomodation">
             <div class="boxes">
