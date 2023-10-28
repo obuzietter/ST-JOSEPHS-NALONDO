@@ -86,7 +86,10 @@
         </section>
         <section class="record">
             <div class="banner">
-                <h1>HIGHEST KCSE SCORE EVER ACHIEVED <span>10.5</span></h1>
+                <h1>HIGHEST KCSE SCORE EVER ACHIEVED
+                    <br>
+                10.5
+                </h1>
             </div>
         </section>
         <section class="student-leaders">

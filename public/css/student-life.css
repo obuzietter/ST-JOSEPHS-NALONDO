@@ -99,7 +99,7 @@ main .clubs .cards .card {
     /* max-width: fit-content; */
     /* max-width: 500px;
     min-width: 300px; */
-    flex: 1 1 400px;
+    flex: 1 0 400px;
     transition: .5s ease;
     position: relative;
     /* border: 2px solid red; */
@@ -159,15 +159,19 @@ main .record .banner {
 }
 
 main .record .banner h1 {
-    /* background-color: rgb(214, 214, 214); */
+    background-color: rgb(0, 0, 47);
+    color: white;
     /* color: white; */
     padding: 3rem;
     text-align: center;
     animation: float 6s ease-in-out infinite;
-    border: 2px solid rgb(0, 0, 47);
+    /* border: 2px solid rgb(0, 0, 47); */
+    width: fit-content;
+    margin: auto;
+    
 }
 
-main .record .banner h1 span {
+/* main .record .banner span {
     background-color: rgb(0, 0, 47);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
@@ -176,7 +180,7 @@ main .record .banner h1 span {
     color: white;
 
 
-}
+} */
 
 /* student leader section styling */
 main .student-leaders {
@@ -300,20 +304,20 @@ transition: .3s ease;
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
         transform: translateY(0px);
-        background-color: rgb(230, 184, 0);
+        /* background-color: rgb(230, 184, 0); */
     }
 
     50% {
         box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
         transform: translateY(-20px);
-        background-color: rgb(0, 0, 47);
-        color: white;
+        /* background-color: rgb(0, 0, 47); */
+        /* color: white; */
     }
 
     100% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
         transform: translateY(0px);
-        background-color: rgb(230, 184, 0);
+        /* background-color: rgb(230, 184, 0); */
     }
 }
 @keyframes textclip {
