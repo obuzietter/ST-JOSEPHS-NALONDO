@@ -14,7 +14,7 @@ main .hero {
 }
 
 main .hero h1 {
-    /* border: 2px solid red; */
+    
     min-height: 40vh;
     display: grid;
     place-items: center;
@@ -24,28 +24,23 @@ main .hero h1 {
 }
 
 main .brief {
-    /* min-height: 30vh; */
-    /* border: 2px solid red; */
+    
     display: flex;
     justify-content: center;
 }
 
 main .brief .box {
-    /* background-color: grey; */
+    
     width: 80%;
-    /* position: absolute; */
+    
     display: flex;
     justify-content: space-evenly;
-    /* margin-top: -10%; */
-    /* margin-bottom: 10%; */
-    /* border: 3px solid blue; */
-    /* background-color: white; */
+    
     flex-wrap: wrap;
     padding: 4rem 0;
 
     .image {
-        /* border: 3px solid blue; */
-        /* max-width: 300px; */
+        
         flex: 0 0 30%;
         min-width: 250px;
 
@@ -62,14 +57,13 @@ main .brief .box {
         display: flex;
         flex: 1;
         min-width: 300px;
-        /* width: min-content; */
+        
         flex-direction: column;
         justify-content: center;
         text-align: justify;
         padding: 1rem;
         font-size: 1.5rem;
-        /* border: 2px solid green; */
-        /* background-color: aliceblue; */
+        
     }
 }
 
@@ -86,23 +80,16 @@ main .clubs .heading {
 
 main .clubs .cards {
     display: flex;
-    /* overflow-x: scroll; */
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
 main .clubs .cards .card {
-    /* width: 300px; */
-    /* margin: 1rem; */
 
-    /* max-width: fit-content; */
-    /* max-width: 500px;
-    min-width: 300px; */
     flex: 1 0 400px;
     transition: .5s ease;
     position: relative;
-    /* border: 2px solid red; */
     overflow: hidden;
     cursor: pointer;
 
@@ -140,16 +127,13 @@ main .clubs .cards .card .desc {
 }
 
 main .clubs .cards .card .desc h3 {
-    /* font-size: 1.8rem; */
     margin-bottom: 1rem;
 
 }
 
 main .clubs .cards .card .desc p {
-    /* font-size: 1.5rem; */
     opacity: 0;
     transition: .5s ease;
-    /* text-align: center; */
 }
 
 /* record section styling */
@@ -161,11 +145,9 @@ main .record .banner {
 main .record .banner h1 {
     background-color: rgb(0, 0, 47);
     color: white;
-    /* color: white; */
     padding: 3rem;
     text-align: center;
     animation: float 6s ease-in-out infinite;
-    /* border: 2px solid rgb(0, 0, 47); */
     width: fit-content;
     margin: auto;
     
@@ -175,15 +157,12 @@ main .record .banner h1 {
 
 /* student leader section styling */
 main .student-leaders {
-    /* background: blue; */
     padding: 3rem;
 }
 
 
 /* religion section styling */
 main .religion {
-    /* background-color: rgb(0, 0, 41); */
-    /* border: 3px solid green; */
     min-height: fit-content;
 }
 
@@ -218,7 +197,6 @@ main .religion .container .text {
         background-size: 200% auto;
         color: #fff;
         background-clip: text;
-        /* text-fill-color: transparent; */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: textclip 2s linear infinite;
@@ -227,8 +205,6 @@ main .religion .container .text {
     }
     .religion-text{
         font-size: 1.5rem;
-        /* color: red; */
-        /* border: 2px solid red; */
         font-weight: 100;
         padding: 2rem 1rem;
         max-width: 90%;
@@ -237,17 +213,11 @@ main .religion .container .text {
 }
 
 main .religion .container .background-clip {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* display: block; */
     position: absolute;
     z-index: -1;
-            /* top: 0;
-            left: 0; */
             width: 100%;
             height: 100%;
             display: flex;
-/* border: 2px solid red; */
 }
 /* accomodation section styling */
 .accomodation{
@@ -255,30 +225,23 @@ main .religion .container .background-clip {
 
 }
 .accomodation .title{
-    /* background-color: #0d013a; */
     padding: 2rem 0;
 
 }
 .accomodation .title h1{
     padding: 1rem 0;
     text-align: center;
-    /* color: white; */
     font-size: 2rem;
 }
 .accomodation .boxes{
     margin: 3rem 0;
     padding: 2rem 0;
     columns: 4;
-    /* column-gap: 3rem; */
     column-gap: 0;
-    /* row-gap: 3rem; */
-    /* break-inside: avoid; */
 
 }
 .accomodation .boxes .box{
-/* border: 2px solid red; */
 margin: 1rem;
-/* margin: 0; */
 
 }
 .accomodation .boxes img{
@@ -295,20 +258,16 @@ transition: .3s ease;
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
         transform: translateY(0px);
-        /* background-color: rgb(230, 184, 0); */
     }
 
     50% {
         box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
         transform: translateY(-20px);
-        /* background-color: rgb(0, 0, 47); */
-        /* color: white; */
     }
 
     100% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
         transform: translateY(0px);
-        /* background-color: rgb(230, 184, 0); */
     }
 }
 @keyframes textclip {
@@ -316,16 +275,3 @@ transition: .3s ease;
       background-position: 200% center;
     }
   }
-/* 
-  @media (min-aspect-ratio:16/9) {
-    .background-clip{
-        width: 100%;
-        height: auto;
-    }
-  }
-  @media (max-aspect-ratio:16/9) {
-    .background-clip{
-        width: auto;
-        height: 100%;
-    }
-  } */
