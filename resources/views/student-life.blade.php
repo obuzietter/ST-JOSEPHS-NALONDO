@@ -24,9 +24,9 @@
                     <img src="/images/background.jpg" alt="">
                 </div>
                 <div class="description">
-                    <h3>STUDENT LIFE</h3>
-                    <p>
-                        The student-life webpage on our high school's website serves as a vibrant hub of information and connection for our students. Here, you'll discover a treasure trove of resources and activities that enrich your high school experience. Stay up-to-date with the latest events, club meetings, and sports fixtures through our interactive calendar. Explore the diverse array of student organizations and clubs that cater to a wide range of interests, from the arts to STEM and beyond. Our student-life webpage also features inspiring stories and achievements from our fellow students, creating a strong sense of community and celebrating our successes. Whether you're looking to get involved, find academic support, or simply stay informed about the pulse of our school, this webpage is your one-stop destination for all things related to high school life.</p>
+                    <h3 class="h3">STUDENT LIFE</h3>
+                    <p class="para">
+                        The student-life webpage on our high school's website serves as a vibrant hub of information and connection for our students. Here, you'll discover a treasure trove of resources and activities that enrich your high school experience. Stay up-to-date with the latest events, club meetings, and sports fixtures through our interactive calendar. Explore the diverse array of student organizations and clubs that cater to a wide range of interests, from the arts to STEM and beyond. </p>
                 </div>
             </div>
         </section>
