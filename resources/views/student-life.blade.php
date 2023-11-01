@@ -35,6 +35,7 @@
                 <h2>CLUBS AND EXTRA CURRICULAR ACTIVITIES</h2>
 
             </div>
+            <hr>
             <div class="cards">
                 <div class="card">
                     <div class="image">
@@ -93,6 +94,11 @@
             </div>
         </section>
         <section class="student-leaders">
+            <!-- Student leader heading -->
+            <div class="heading">
+                <h1>STUDENT LEADERS</h1>
+            </div>
+            <hr>
             <!-- Slideshow container -->
             <div class="slideshow-container">
 

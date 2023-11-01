@@ -174,9 +174,13 @@ main .record .banner h1 {
 
 /* student leader section styling */
 main .student-leaders {
-    padding: 3rem;
+    /* padding: 3rem; */
 }
 
+main .student-leaders .heading{
+    padding: 3rem 0;
+    text-align: center;
+}
 
 /* religion section styling */
 main .religion {
@@ -232,10 +236,10 @@ main .religion .container .text {
 main .religion .container .background-clip {
     position: absolute;
     z-index: -1;
-            width: 100%;
-            height: 100%;
-            display: flex;
-}
+    bottom: 0;
+    right: 0;
+    
+    }
 /* accomodation section styling */
 .accomodation{
     /* border: 2px solid blue; */
@@ -290,5 +294,18 @@ transition: .3s ease;
 @keyframes textclip {
     to {
       background-position: 200% center;
+    }
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
     }
   }
