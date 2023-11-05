@@ -11,6 +11,9 @@
     <script src="{{url('/js/about.js')}}" defer></script>
     <link rel="stylesheet" href="/css/about.css">
 
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
 
 
 </head>
@@ -27,7 +30,7 @@
             </div>
         </div>
         <nav>
-            <!-- <ul class="header-links">
+            <ul class="header-links">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('faculty') }}">Faculty</a></li>
@@ -35,7 +38,7 @@
                 <li><a href="{{ route('community') }}">Community</a></li>
                 <li><a href="{{ route('achievements') }}">Achievements</a></li>
                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
-            </ul> -->
+            </ul>
         </nav>
 
 

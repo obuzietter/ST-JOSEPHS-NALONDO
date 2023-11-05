@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMMUNITY AND EVENTS</title>
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="/css/projects.css">
     <link rel="stylesheet" href="{{ url('css/projects.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
+
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
     
 </head>

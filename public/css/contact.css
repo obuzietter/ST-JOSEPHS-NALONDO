@@ -59,7 +59,7 @@ body{
     opacity:0;
     transform:translateY(150%);
     color:white;
-    font-size:clamp(20px,80vw,45px);
+    font-size:clamp(20px,80vw,38px);
 }
 
 .map-text button{
