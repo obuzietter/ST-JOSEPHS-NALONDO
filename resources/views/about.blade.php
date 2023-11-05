@@ -8,8 +8,11 @@
     <title>Nalondo - About</title>
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
-
+    <script src="{{url('/js/about.js')}}" defer></script>
     <link rel="stylesheet" href="/css/about.css">
+
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
 
 
@@ -28,18 +31,18 @@
 
         </div>
         <nav>
-        <ul class="header-links">
-                 <li><a href="{{ route('home') }}">Home</a></li>
+            <ul class="header-links">
+                <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('faculty') }}">Faculty</a></li>
                 <li><a href="{{ route('studentLife') }}">Student Life</a></li>
                 <li><a href="{{ route('community') }}">Community</a></li>
                 <li><a href="{{ route('achievements') }}">Achievements</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
+                <li><a href="{{ route('contact') }}">Contact Us</a></li>
             </ul>
         </nav>
-          
-        
+
+
 
     </header>
     <main>
@@ -184,15 +187,15 @@
             <div class="container">
                 <div class="counters">
                     <div class="counter">
-                        <span>300</span>
+                        <span class="count" data-target="49">0</span>
                         <h3>TEACHERS</h3>
                     </div>
                     <div class="counter">
-                        <span>300</span>
+                        <span class="count" data-target="1060">0</span>
                         <h3>STUDENTS</h3>
                     </div>
                     <div class="counter">
-                        <span>300</span>
+                        <span class="count" data-target="136">0</span>
                         <h3>CANDIDATES</h3>
                     </div>
                 </div>
@@ -269,24 +272,24 @@
 </body>
 
 </html>
-<script>
-    // const listItems = document.querySelectorAll(".core-value");
-    // const observer = new IntersectionObserver(
-    //     (entries) => {
-    //         entries.forEach((entry) => {
-    //             if (entry.isIntersecting) {
+<!-- <script>
+    const listItems = document.querySelectorAll(".core-value");
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
 
-    //                 entry.target.style.transform = "translateX(0)"
-    //             } else {
-    //                 entry.target.style.transform = "translateX(80%)";
-    //             }
+                    entry.target.style.transform = "translateX(0)"
+                } else {
+                    entry.target.style.transform = "translateX(80%)";
+                }
 
-    //         });
-    //     }, {
-    //         threshold: 0.1,
-    //     }
-    // );
-    // listItems.forEach((li) => {
-    //     observer.observe(li);
-    // });
-</script>
+            });
+        }, {
+            threshold: 0.1,
+        }
+    );
+    listItems.forEach((li) => {
+        observer.observe(li);
+    });
+</script> -->

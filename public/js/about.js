@@ -1,64 +1,59 @@
-const chev = document.getElementById("chevron");
-chev.addEventListener("click", () => {
-    location.href = "#values";
-});
-
-const navItems = document.querySelectorAll(".history-nav .item");
-
-navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-        let activeLinks = document.querySelectorAll(".active");
-        activeLinks.forEach((activeLink) => {
-            activeLink.classList.remove("active");
-        });
-        item.classList.add("active");
-    });
-});
-
-document.getElementById("up").addEventListener("click", () => {
-    location.href = "about";
-});
-
-// statistics intersection observer
-const coreValues = document.querySelectorAll(".core-value");
-
+const listItems = document.querySelectorAll(".core-value");
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            entry.isIntersecting
-                ? (entry.target.style.translate = "0")
-                : entry.target.classList.contains("even")
-                ? (entry.target.style.translate = "100px")
-                : (entry.target.style.translate = "-100px");
+            if (entry.isIntersecting) {
+                entry.target.style.transform = "translateX(0)";
+            } else {
+                entry.target.style.transform = "translateX(80%)";
+            }
         });
     },
     {
-        threshold: 0.2,
+        threshold: 0.1,
     }
 );
-coreValues.forEach((coreValue) => {
-    observer.observe(coreValue);
+listItems.forEach((li) => {
+    observer.observe(li);
 });
 
 
-// window scroll event
-/*
-const revealElement = document.getElementById('revealElement');
+const counters = document.querySelectorAll(".count");
+const speed = 200;
+function animatedCounter() {
+    counters.forEach((counter) => {
+        console.log(counter);
 
-function checkScroll() {
-  const scrollPosition = window.scrollY;
-  const windowHeight = window.innerHeight;
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            const increment = target / speed;
+            console.log(count);
 
-  if (scrollPosition > windowHeight) {
-    revealElement.style.opacity = 1;
-  } else {
-    revealElement.style.opacity = 0;
-  }
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 3);
+            } else {
+                count.innerText = target;
+            }
+        };
+        updateCount();
+    });
 }
 
-// Attach the scroll event listener
-window.addEventListener('scroll', checkScroll);
 
-// Initial check in case the user starts already scrolled down
-checkScroll();
-*/
+const counterObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                animatedCounter()
+            } 
+        });
+    },
+    {
+        threshold: 1,
+    }
+);
+counters.forEach((counter) => {
+    counterObserver.observe(counter);
+});

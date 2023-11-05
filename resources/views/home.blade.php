@@ -9,8 +9,9 @@
     {{-- css linking --}}
     {{-- <link rel="stylesheet" href="{{ asset('/css/home.css') }}"> --}}
     <link rel="stylesheet" href="/css/home.css">
-    <script src="{{ asset('/js/home.js') }}" defer></script>
+    <script src="/js/home.js" defer></script>
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     {{-- <link rel="stylesheet" href="{{ asset('/css/navbar.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
 
@@ -271,6 +272,7 @@
                 <p style="color:var(--background-color);">&copy; 2023 NALONDO HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
+        
     </footer>
 </body>
 <script>
