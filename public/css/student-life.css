@@ -19,7 +19,14 @@ main .hero h1 {
     display: grid;
     place-items: center;
     color: white;
-    background-color: rgb(1, 1, 90, .5);
+    /* background-color: rgb(1, 1, 90, .5); */
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.8),
+        rgb(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.8)
+    );
+    font-size: 2rem;
 
 }
 
@@ -31,17 +38,19 @@ main .brief {
 
 main .brief .box {
     
-    width: 80%;
+    width: 90%;
     
     display: flex;
     justify-content: space-evenly;
-    
+    row-gap: 1rem;
     flex-wrap: wrap;
     padding: 4rem 0;
+    /* border: 1px solid red; */
 
     .image {
         
-        flex: 0 0 30%;
+        /* flex: 0 0 30%; */
+        max-width: 50%;
         min-width: 250px;
 
 
@@ -56,13 +65,20 @@ main .brief .box {
     .description {
         display: flex;
         flex: 1;
+        /* max-width: 50%; */
         min-width: 300px;
         
         flex-direction: column;
         justify-content: center;
         text-align: justify;
-        padding: 1rem;
+        padding: 2rem;
         font-size: 1.5rem;
+        background-color: #0d013a;
+        color: white;
+        .h3{
+            text-align: center;
+        }
+        
         
     }
 }
@@ -81,12 +97,13 @@ main .clubs .heading {
 main .clubs .cards {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
+    
     flex-wrap: wrap;
 }
 
 main .clubs .cards .card {
-
+    margin: 2rem;
     flex: 1 0 400px;
     transition: .5s ease;
     position: relative;
@@ -157,9 +174,13 @@ main .record .banner h1 {
 
 /* student leader section styling */
 main .student-leaders {
-    padding: 3rem;
+    /* padding: 3rem; */
 }
 
+main .student-leaders .heading{
+    padding: 3rem 0;
+    text-align: center;
+}
 
 /* religion section styling */
 main .religion {
@@ -215,15 +236,12 @@ main .religion .container .text {
 main .religion .container .background-clip {
     position: absolute;
     z-index: -1;
-            width: 100%;
-            height: 100%;
-            display: flex;
-}
+    bottom: 0;
+    right: 0;
+    
+    }
 /* accomodation section styling */
-.accomodation{
-    /* border: 2px solid blue; */
 
-}
 .accomodation .title{
     padding: 2rem 0;
 
@@ -273,5 +291,18 @@ transition: .3s ease;
 @keyframes textclip {
     to {
       background-position: 200% center;
+    }
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
     }
   }
