@@ -105,96 +105,6 @@ transform: scaleX(1); /* Make the line visible */
     background-color: #fff;
     margin: 3px 0;
 }
-
-
-
-/* Container styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-}
-
-/* Achievement styles */
-.achievement {
-    border: 1px solid var(--secondary-color);
-    padding: 0;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
-
-.achievement:hover {
-    transform: scale(1.05);
-}
-
-.large-achievement {
-    grid-column: span 2;
-    border: 1px solid var(--secondary-color);
-    padding: 0;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
-
-.large-achievement:hover {
-    transform: scale(1.05);
-}
-
-.achievement img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-/* Footer styles */
-.footer {
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
-    padding: 7rem;
-}
-
-.contact-info {
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    margin: 0;
-}
-
-.footer-line {
-    border-top: 1px solid #fff;
-    margin: 10px 0;
-    width: 100%;
-}
-
-.footer-icons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-icons-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-icons-row a {
-    margin: 10px;
-    font-size: 24px;
-}
-
 /* Title container styles */
 .title-container {
     text-align: center;
@@ -254,302 +164,6 @@ transform: scaleX(1); /* Make the line visible */
     }
 }
 
-.achievements-title {
-    font-size: 40px;
-    color:var(--background-color);
-    margin-top: 20px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    text-underline-position: below;
-}
-
-.achievements-description {
-    font-size: 18px;
-    color: var(--secondary-color);
-    margin-top: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    font-weight: bolder;
-    width: 100%;
-}
-
-
-body, h1, h2, p {
-margin: 0;
-padding: 0;
-}
-
-@media screen and (max-width: 480px) {
-/* Adjust your styles for mobile devices here */
-body {
-font-size: 16px; /* Example: Decrease the font size for better readability */
-}
-
-/* You can modify other styles as needed */
-}
-
-/* iPads and Tablets (481px - 768px) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-/* Adjust your styles for tablets here */
-body {
-font-size: 18px; /* Example: Slightly larger font size for tablets */
-}
-
-/* You can modify other styles as needed */
-}
-
-/* Small screens and laptops (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-/* Adjust your styles for small screens and laptops here */
-body {
-font-size: 20px; /* Example: Bigger font size for laptops */
-}
-
-/* You can modify other styles as needed */
-}
-
-/* Desktops and large screens (1025px - 1200px) */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-/* Adjust your styles for desktops and large screens here */
-/* You can add specific styles for this range */
-}
-/* Hamburger menu styles */
-.hamburger {
-display: none; /* Initially hide the hamburger menu */
-cursor: pointer;
-margin-right: 10px;
-}
-
-/* Show the hamburger menu on smaller screens */
-@media screen and (max-width: 768px) {
-.school-info {
-justify-content: space-between; /* Separate the high school name and hamburger menu */
-}
-
-.school-name {
-font-size: 18px; /* Adjust the font size for smaller screens */
-}
-
-.hamburger {
-display: block; /* Show the hamburger menu */
-}
-
-}
-
-
-.achievement-container {
-display:flex;
-gap: 1000px; /* Add some spacing between columns */
-justify-items: center; 
-align-items: flex-start; 
-margin-top: 10px; 
-background-image: url('images/achieve.jpg'); 
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-border-radius: 1px;
-position: relative;;
-overflow: hidden; 
-width: 100%;
-text-emphasis-color: white;
-
-
-}
-.grid-container {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
-justify-items: center;
-align-items: flex-start;
-margin-top: 20px;
-position: relative;
-border-radius: 1px;
-padding: 20px;
-backdrop-filter: blur(5px);
-background-color: rgba(255, 255, 255, 0.6);
-}
-
-
-
-/* Style for the achievements */
-.achievement {
-background-color: #fff;
-border: 0px solid #ddd;
-border-radius: 1px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-position: relative; /* Add this line */
-background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
-width: 100%;
-
-}
-.achievement-content {
-width: 100%; /* Set the width to 100% */
-}
-
-/* Style for the achievement text */
-.achievement-text {
-width: 100%; /* Set the width to 100% */
-}
-
-
-/* Style for the achievement images */
-.achievement-image {
-max-width: 40%;
-height: 10vh;
-object-fit: cover;
-border-radius: 10px 10px 0 0;
-margin: 20px;
-animation: bounce 1.5s infinite alternate; /* Apply the bounce animation */
-}
-
-/* Define the bounce animation */
-@keyframes bounce {
-0% {
-transform: translateY(0);
-}
-100% {
-transform: translateY(-10px);
-}
-}
-@keyframes slideInLeft{
-from{
-transform:translateX(-200px);
-}
-to{
-transform:translateX(0);
-}
-}
-
-
-/* Style for Achievement 1 */
-.achievement-container:nth-child(1) .achievement {
-display: flex;
-flex-direction: row-reverse; /* Image on the left, text on the right */
-max-width: 100%;
-height: 50vh;
-align-items: center;
-}
-
-/* Style for Achievement 2 */
-.achievement-container:nth-child(2) .achievement {
-display: flex;
-flex-direction: row; /* Image on the right, text on the left */
-max-width: 100%;
-height: 50vh;
-align-items: center;
-}
-
-.achievement-container:nth-child(3) .achievement {
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-max-width: 100%;
-height: 50vh;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-/* Additional styles specific to Achievement 6 (if needed) */
-.achievement-container:nth-child(6) .achievement {
-background-image: url('images/achieve.jpeg'); /* Background image */
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-max-width: 100%;
-height: 50vh;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-
-
-
-
-
-/* Style for Achievements 4 and 5 (Similar to Achievements 1 and 2) */
-.achievement-container:nth-child(4) .achievement,
-.achievement-container:nth-child(5) .achievement {
-display: flex;
-flex-direction: row-reverse; /* Image on the left, text on the right */
-max-width: 100%;
-height: 50vh;
-align-items: center;
-}
-
-
-
-/* Style for Achievements 7 and 8 (Similar to Achievements 1 and 2) */
-.achievement-container:nth-child(7) .achievement,
-.achievement-container:nth-child(8) .achievement {
-display: flex;
-flex-direction: row-reverse; /* Image on the right, text on the left */
-max-width: 100%;
-height: 50vh;
-align-items: center;
-}
-
-/* Style for Achievements 9 and 10 (Similar to Achievements 1 and 2) */
-.achievement-container:nth-child(9) .achievement,
-.achievement-container:nth-child(10) .achievement {
-display: flex;
-flex-direction: row-reverse; /* Image on the right, text on the left */
-max-width: 100%;
-height: 50vh;
-align-items: center;
-}
-
-
-
-/* Style the achievement text below images */
-.achievement-description {
-text-align:center;
-padding: 0;
-color: #fff !important;
-margin-top: 20px;
-width: 100%;
-}
-.achievement-text{
-color: var(--background-color);
-}
-
-
-
-
-/* Additional CSS for the button */
-.read-more-button {
-    background-color:burlywood;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    margin-left: 20px;
-   
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-
-}
-
 .scroll-to-top-button {
     display: block;
     position: fixed;
@@ -582,8 +196,15 @@ color: var(--background-color);
     z-index: 1000;
 }
 
-/* Additional description container styles */
-/* Styles for the header section */
+/*additional descriptions container*/
+.additional-description-container {
+    display: flex;
+    align-items: center;
+    border-radius: 1px; /* Match the border-radius with the achievement container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Match the box-shadow with the achievement container */
+    height: 60vh;
+    background-color: #031a32;
+    }
 .additional-description-header {
 background-color: burlywood;
 color: white;
@@ -607,17 +228,6 @@ color: #031a32;
 
 }
 
-/* Rest of the styles */
-.additional-description-container {
-display: flex;
-align-items: center;
-padding: 0px;
-margin: 8px;
-border-radius: 1px; /* Match the border-radius with the achievement container */
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Match the box-shadow with the achievement container */
-height: 60vh;
-background-color: #031a32;
-}
 
 
 .additional-description-content {
@@ -688,11 +298,247 @@ justify-content: center;
 border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
 border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
 }
-/* Style for the achievements row container */
+.achievement-container {
+    display:flex;
+    gap: 1000px; /* Add some spacing between columns */
+    justify-items: center; 
+    align-items: flex-start; 
+    margin-top: 10px; 
+    background-image: url('images/achieve.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 1px;
+    position: relative;;
+    overflow: hidden; 
+    width: 100%;
+    text-emphasis-color: white;
+    
+    
+    }
+
+.achievement:hover {
+    transform: scale(1.05);
+}
+
+.achievement img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.achievement {
+    background-color: #fff;
+    border: 0px solid #ddd;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Add this line */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
+    width: 100%;
+    
+    }
+    .achievement-content {
+    width: 100%; /* Set the width to 100% */
+    }
+    
+    /* Style for the achievement text */
+    .achievement-text {
+    width: 100%; /* Set the width to 100% */
+    }
+    
+    
+    /* Style for the achievement images */
+    .achievement-image {
+    max-width: 40%;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin: 20px;
+    animation: bounce 1.5s infinite alternate; /* Apply the bounce animation */
+    }
+    
+    /* Define the bounce animation */
+    @keyframes bounce {
+    0% {
+    transform: translateY(0);
+    }
+    100% {
+    transform: translateY(-10px);
+    }
+    }
+    @keyframes slideInLeft{
+    from{
+    transform:translateX(-200px);
+    }
+    to{
+    transform:translateX(0);
+    }
+    }
+    
+    
+    /* Style for Achievement 1 */
+    .achievement-container:nth-child(1) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    max-width: 100%;
+    height: 50vh;
+    align-items: center;
+    }
+    
+    /* Style for Achievement 2 */
+    .achievement-container:nth-child(2) .achievement {
+    display: flex;
+    flex-direction: row; /* Image on the right, text on the left */
+    max-width: 100%;
+    height: 50vh;
+    align-items: center;
+    }
+    
+    .achievement-container:nth-child(3) .achievement {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    /* Additional styles specific to Achievement 6 (if needed) */
+    .achievement-container:nth-child(6) .achievement {
+    background-image: url('images/achieve.jpeg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    
+    
+    
+    
+    /* Style for Achievements 4 and 5 (Similar to Achievements 1 and 2) */
+    .achievement-container:nth-child(4) .achievement,
+    .achievement-container:nth-child(5) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    max-width: 100%;
+    height: 50vh;
+    align-items: center;
+    }
+    
+    
+    
+    /* Style for Achievements 7 and 8 (Similar to Achievements 1 and 2) */
+    .achievement-container:nth-child(7) .achievement,
+    .achievement-container:nth-child(8) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    max-width: 100%;
+    height: 50vh;
+    align-items: center;
+    }
+    
+    /* Style for Achievements 9 and 10 (Similar to Achievements 1 and 2) */
+    .achievement-container:nth-child(9) .achievement,
+    .achievement-container:nth-child(10) .achievement {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    max-width: 100%;
+    height: 50vh;
+    align-items: center;
+    }
+
+
+.achievements-title {
+    font-size: 40px;
+    color:var(--background-color);
+    margin-top: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-underline-position: below;
+}
+
+
+
+
+body, h1, h2, p {
+margin: 0;
+padding: 0;
+}
+
+
+
+/* Style the achievement text below images */
+.achievement-description {
+text-align:center;
+padding: 0;
+color: #fff !important;
+margin-top: 20px;
+width: 100%;
+}
+.achievement-text{
+color: var(--background-color);
+}
+
 .achievements-row {
 display: flex;
 gap: 20px; /* Add some spacing between achievements */
 justify-content: center; /* Center the achievements horizontally */
 align-items: flex-start; /* Align achievements to the top */
 }
+/* Footer styles */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 7rem;
+}
 
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.footer-line {
+    border-top: 1px solid #fff;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.footer-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons-row a {
+    margin: 10px;
+    font-size: 24px;
+}

@@ -12,25 +12,27 @@
 <body>
 <header>
 <div class="school-info">
-        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <nav>
-    <ul class="header-links">
-        <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('about') }}">About Us</a></li>
-        <li><a href="{{ route('faculty') }}">Faculty</a></li>
-        <li><a href="{{ route('studentLife') }}">Student Life</a></li>
-        <li><a href="{{ route('community') }}">Community</a></li>
-        <li><a href="{{ route('achievements') }}">Achievements</a></li>
-        <li><a href="{{ route('contact') }}">Contact Us</a></li>
-    </ul>
-</nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
 
+        </div>
+        <nav>
+        <ul class="header-links">
+                 <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('about') }}">About Us</a></li>
+                <li><a href="{{ route('faculty') }}">Faculty</a></li>
+                <li><a href="{{ route('studentLife') }}">Student Life</a></li>
+                <li><a href="{{ route('community') }}">Community</a></li>
+                <li><a href="{{ route('achievements') }}">Achievements</a></li>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
+            </ul>
+        </nav>
+          
+        
 </header>
 <div class="title-container">
     <div class="title-text">
@@ -87,32 +89,20 @@
     </div>
 </div>
 
-<div class="grid-container">
-<!-- Achievement 3 -->
 <div class="achievement-container">
-    <div class="achievement">
+<!-- Achievement 3 -->
+<div class="achievement">
+        <img src="images/achievement2.jpeg" alt="Achievement 3" class="achievement-image">
         <div class="achievement-content">
             <div class="achievement-text">
                 <h2>Achievement 3</h2>
-                <p>Your achievement description goes here.</p>
+                <p>Received Employee of the Month award for consistently exceeding performance targets and providing outstanding customer service.</p>
             </div>
         </div>
-        
     </div>
 </div>
 
-<!-- Achievements 6 -->
-<div class="achievement-container no-image">
-    <div class="achievement">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 6</h2>
-                <p>Initiated and managed a community outreach program that resulted in a 50% increase in volunteer participation and positive community feedback.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+
 <!-- Achievements 4 -->
 <div class="achievement-container">
     <div class="achievement">
@@ -140,6 +130,20 @@
 </div>
 
 
+<!-- Achievements 6 -->
+<div class="achievement-container ">
+    <div class="achievement">
+    <img src="images/achievement2.jpeg" alt="Achievement 2" class="achievement-image">
+
+        <div class="achievement-content">
+            <div class="achievement-text">
+                <h2>Achievement 6</h2>
+                <p>Initiated and managed a community outreach program that resulted in a 50% increase in volunteer participation and positive community feedback.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 <!-- Achievements 7 -->
 <div class="achievement-container">
@@ -220,6 +224,17 @@
     </div>
 </div>
 <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".header-links");
+
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+    });
+});
+
+
     document.addEventListener("DOMContentLoaded", function () {
     const showAchievementsButton = document.getElementById("showAchievementsButton");
 

@@ -16,12 +16,12 @@
     <header>
     
     <div class="school-info">
-        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
+        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
     </div>
     <nav>
     <ul class="header-links">
