@@ -53,7 +53,7 @@
 </div>
          <div class="header_right">
          <div class="header_right-image"></div>
-         <img src="./images/achieve.jpg">  
+         <img src="./images/students.jpeg"  width="300" height="400">  
          </div>
        </div>
     </header>       

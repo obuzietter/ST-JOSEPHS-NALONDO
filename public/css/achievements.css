@@ -50,6 +50,7 @@ h3,
 h4,
 h5{
     line-height: 1.2;
+    color: orange;
 
 }
 h1{
@@ -189,14 +190,15 @@ header{
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 5rem;
+    gap: 7rem;
     height:100%;
 
 }
 .header_left p{
-    margin:1rem 0 2,4rem;
+    margin:1rem 0 2.4rem;
     
 }
+
 /*====CATEFGORIES==*/
 .categories{
     background: var(--bg1-color);
