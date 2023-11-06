@@ -75,11 +75,11 @@
 
             </div>
 
-            <nav>
+            <nav1>
                 <span class="navBtns active">O</span>
                 <span class="navBtns">O</span>
                 <span class="navBtns">O</span>
-            </nav>
+            </nav1>
         </section>
         <section class="brief">
             <div class="card student-life">
@@ -229,11 +229,11 @@
                 <div class="button">
                     <button id="btn">LEARN MORE</button>
                 </div>
-                <nav>
+                <nav1>
                     <a href="">A</a>
                     <a href="">B</a>
                     <a href="">C</a>
-                </nav>
+                </nav1>
             </div>
         </section>
         <section class="counters">

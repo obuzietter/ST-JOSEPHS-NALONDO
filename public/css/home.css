@@ -72,7 +72,7 @@
 
 }
 
-.landing nav {
+.landing nav1 {
     position: absolute;
 
     bottom: 1rem;
@@ -80,14 +80,14 @@
     transform: translateX(-50%);
 }
 
-.landing nav span {
+.landing nav1 span {
     cursor: pointer;
     color: white;
     font-weight: 900;
     margin: 1rem;
 }
 
-.landing nav span.active {
+.landing nav1 span.active {
     color: white;
     border-radius: 100%;
     padding: 5px;
