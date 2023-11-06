@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('/css/contact.css') }}">
     <link rel="stylesheet" href="/css/contact.css">
-
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -16,26 +17,25 @@
 <body>
     <header>
 
-    <div class="school-info">
-            <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <nav>
-            <ul class="header-links">
-                <li><a href="{{ route('home') }}">Home</a></li>
+    <nav>
+        <div class="container nav_container">
+        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
+  
+        <ul class="nav_menu">
+                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('faculty') }}">Faculty</a></li>
                 <li><a href="{{ route('studentLife') }}">Student Life</a></li>
                 <li><a href="{{ route('community') }}">Community</a></li>
                 <li><a href="{{ route('achievements') }}">Achievements</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
             </ul>
-        </nav>
+            <button id="open-menu-btn"><i class ="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class ="uil uil-multiply"></i></button>
 
+        </div>
+
+    </nav>
     </header>
 
     <main>
@@ -115,5 +115,38 @@
             </div>
         </div>
     </footer>
+    
+
+<script>
+    window.addEventListener('scroll',()=>{
+    document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0)
+})
+
+//show/hide nav menu
+const menu=document.querySelector(".nav_menu");
+const menuBtn=document.querySelector("#open-menu-btn");
+const closeBtn=document.querySelector("#close-menu-btn");
+
+
+
+menuBtn.addEventListener('click',()=>{
+    menu.style.display="flex";
+    closeBtn.style.display="inline-block";
+    menuBtn.style.display="none";
+})
+
+//close navbar
+const closeNav=()=>{
+    menu.style.display="none";
+    closeBtn.style.display="none";
+    menuBtn.style.display="inline-block";
+
+
+}
+closeBtn.addEventListener('click',closeNav)
+
+</script>
+
 </body>
+
 </html>

@@ -1,511 +1,492 @@
-
-/* Reset and global styles */
-:root {
-    --primary-color: #031a32;
-    --secondary-color: #062744;
-    --background-color: #F8F9FA;
-}
-
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-}
-
-/* Header styles */
-header {
-    background-color: var(--primary-color);
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}/* Updated CSS for the header styles */
-.header-links {
+    padding:0;
+    border:0;
+    outline:0;
+    text-decoration: none;
     list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
+    box-sizing: border-box;
 }
-.header-links li {
-margin: 0;
-position: relative; /* Add relative positioning */
-}
+:root{
+ 
+    --primary-color: #031a32;
+    --success-color:#00bf8e;
+    --warning-color:yellow;
+    --danger-color:red;
+    --danger-vaiant--color:maroon;
+    --white-color:white;
+    --black-color:black;
+    --bg-color:blue;
+    --bg1-color:#2e3267;
+    --bg2-color:#031a32;
 
-.header-links a {
-margin: 0;
-color: #fff;
-text-decoration: none;
-font-weight: bold;
-font-size: 18px;
-position: relative; /* Add relative positioning */
-}
+    --container-width-1g:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
 
-/* Add a hover effect for the links */
-.header-links a:hover {
-color: burlywood;
-/* Add animation for smoother transition */
-transition: color 0.3s ease;
-}
+    --transition:all 400ms ease;
 
-/* Add a line below the link when hovered */
-.header-links a::after {
-content: "";
-display: block;
-position: absolute;
-left: 0;
-bottom: -2px; /* Adjust the position as needed */
-width: 100%;
-height: 2px; /* Height of the line */
-background-color: #fff; /* Color of the line */
-transform: scaleX(0); /* Initially, the line is not visible */
-transform-origin: center; /* Set the transform origin to center */
-transition: transform 0.3s ease; /* Add animation for smoother transition */
 }
-
-.header-links a:hover::after {
-transform: scaleX(1); /* When hovered, make the line visible */
-}
-
-/* Add a background color for the active link */
-.header-links a.active {
-background-color: #062744;
-/* Add animation for smoother transition */
-transition: background-color 0.3s ease;
-}
-
-/* Add a line below the active link */
-.header-links a.active::after {
-transform: scaleX(1); /* Make the line visible */
-}
-
-
-.school-info {
-    display: flex;
-    align-items: center;
-}
-
-.school-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.hamburger span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-}
-/* Title container styles */
-.title-container {
-    text-align: center;
-    position: relative;
-    padding: 0;
-    height: 50vh;
-    overflow: hidden;
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1px;
-    width: 100%;
-}
-
-.title-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    animation: imageSwitch 15s linear infinite;
-    filter: blur(10px);
-}
-
-.title-image:nth-child(1) {
-    animation-delay: 0s;
-    opacity: 0.5;
-    z-index: 0;
-}
-
-.title-image:nth-child(2) {
-    animation-delay: 5s;
-    z-index: -1;
-}
-
-.title-image:nth-child(3) {
-    animation-delay: 10s;
-    z-index: -1;
-}
-
-@keyframes imageSwitch {
-    0%, 100% {
-        opacity: 0;
-        z-index: -1;
-    }
-    33.33%, 100% {
-        opacity: 1;
-        z-index: 0;
-    }
-    66.66% {
-        opacity: 0;
-        z-index: -1;
-    }
-}
-
-.scroll-to-top-button {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 10px 20px;
-    font-size: 24px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.scroll-to-top-button.show {
-    display: block;
-}
-
-/* Additional CSS for the "See More" button */
-.see-more-button {
-    background-color: burlywood;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 80px;
-    z-index: 1000;
-}
-
-/*additional descriptions container*/
-.additional-description-container {
-    display: flex;
-    align-items: center;
-    border-radius: 1px; /* Match the border-radius with the achievement container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Match the box-shadow with the achievement container */
-    height: 60vh;
+body{
+    font-family:Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--white-color);
     background-color: #031a32;
-    }
-.additional-description-header {
-background-color: burlywood;
-color: white;
-padding: 10px;
-border-top-left-radius: 30px;
-border-top-right-radius: 5px;
-justify-content: center;
+}
+.container{
+    width: var(--container-width-1g);
+    margin: 0 auto;
+}
+section{
+    padding:6rem 0;
+}
+section h2{
+    text-align:center;
+    margin-bottom: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    line-height: 1.2;
 
 }
-
-.additional-description-header h3 {
-font-size: 40px;
-margin: 0;
-}
-
-.additional-description-header p {
-font-size: 20px;
-margin: 0;
-color: #031a32;
-
+h1{
+    font-size: 2.4rem;
+    color: orange;
 
 }
-
-
-
-.additional-description-content {
-flex: 2;
-padding: 0px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
-border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
-border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
-background-color: #031a32;
-color: #fff;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+h2{
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
 }
 
-.additional-description-content .read-more-button {
-background-color: burlywood;
-color: white;
-padding: 10px 20px;
-font-size: 18px;
-
-cursor: pointer;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-margin-top: 20px; /* Add some spacing between the button and header */
-border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
-border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
+a{
+    color:white;
 }
-
-
-.additional-description-content .additional-description p {
-font-size: 20px;
-color: var(--primary-color);
-margin-top: 40px;
-display: flex;
-align-content: center;
-box-shadow: 0 0 10px burlywood;
-max-width: 1000px;
-height: auto;
-fill: var(--background-color);
-border-radius: 10px;
-background-color: var(--background-color);
-padding: 20px;
-margin: 20px;
-}
-
-.additional-description-image {
-flex: 1.5;
-padding: 30px;
-display: flex;
-justify-content:right;
-align-items: center;
-height: 30vh;
-}
-
-
-.additional-description-header {
-background-color: burlywood;
-color: white;
-padding: 30px;
-margin: 20px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-justify-content: center;
-border-bottom-left-radius: 10px; /* Match the border-radius with the achievement container */
-border-bottom-right-radius: 10px; /* Match the border-radius with the achievement container */
-}
-.achievement-container {
-    display:flex;
-    gap: 1000px; /* Add some spacing between columns */
-    justify-items: center; 
-    align-items: flex-start; 
-    margin-top: 10px; 
-    background-image: url('images/achieve.jpg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 1px;
-    position: relative;;
-    overflow: hidden; 
+img{
     width: 100%;
-    text-emphasis-color: white;
-    
-    
-    }
-
-.achievement:hover {
-    transform: scale(1.05);
-}
-
-.achievement img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.achievement {
-    background-color: #fff;
-    border: 0px solid #ddd;
-    border-radius: 1px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative; /* Add this line */
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
-    width: 100%;
-    
-    }
-    .achievement-content {
-    width: 100%; /* Set the width to 100% */
-    }
-    
-    /* Style for the achievement text */
-    .achievement-text {
-    width: 100%; /* Set the width to 100% */
-    }
-    
-    
-    /* Style for the achievement images */
-    .achievement-image {
-    max-width: 40%;
-    height: 10vh;
+    display: block;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin: 20px;
-    animation: bounce 1.5s infinite alternate; /* Apply the bounce animation */
-    }
-    
-    /* Define the bounce animation */
-    @keyframes bounce {
-    0% {
-    transform: translateY(0);
-    }
-    100% {
-    transform: translateY(-10px);
-    }
-    }
-    @keyframes slideInLeft{
-    from{
-    transform:translateX(-200px);
-    }
-    to{
-    transform:translateX(0);
-    }
-    }
-    
-    
-    /* Style for Achievement 1 */
-    .achievement-container:nth-child(1) .achievement {
-    display: flex;
-    flex-direction: row-reverse; /* Image on the left, text on the right */
-    max-width: 100%;
-    height: 50vh;
-    align-items: center;
-    }
-    
-    /* Style for Achievement 2 */
-    .achievement-container:nth-child(2) .achievement {
-    display: flex;
-    flex-direction: row; /* Image on the right, text on the left */
-    max-width: 100%;
-    height: 50vh;
-    align-items: center;
-    }
-    
-    .achievement-container:nth-child(3) .achievement {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    height: 50vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    /* Additional styles specific to Achievement 6 (if needed) */
-    .achievement-container:nth-child(6) .achievement {
-    background-image: url('images/achieve.jpeg'); /* Background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    max-width: 100%;
-    height: 50vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    
-    
-    
-    
-    
-    /* Style for Achievements 4 and 5 (Similar to Achievements 1 and 2) */
-    .achievement-container:nth-child(4) .achievement,
-    .achievement-container:nth-child(5) .achievement {
-    display: flex;
-    flex-direction: row-reverse; /* Image on the left, text on the right */
-    max-width: 100%;
-    height: 50vh;
-    align-items: center;
-    }
-    
-    
-    
-    /* Style for Achievements 7 and 8 (Similar to Achievements 1 and 2) */
-    .achievement-container:nth-child(7) .achievement,
-    .achievement-container:nth-child(8) .achievement {
-    display: flex;
-    flex-direction: row-reverse; /* Image on the right, text on the left */
-    max-width: 100%;
-    height: 50vh;
-    align-items: center;
-    }
-    
-    /* Style for Achievements 9 and 10 (Similar to Achievements 1 and 2) */
-    .achievement-container:nth-child(9) .achievement,
-    .achievement-container:nth-child(10) .achievement {
-    display: flex;
-    flex-direction: row-reverse; /* Image on the right, text on the left */
-    max-width: 100%;
-    height: 50vh;
-    align-items: center;
-    }
 
+}
+.btn{
+    display: inline-block;
+    background-color: white;
+    color:var(--black-color);
+    padding:1rem 2rem ;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+.btn:hover{
+    background: transparent;
+    color:white;
+    border-color:white;
 
-.achievements-title {
-    font-size: 40px;
-    color:var(--background-color);
-    margin-top: 20px;
-    font-weight: bolder;
-    text-transform: uppercase;
+}
+.btn-primary{
+    background:orange;
+    color:var(--white-color);
+   margin-top: 4rem;
+}
+
+/*====NAVBAR====*/
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index:1;
+}
+ /*change navbar styles on scroll using js */
+ .window-scroll{
+    background: var(--bg1-color);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+ }
+.nav_container{
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav button{
+    display:none;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-weight: bold;
+}
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+.nav_menu a:hover{
+    color:orange;
+}
+/* Add a line below the link when hovered */
+.nav_menu a::after {
+    content: "";
+    display: block;
     position: absolute;
-    top: 30%;
+    left: 0;
+    bottom: -2px; /* Adjust the position as needed */
+    width: 100%;
+    height: 2px; /* Height of the line */
+    background-color: #fff; /* Color of the line */
+    transform: scaleX(0); /* Initially, the line is not visible */
+    transform-origin: center; /* Set the transform origin to center */
+    transition: transform 0.3s ease; /* Add animation for smoother transition */
+    }
+    
+    .nav_menu a:hover::after {
+    transform: scaleX(1); /* When hovered, make the line visible */
+    }
+    
+    /* Add a background color for the active link */
+    .nav_menu a.active {
+    background-color: #062744;
+    /* Add animation for smoother transition */
+    transition: background-color 0.3s ease;
+    }
+    
+    /* Add a line below the active link */
+    .nav_menu a.active::after {
+    transform: scaleX(1); /* Make the line visible */
+    }
+    
+    
+    .school-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .school-name {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+/*====HEADER==*/
+header{
+    margin-top: 5rem;
+    position: relative;
+    top: 5rem;
+    overflow:hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+.header_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height:100%;
+
+}
+.header_left p{
+    margin:1rem 0 2,4rem;
+    
+}
+/*====CATEFGORIES==*/
+.categories{
+    background: var(--bg1-color);
+    height:29rem; 
+}
+.categories h1{
+   line-height:1;
+   margin-bottom: 3rem; 
+}
+.categories_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+   grid-area: 4rem;
+} 
+ 
+
+
+.categories_left p{
+  margin: 1rem 0 3rem;
+}
+.categories_right{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2em;
+}
+.category{
+    background: var(--bg2-color);
+    padding: 2rem;
+    border-radius:2rem;
+    transition:var(--transition);
+
+}
+.category:hover{
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+.category:nth-child(2).category_icon{
+    background:var(--danger-color) ;
+}
+.category_icon{
+    background: var(--bg1-color);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+.category h5{
+    margin: 2rem 0 1rem;
+}
+.category p
+
+{
+    font-size: 0.85rem ;
+}
+.courses{
+    margin-top: 10rem;
+
+}
+.courses_container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+text-align: center;
+border:1px solid transparent;
+gap:2rem;
+}
+.course{
+    background:var(--bg1-color);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+    background: transparent;
+    border-color: var(--primary-color);
+}
+.course_info{
+    padding:2rem;
+}
+.course_info p{
+    margin: 1.2em 0 2rem;
+    font-size: 0.9rem;
+}
+/*====TESTIMONIALS==*/
+.testimonials_container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+
+}
+.testimonials{
+    padding-top: 2rem;
+}
+.avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--bg1-color);
+}
+.testimonial_info{
+    text-align: center;
+}
+.testimonial_body{
+    background:orange;
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.testimonial_body::before{
+    content: "";
+    display: block;
+    background:linear-gradient(135deg,transparent,orange,orange,orange);
+    width:3rem;
+    height: 3rem;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    text-underline-position: below;
+    top: -1.5rem;
+    transform:rotate(45deg);
+
+}
+/*====Tablets media queries==*/
+@media screen and (max-width: 1024px){
+.container{
+    width: var(--container-width-md)
+}
+h1{
+    font-size: 2.2rem;
+}
+h2{
+    font-size: 1.7rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+/*NAVBAR*/
+nav button{
+display:inline-block;
+background: transparent;
+font-size: 1.8rem;
+color:var(--white-color);
+cursor: pointer;}
+nav button#close-menu-btn{
+display:none;
+}
+.nav_menu{
+    position:fixed;
+    top:5rem;
+    right:5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+}
+.nav_menu li{
+    width:100%;
+    height: 5.8rem;
+    animation: animateNavItem 400ms linear forwards;
+    transform-origin:top right;
+
+}
+.nav_menu li:nth-child(2){
+    animation-delay: 200ms;
+}
+
+.nav_menu li:nth-child(3){
+    animation-delay: 400ms;
+}
+
+.nav_menu li:nth-child(4){
+    animation-delay: 600ms;
 }
 
 
+@keyframes animateNavItems {
+    0%{ 
+        transform: rotateZ(-90deg) rotateX(90deg)scale(0.1);
+
+    }
+   100%{
+      transform: rotateZ(0)rotateX(0)scale(1);
+      opacity: 1;
+   }
+}
+.nav_menu li a{
+    background: var(--bg1-color);
+    box-shadow: -4rem 6rem 10rem rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+.nav_menu li a:hover{
+    background: orange;
+    color: var(--white-color);
+
+}
+    
 
 
-body, h1, h2, p {
-margin: 0;
-padding: 0;
+}
+/*header */
+header{
+    height: 52vh;
+    margin-bottom: 4rem;
+}
+.header_container{
+    gap:0;
+    padding-bottom: 3rem;
+}
+/*categories */
+.categories{
+    height:auto;
+}
+.categories_container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+}
+.categories_left{
+    margin-right: 0;
+}
+.courses{
+    margin: top 0;
+}
+.courses_container{
+    grid-template-columns: 1fr 1fr;
+}
+
+/*footer*/
+.footer{
+    grid-template-columns: 1fr 1fr;
+}
+/*====Phone media queries==*/
+@media screen and (max-width: 600px){
+.container{
+    width: var(--container-width-sm);
+}
+/*navbar*/
+.nav_menu{
+    right: 3%;
+}
+/*header*/
+.header_container{
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+}
+.header_left p{
+    margin-bottom: 1.3rem;
+}
+
+/*categories*/
+.categories_right{
+    grid-template-columns: 1fr 1fr;
+    gap:0.7rem
+}
+.category{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.category_icon{
+    margin-top: 4px;
+    display: inline-block;
+}
+/*cources/achievements*/
+.courses_container{
+    grid-template-columns: 1fr;
+}
+/*testimonials*/
+.testimonial_body{
+    padding: 1.2rem;
+}
+
+/*footer*/
+.footer{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
 }
 
 
+}
+    
 
-/* Style the achievement text below images */
-.achievement-description {
-text-align:center;
-padding: 0;
-color: #fff !important;
-margin-top: 20px;
-width: 100%;
-}
-.achievement-text{
-color: var(--background-color);
-}
-
-.achievements-row {
-display: flex;
-gap: 20px; /* Add some spacing between achievements */
-justify-content: center; /* Center the achievements horizontally */
-align-items: flex-start; /* Align achievements to the top */
-}
-/* Footer styles */
 .footer {
-    background-color: var(--primary-color);
+    background-color: var(--bg1-color);
     color: #fff;
     text-align: center;
     padding: 7rem;

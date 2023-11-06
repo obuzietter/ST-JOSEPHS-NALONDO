@@ -7,22 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/achievements.css">
     <link rel="stylesheet" href="/css/achievement.css">
-  
+   <!--ICONSCOUT CDN-->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     
 </head>
 <body>
-<header>
-<div class="school-info">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
-
-        </div>
-        <nav>
-        <ul class="header-links">
+    <nav>
+        <div class="container nav_container">
+        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
+  
+        <ul class="nav_menu">
                  <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('faculty') }}">Faculty</a></li>
@@ -31,177 +34,274 @@
                 <li><a href="{{ route('achievements') }}">Achievements</a></li>
                 <li><a href="{{ route('contact') }}">Contact Us</a></li> 
             </ul>
-        </nav>
-          
-        
-</header>
-<div class="title-container">
-    <div class="title-text">
-        <h2 class="achievements-title">SCHOOL ACHIEVEMENTS</h2>
-        <button class="see-more-button" id="showAchievementsButton">See More Achievements</button>
-        <button class="scroll-to-top-button" id="scrollToTopButton">&#8593;</button>
-    </div>
-    <img class="title-image" src="images/title.jpeg" alt="Achievement Image 1">
-    <img class="title-image" src="images/sports red.jpeg" alt="Achievement Image 2">
-    <img class="title-image" src="images/title3.jpeg" alt="Achievement Image 3">
-</div>
-<div class="additional-description-container">
-    <div class="additional-description-image">
-        <img src="images/achieve.jpg" alt="Achievement Image" class="additional-image">
-    </div>
-    <div class="additional-description-content">
-        <div class="additional-description-header">
-            <h3>Our Achievements</h3>
-            <p>Discover our remarkable accomplishments.</p>
+            <button id="open-menu-btn"><i class ="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class ="uil uil-multiply"></i></button>
+
         </div>
-        <button class="read-more-button" id="readMoreButton">Read More</button>
-        <div class="additional-description">
+
+    </nav>
+     <!--end of body-->
+    <!--start of header-->
+<header>
+<div class="container header_container">
+        <div class="header_left">
+            <h1>Grow your skills</h1>
             <p>
-    Step into the world of St. Joseph's Nalondo High School, where extraordinary achievements become everyday stories. Our path is illuminated by the pursuit of excellence in every facet of education and beyond. Dive into the narratives of our students' incredible feats, from conquering regional math competitions to emerging as champions in thrilling sports showdowns. Marvel at the innovative projects that not only impress but inspire. These achievements are more than accolades; they are the embodiment of our students' dedication, the cornerstone of our supportive faculty, and the heartbeat of our vibrant school community. Join us on this exhilarating journey through our accomplishments and witness the unwavering spirit of excellence that defines our school
+    Step into the world of St. Joseph's Nalondo High School, where extraordinary achievements become everyday stories.</p> 
+    <button class="btn btn-primary btn-show-achievements">See Achievements</button>
 
+</div>
+         <div class="header_right">
+         <div class="header_right-image"></div>
+         <img src="./images/achieve.jpg">  
+         </div>
+       </div>
+    </header>       
+  <!--end of header-->
+  <section class="categories">
+    <div class="container categories_container">
+    <div class="categories_left">
+        <h1>Achievement Categories</h1>
+        <p>
+            The school has had various achievements in various categories.
+        </p>
+        <a href="#" class="btn btn-learn-more">Learn More</a>
+
+    </div>
+    <div class="categories_right">
+        <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"  ></i></span>
+            <h5>Academic achievements</h5>
+            <p>
+                they include the following:
             </p>
-        </div>
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"  ></i></span>
+            <h5>Extra-Curricular</h5>
+            <p>
+                they include the following:
+            </p>
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"  ></i></span>
+            <h5>Community Service</h5>
+            <p>
+                they include the following:
+            </p>
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"  ></i></span>
+            <h5>Arhitecture</h5>
+            <p>
+                they include the following:
+            </p>
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"  ></i></span>
+            <h5>Contests</h5>
+            <p>
+                they include the following:
+            </p>
+        </article>
+
+        <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"  ></i></span>
+            <h5>Music </h5>
+            <p>
+                they include the following:
+            </p>
+        </article>
     </div>
-</div>
-
-<!-- Achievements 1 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 1</h2>
-                <p>Completed a challenging project under tight deadline, showcasing exceptional time-management and problem-solving skills.</p>
-            </div>
-        </div>
-        <img src="images/achievement1.jpeg" alt="Achievement 1" class="achievement-image">
     </div>
-</div>
 
-<!-- Achievements 2 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <img src="images/achievement2.jpeg" alt="Achievement 2" class="achievement-image">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 2</h2>
-                <p>Received Employee of the Month award for consistently exceeding performance targets and providing outstanding customer service.</p>
-            </div>
+
+</section>
+<section class="courses">
+    <h2>Achievements Featured</h2>
+   <div class="container courses_container">
+    <article class="course">
+        <div class="course_image">
+            <img src="./images/exams.jpeg" alt="">
         </div>
-    </div>
-</div>
+        <h4>Contests</h4>
+        <p>
+        Students took part in the Maths contest and managed to achieve top positions among other contests.
 
-<div class="achievement-container">
-<!-- Achievement 3 -->
-<div class="achievement">
-        <img src="images/achievement2.jpeg" alt="Achievement 3" class="achievement-image">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 3</h2>
-                <p>Received Employee of the Month award for consistently exceeding performance targets and providing outstanding customer service.</p>
-            </div>
+        </p>
+     </article>
+
+     <article class="course">
+        <div class="course_image">
+            <img src="./images/students2.jpeg" alt="">
         </div>
-    </div>
-</div>
+       <div class="course_info">
+        <h4>Barazas</h4>
+        <p>
+        Students took part in the Maths contest and managed to achieve top positions among other contests.
 
+        </p>
+      </div>
+     </article>
 
-<!-- Achievements 4 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 4</h2>
-                <p>Implemented an innovative cost-saving strategy that reduced departmental expenses by 15% while maintaining high-quality standards.</p>
-            </div>
+     <article class="course">
+        <div class="course_image">
+            <img src="./images/achievement4.jpg" alt="">
         </div>
-        <img src="images/achievement4.jpeg" alt="Achievement 4" class="achievement-image">
-    </div>
-</div>
+       <div class="course_info">
 
-<!-- Achievements 5 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <img src="images/achievement5.jpeg" alt="Achievement 5" class="achievement-image">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 5</h2>
-                <p>Developed and delivered a series of training sessions that improved overall team efficiency and productivity by 20% within three months.</p>
-            </div>
+        <h4> Extra-Curricular</h4>
+        <p>
+        Students took part in the Maths contest and managed to achieve top positions among other contests.
+
+        </p>
+       </div> 
+     </article>
+
+     <article class="course">
+        <div class="course_image">
+            <img src="./images/achievement2.jpg" alt="">
         </div>
-    </div>
-</div>
+        
+        <div class="course_info">
 
+        <h4>Debates</h4>
+        <p>
+        Students took part in the Maths contest and managed to achieve top positions among other contests.
 
-<!-- Achievements 6 -->
-<div class="achievement-container ">
-    <div class="achievement">
-    <img src="images/achievement2.jpeg" alt="Achievement 2" class="achievement-image">
-
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 6</h2>
-                <p>Initiated and managed a community outreach program that resulted in a 50% increase in volunteer participation and positive community feedback.</p>
-            </div>
+        </p>
         </div>
-    </div>
-</div>
-</div>
+    </article>
 
-<!-- Achievements 7 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 7</h2>
-                <p>Received the Innovation Excellence Award for conceptualizing and implementing a groundbreaking solution that revolutionized internal processes.</p>
-            </div>
+     <article class="course">
+        <div class="course_image">
+            <img src="./images/buildings1.jpeg" alt="">
         </div>
-        <img src="images/achievement1.jpeg" alt="Achievement 7" class="achievement-image">
-    </div>
-</div>
-<div class="achievement-row">
-    <div class="grid-container">
-        <!-- Achievements 8 -->
-        <div class="achievement-container">
-            <div class="achievement">
-                <img src="images/trumpet.jpg" alt="Achievement 8" class="achievement-image">
-                <div class="achievement-content">
-                    <div class="achievement-text">
-                        <h2>Achievement 8</h2>
-                        <p>Collaborated with cross-functional teams to successfully launch a product in a new international market, achieving a 25% increase in market share.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Achievements 9 -->
-        <div class="achievement-container">
-            <div class="achievement">
-                <img src="images/sports red.jpeg" alt="Achievement 9" class="achievement-image">
-                <div class="achievement-content">
-                    <div class="achievement-text">
-                        <h2>Achievement 9</h2>
-                        <p>Implemented a data-driven marketing strategy that led to a 40% increase in online sales and a 30% improvement in customer retention.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+       <div class="course_info">
 
-<!-- Achievements 10 -->
-<div class="achievement-container">
-    <div class="achievement">
-        <img src="images/basketball.jpeg" alt="Achievement 10" class="achievement-image">
-        <div class="achievement-content">
-            <div class="achievement-text">
-                <h2>Achievement 10</h2>
-                <p>Designed and executed a comprehensive rebranding campaign that resulted in a 50% increase in brand awareness and positive customer perception.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+        <h4>School Architecture</h4>
+        <p>
+        Students took part in the Maths contest and managed to achieve top positions among other contests.
 
+        </p>
+       </div>
+    </article>
+
+     <article class="course">
+        <div class="course_image">
+            <img src="./images/title2 (2).jpeg" alt="">
+        </div>
+       <div class="course_info">
+
+        <h4>KCSE Achievements</h4>
+        <p>
+        Students took part in the Maths contest and managed to achieve top positions among other contests.
+
+        </p>
+       </div>
+    </article>
+   </div>
+</section>
+<!--TESTIMONIALS SECTION-->
+<section class="container testimonials_Container swiper mySwiper">
+  <h1>Alumni Testimonial</h1>
+  <div class="swiper-wrapper">
+    <article class="testimonial swiper-slide">
+     <div class="avatar">
+        <img src="./images/avatar3.jpg">
+     </div>
+      <div class="testimonial_info">
+       <h5>Jeff Roney</h5>
+       <small>Alumni</small>
+      </div>
+      <div class="testimonial_body">
+        <p>
+            The school prepared me for real world.
+        </p>
+      </div>
+    </article>
+
+    <article class="testimonial swiper-slide">
+        <div class="avatar">
+           <img src="./images/avatar.jpeg">
+        </div>
+         <div class="testimonial_info">
+          <h5>John Williams</h5>
+          <small>Alumni</small>
+         </div>
+         <div class="testimonial_body">
+           <p>
+               The school prepared me for real world.
+           </p>
+         </div>
+       </article>
+
+       <article class="testimonial swiper-slide">
+        <div class="avatar">
+           <img src="./images/avatar7.jpeg">
+        </div>
+         <div class="testimonial_info">
+          <h5>Ken Bett</h5>
+          <small>Alumni</small>
+         </div>
+         <div class="testimonial_body">
+           <p>
+               The school prepared me for real world.
+           </p>
+         </div>
+       </article>
+
+       <article class="testimonial swiper-slide">
+        <div class="avatar">
+           <img src="./images/avatar4.jpeg">
+        </div>
+         <div class="testimonial_info">
+          <h5>Daniel Mungai</h5>
+          <small>Alumni</small>
+         </div>
+         <div class="testimonial_body">
+           <p>
+               The school prepared me for real world.
+           </p>
+         </div>
+       </article>
+
+       <article class="testimonial swiper-slide">
+        <div class="avatar">
+           <img src="./images/avatar5.jpeg">
+        </div>
+         <div class="testimonial_info">
+          <h5>Kelvin Ekisa</h5>
+          <small>Alumni</small>
+         </div>
+         <div class="testimonial_body">
+           <p>
+               The school prepared me for real world.
+           </p>
+         </div>
+       </article>
+
+       <article class="testimonial swiper-slide ">
+        <div class="avatar">
+           <img src="./images/avatar6.jpeg">
+        </div>
+         <div class="testimonial_info">
+          <h5>Peter Onyango</h5>
+          <small>Alumni</small>
+         </div>
+         <div class="testimonial_body">
+           <p>
+               The school prepared me for real world.
+           </p>
+         </div>
+       </article>
+  </div>
+  <div class="swiper-pagination"></div>
+</section>
 
 
 
@@ -224,60 +324,77 @@
         <p style="color:var(--background-color);">&copy; 2023 NALONDO HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.querySelector(".header-links");
+    document.addEventListener('DOMContentLoaded', function() {
+    const showAchievementsButton = document.querySelector('.btn-show-achievements');
+    const learnMoreButtons = document.querySelectorAll('.btn-learn-more');
 
-    hamburger.addEventListener("click", function () {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
+    showAchievementsButton.addEventListener('click', function() {
+        const categoriesSection = document.querySelector('.categories');
+        window.scrollTo({
+            top: categoriesSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const coursesSection = document.querySelector('.courses');
+            window.scrollTo({
+                top: coursesSection.offsetTop,
+                behavior: 'smooth'
+            });
+        });
     });
 });
 
+    window.addEventListener('scroll',()=>{
+    document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0)
+})
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const showAchievementsButton = document.getElementById("showAchievementsButton");
+//show/hide nav menu
+const menu=document.querySelector(".nav_menu");
+const menuBtn=document.querySelector("#open-menu-btn");
+const closeBtn=document.querySelector("#close-menu-btn");
 
-    showAchievementsButton.addEventListener("click", function () {
-        const achievementsContainer = document.querySelector(".achievement-container");
-        const windowHeight = window.innerHeight;
-        const achievementsHeight = achievementsContainer.getBoundingClientRect().height;
-        const scrollY = window.scrollY;
 
-        if (achievementsHeight - scrollY <= windowHeight) {
-            window.scrollBy(0, 1000); // Scroll by 1 pixel to trigger scroll event
-        } else {
-            achievementsContainer.scrollIntoView({ behavior: "smooth" });
+
+menuBtn.addEventListener('click',()=>{
+    menu.style.display="flex";
+    closeBtn.style.display="inline-block";
+    menuBtn.style.display="none";
+})
+
+//close navbar
+const closeNav=()=>{
+    menu.style.display="none";
+    closeBtn.style.display="none";
+    menuBtn.style.display="inline-block";
+
+
+}
+closeBtn.addEventListener('click',closeNav)
+
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when windo is>=600px
+      breakpoints: {
+        600:{
+            slidesPerView:2
+
         }
+      }
     });
-
-    const scrollToTopButton = document.getElementById("scrollToTopButton");
-
-    scrollToTopButton.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    const additionalDescription = document.querySelector(".additional-description");
-    const readMoreButton = document.getElementById("readMoreButton");
-    const paragraph = additionalDescription.querySelector("p");
-
-    const originalText = paragraph.textContent;
-    let isDescriptionExpanded = false;
-
-    readMoreButton.addEventListener("click", function () {
-        isDescriptionExpanded = !isDescriptionExpanded;
-
-        if (isDescriptionExpanded) {
-            paragraph.textContent = originalText;
-            readMoreButton.textContent = "Read Less";
-        } else {
-            paragraph.textContent = originalText.substring(0, 100); // Adjust the length as needed
-            readMoreButton.textContent = "Read More";
-        }
-    });
-});
-
+   
 </script>
 
 </body>

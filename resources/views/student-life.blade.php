@@ -11,31 +11,33 @@
 
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
 
-    <div class="school-info">
-        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
+    
     <nav>
-    <ul class="header-links">
-        <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('about') }}">About Us</a></li>
-        <li><a href="{{ route('faculty') }}">Faculty</a></li>
-        <li><a href="{{ route('studentLife') }}">Student Life</a></li>
-        <li><a href="{{ route('community') }}">Community</a></li>
-        <li><a href="{{ route('achievements') }}">Achievements</a></li>
-        <li><a href="{{ route('contact') }}">Contact Us</a></li>
-    </ul>
+        <div class="container nav_container">
+        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
+  
+        <ul class="nav_menu">
+                 <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('about') }}">About Us</a></li>
+                <li><a href="{{ route('faculty') }}">Faculty</a></li>
+                <li><a href="{{ route('studentLife') }}">Student Life</a></li>
+                <li><a href="{{ route('community') }}">Community</a></li>
+                <li><a href="{{ route('achievements') }}">Achievements</a></li>
+                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
+            </ul>
+            <button id="open-menu-btn"><i class ="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class ="uil uil-multiply"></i></button>
 
-</nav>
+        </div>
+
+    </nav>
     </header>
     <main>
         <section class="hero">
@@ -234,6 +236,54 @@
             </div>
         </div>
     </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    window.addEventListener('scroll',()=>{
+    document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0)
+})
+
+//show/hide nav menu
+const menu=document.querySelector(".nav_menu");
+const menuBtn=document.querySelector("#open-menu-btn");
+const closeBtn=document.querySelector("#close-menu-btn");
+
+
+
+menuBtn.addEventListener('click',()=>{
+    menu.style.display="flex";
+    closeBtn.style.display="inline-block";
+    menuBtn.style.display="none";
+})
+
+//close navbar
+const closeNav=()=>{
+    menu.style.display="none";
+    closeBtn.style.display="none";
+    menuBtn.style.display="inline-block";
+
+
+}
+closeBtn.addEventListener('click',closeNav)
+
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when windo is>=600px
+      breakpoints: {
+        600:{
+            slidesPerView:2
+
+        }
+      }
+    });
+</script>
+
 </body>
 
 </html>
