@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="./css/theme.css">
     <script src="/js/contact.js" defer></script>
     
 </head>

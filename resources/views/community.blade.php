@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/theme.css">
 
     
 </head>
@@ -127,8 +128,8 @@
             </div>
         </div>
 
-        <div class="calendar-intro">ANNUAL CALENDAR</div>
-        <div class="calendar">
+        <!-- <div class="calendar-intro">ANNUAL CALENDAR</div> -->
+        {{--<div class="calendar">
             <!-- show beginning of calendar -->
         
             <div class="headings">
@@ -172,7 +173,7 @@
                 <div class="date"></div>
                 <div class="action"></div>
             </div>
-        </div>
+        </div>--}}
 
     </main>
     <div class="footer">

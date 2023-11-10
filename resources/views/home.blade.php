@@ -6,44 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nalondo - Home</title>
-    {{-- css linking --}}
-    {{-- <link rel="stylesheet" href="{{ asset('/css/home.css') }}"> --}}
+    <link rel="stylesheet" href="/css/navbar-footer.css">
     <link rel="stylesheet" href="/css/home.css">
-    <script src="/js/home.js" defer></script>
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    {{-- <link rel="stylesheet" href="{{ asset('/css/navbar.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('/css/footer.css') }}">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <script src="/js/home.js" defer></script>
 
 
 
 </head>
 
 <body>
-    <header>
-    <nav>
-        <div class="container nav_container">
-        <div class="school-name">ST JOSEPH'S NALONDO HIGH SCHOOL</div>
-  
-        <ul class="nav_menu">
-                 <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('about') }}">About Us</a></li>
-                <li><a href="{{ route('faculty') }}">Faculty</a></li>
-                <li><a href="{{ route('studentLife') }}">Student Life</a></li>
-                <li><a href="{{ route('community') }}">Community</a></li>
-                <li><a href="{{ route('achievements') }}">Achievements</a></li>
-                <li><a href="{{ route('contact') }}">Contact Us</a></li> 
-            </ul>
-            <button id="open-menu-btn"><i class ="uil uil-bars"></i></button>
-        <button id="close-menu-btn"><i class ="uil uil-multiply"></i></button>
-
-        </div>
-
-    </nav>
     
-    </header>
+    @include('navbar')
     <main>
         {{-- section landing --}}
         <section class="landing">
@@ -273,7 +249,7 @@
                 <p style="color:var(--background-color);">&copy; 2023 NALONDO HIGH SCHOOL. ALL RIGHTS RESERVED.</p>
             </div>
         </div>
-        
+
     </footer>
 </body>
 <script>
@@ -345,33 +321,32 @@
             headerLinks.appendChild(listItem);
         });
     });
-    window.addEventListener('scroll',()=>{
-    document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0)
-})
+    window.addEventListener('scroll', () => {
+        document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
+    })
 
-//show/hide nav menu
-const menu=document.querySelector(".nav_menu");
-const menuBtn=document.querySelector("#open-menu-btn");
-const closeBtn=document.querySelector("#close-menu-btn");
-
-
-
-menuBtn.addEventListener('click',()=>{
-    menu.style.display="flex";
-    closeBtn.style.display="inline-block";
-    menuBtn.style.display="none";
-})
-
-//close navbar
-const closeNav=()=>{
-    menu.style.display="none";
-    closeBtn.style.display="none";
-    menuBtn.style.display="inline-block";
+    //show/hide nav menu
+    const menu = document.querySelector(".nav_menu");
+    const menuBtn = document.querySelector("#open-menu-btn");
+    const closeBtn = document.querySelector("#close-menu-btn");
 
 
-}
-closeBtn.addEventListener('click',closeNav)
 
+    menuBtn.addEventListener('click', () => {
+        menu.style.display = "flex";
+        closeBtn.style.display = "inline-block";
+        menuBtn.style.display = "none";
+    })
+
+    //close navbar
+    const closeNav = () => {
+        menu.style.display = "none";
+        closeBtn.style.display = "none";
+        menuBtn.style.display = "inline-block";
+
+
+    }
+    closeBtn.addEventListener('click', closeNav)
 </script>
 
 </html>
