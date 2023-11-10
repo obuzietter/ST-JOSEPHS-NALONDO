@@ -38,9 +38,9 @@ body{
     width: var(--container-width-1g);
     margin: 0 auto;
 }
-section{
+/* section{
     padding:6rem 0;
-}
+} */
 section h2{
     text-align:center;
     margin-bottom: 4rem;
