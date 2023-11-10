@@ -127,8 +127,8 @@
             </div>
         </div>
 
-        <div class="calendar-intro">ANNUAL CALENDAR</div>
-        <div class="calendar">
+        <!-- <div class="calendar-intro">ANNUAL CALENDAR</div> -->
+        {{--<div class="calendar">
             <!-- show beginning of calendar -->
         
             <div class="headings">
@@ -172,7 +172,7 @@
                 <div class="date"></div>
                 <div class="action"></div>
             </div>
-        </div>
+        </div>--}}
 
     </main>
     <div class="footer">

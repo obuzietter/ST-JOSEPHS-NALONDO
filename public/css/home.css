@@ -7,6 +7,9 @@
     /* border: 1px solid red; */
 }
 
+section{
+    padding: 0;
+}
 /* main section styling */
 
 /* landing section styling */
@@ -461,7 +464,7 @@ color: white;
     justify-content: space-evenly;
     flex-wrap: wrap;
     overflow-x: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     gap: 1rem;
 }
 
