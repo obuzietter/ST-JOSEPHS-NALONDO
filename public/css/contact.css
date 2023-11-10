@@ -59,7 +59,11 @@ body{
     opacity:0;
     transform:translateY(150%);
     color:white;
-    font-size:clamp(20px,80vw,38px);
+    /* font-size:clamp(20px,60vw,44px);
+     */
+
+     font-size:var(--sec-heading);
+
 }
 
 .map-text button{

@@ -2,12 +2,14 @@
 
      
     --prim-color:rgb(9,9,143);
-    --sec-color:rgb(31,120,237);
-    --tertiary-color:31,185,237;
+    --sec-color:rgb(119,138,237);
+    --tertiary-color:rgb(71,204,252);
 
 
-    --heading:clamp();
-    --sec-heading:clamp();
-    --body-text:clamp();
+    --heading:clamp(20px,15vw,44px);
+    --sec-heading:clamp(15px,10vw,28px);
+    --body-text:clamp(10px,5vw,16px);
 
 }
+
+
