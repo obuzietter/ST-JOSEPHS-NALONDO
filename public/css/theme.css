@@ -7,10 +7,14 @@
     --colorD:white;
 
 
-    --heading:clamp(20px,15vw,44px);
-    --sec-heading:clamp(15px,10vw,28px);
-    --body-text:clamp(10px,5vw,16px);
 
+
+    --h-size:clamp(20px,15vw,44px);
+    --sh-size:clamp(15px,10vw,28px);
+    --bd-text-size:clamp(10px,5vw,16px);
+
+    --h-color:rgb(255, 165, 0);
+    --sh-color:rgb(119,138,237);
 }
 
 
