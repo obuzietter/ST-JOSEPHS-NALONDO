@@ -4,14 +4,20 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      background-color: #00BAF0;
-      background: linear-gradient(to left, #f46b45, #eea849);
+      background-color: var(--prim-color);
+      /* background: linear-gradient(to right, var(--prim-color), var(--sec-color)); */
+
       color: #FFF;
-      height: 50px;
+      /* min-height: 50px; */
       padding: 2rem 1rem;
       position: sticky;
       top: 0;
       z-index: 5;
+    }
+
+    .logo{
+      font-size: 1.5rem;
+      font-weight: 600;
     }
 
     .menu {
@@ -24,9 +30,35 @@
 
     .menu>li {
       margin: 0 1rem;
+      width: fit-content;
       overflow: hidden;
     }
+    .menu>li>a {
+      position: relative;
+      color: var(--colorD);
+      text-decoration: none;
+      /* font-size: 1.2rem; */
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
 
+      &::after {
+        content: '';
+        position: absolute;
+        /* display: block; */
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 3px;
+        background-color: var(--colorD);
+        transition: width 0.1s ease-in-out;
+        
+      }
+      &:hover::after{
+        width: 100%;
+      }
+      
+    }
     .menu-button-container {
       display: none;
       height: 100%;
@@ -84,7 +116,7 @@
 
       .menu {
         position: absolute;
-        top: 0;
+        top: 40%;
         margin-top: 50px;
         left: 0;
         flex-direction: column;
@@ -115,7 +147,7 @@
         padding: 0.5em 0;
         width: 100%;
         color: white;
-        background-color: #222;
+        background-color: var(--sec-color);
       }
 
       .menu>li:not(:last-child) {
