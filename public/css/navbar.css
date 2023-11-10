@@ -245,13 +245,18 @@ transform: scaleX(1); /* Make the line visible */
     }
     
 /*====Phone media queries==*/
-@media screen and (max-width: 600px){
-    .container{
+@media screen and (max-width: 600px) {
+    .container {
         width: var(--container-width-sm);
     }
-    /*navbar*/
-    .nav_menu{
-        right: 3%;
-    }}
 
+    /* Navbar */
+    .nav_menu {
+        left: 0;
+        right: 0;
+        width: 100%; /* Set the width to 100% to cover the whole screen */
+        margin: auto; /* Center the menu horizontally */
+        transform: translateX(0); /* Reset any previous translations */
+    }
+}
 
