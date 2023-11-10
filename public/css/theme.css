@@ -1,0 +1,13 @@
+:root{
+
+     
+    --prim-color:rgb(9,9,143);
+    --sec-color:rgb(31,120,237);
+    --tertiary-color:31,185,237;
+
+
+    --heading:clamp();
+    --sec-heading:clamp();
+    --body-text:clamp();
+
+}
