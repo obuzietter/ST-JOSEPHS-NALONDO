@@ -62,6 +62,7 @@ h2{
     font-size: 3rem;
     color: orange;
     font-weight: bold;
+  
 }
 h3{
     font-size: 1.6rem;
@@ -197,8 +198,12 @@ header{
 .header_left p{
     margin:1rem 0 2.4rem;
     
-}
 
+}
+.header_right img{
+    backdrop-filter: blur(10px);
+
+}
 /*====CATEFGORIES==*/
 .categories{
     background: var(--bg1-color);
