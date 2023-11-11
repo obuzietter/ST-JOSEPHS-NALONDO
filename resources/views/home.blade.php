@@ -52,9 +52,9 @@
             </div>
 
             <nav1>
-                <span class="navBtns active">O</span>
-                <span class="navBtns">O</span>
-                <span class="navBtns">O</span>
+                <span class="navBtns active"></span>
+                <span class="navBtns"></span>
+                <span class="navBtns"></span>
             </nav1>
         </section>
         <section class="brief">
@@ -279,74 +279,6 @@
     })
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = [{
-                text: 'Home',
-                link: '/'
-            },
-            {
-                text: 'AboutUs',
-                link: 'about'
-            },
-            {
-                text: 'Faculty',
-                link: 'faculty'
-            },
-            {
-                text: 'StudentLife',
-                link: 'student life'
-            },
-            {
-                text: 'Community',
-                link: 'community.html'
-            },
-            {
-                text: 'Achievements',
-                link: 'achievements'
-            },
-            {
-                text: 'ContactUs',
-                link: 'contact.html'
-            },
-        ];
-
-        const headerLinks = document.getElementById('headerLinks');
-
-        navLinks.forEach(link => {
-            const listItem = document.createElement('li');
-            const anchor = document.createElement('a');
-            anchor.href = link.link;
-            anchor.textContent = link.text;
-            listItem.appendChild(anchor);
-            headerLinks.appendChild(listItem);
-        });
-    });
-    window.addEventListener('scroll', () => {
-        document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0)
-    })
-
-    //show/hide nav menu
-    const menu = document.querySelector(".nav_menu");
-    const menuBtn = document.querySelector("#open-menu-btn");
-    const closeBtn = document.querySelector("#close-menu-btn");
-
-
-
-    menuBtn.addEventListener('click', () => {
-        menu.style.display = "flex";
-        closeBtn.style.display = "inline-block";
-        menuBtn.style.display = "none";
-    })
-
-    //close navbar
-    const closeNav = () => {
-        menu.style.display = "none";
-        closeBtn.style.display = "none";
-        menuBtn.style.display = "inline-block";
-
-
-    }
-    closeBtn.addEventListener('click', closeNav)
-</script>
+  </script>
 
 </html>

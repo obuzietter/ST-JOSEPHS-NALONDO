@@ -13,6 +13,7 @@
       position: sticky;
       top: 0;
       z-index: 5;
+      /* display: block; */
     }
 
     .logo{
@@ -31,7 +32,7 @@
     .menu>li {
       margin: 0 1rem;
       width: fit-content;
-      overflow: hidden;
+      
     }
     .menu>li>a {
       position: relative;
@@ -50,9 +51,12 @@
         bottom: -3px;
         width: 0;
         height: 3px;
-        background-color: var(--colorD);
+        background-color: var(--h-color);
         transition: width 0.1s ease-in-out;
         
+      }
+      &:hover{
+        color: var(--h-color);
       }
       &:hover::after{
         width: 100%;
@@ -109,7 +113,7 @@
       transform: rotate(-405deg);
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 792px) {
       .menu-button-container {
         display: flex;
       }
@@ -147,6 +151,7 @@
         padding: 0.5em 0;
         width: 100%;
         color: white;
+        overflow: hidden;
         background-color: var(--sec-color);
       }
 
